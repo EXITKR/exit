@@ -3,25 +3,27 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { MdEmail } from "react-icons/md";
 import { RiKakaoTalkFill } from "react-icons/ri";
+import { getConfig } from "@utils/Config";
 
 const Footer = () => {
   const router = useRouter()
+  const config = getConfig()
   return (
     <>
         <footer id="footer_pc">
             <div className="inner_main footer_main">
               <div className="top_section">
                 <div className="info_section">
-                  <span className="company_title">EXIT</span>
+                  <span className="company_title">{config.company_en}</span>
                   <div className="info_content">
-                    <span className="company_name">주식회사 엑시트</span>
-                    <span className="company_ceo">대표이사 :: 이승준</span>
-                    <span className="company_ceo">개인정보관리 책임자 :: 이승준</span>
-                    <span className="company_number">사업자 등록 번호 :: 701-86-03521</span>
-                    <span className="company_address">주소 :: 충청남도 천안시 서북구 천안천4길 32 그린스타트업타운 (우: 31145)</span>
-                    <span className="company_tel">Tel :: 010-8384-6126</span>
-                    <span className="company_fax">Fax :: 0504-482-6126</span>
-                    <span className="company_mail">e-mail :: exitinfo08@gmail.com</span>
+                    <span className="company_name">{config.company_kr}</span>
+                    <span className="company_ceo">대표이사 :: {config.ceo}</span>
+                    <span className="company_ceo">개인정보관리 책임자 :: {config.duty}</span>
+                    <span className="company_number">사업자 등록 번호 :: {config.bs_number}</span>
+                    <span className="company_address">주소 :: {config.address}</span>
+                    <span className="company_tel">Tel :: {config.tel_number}</span>
+                    <span className="company_fax">Fax :: {config.fax_number}</span>
+                    <span className="company_mail">e-mail :: {config.email}</span>
                   </div>
                 </div>
                 <div className="menu_section">
@@ -54,19 +56,19 @@ const Footer = () => {
               </div>
               <div className="bot_section">
                 <div className="contact_section">
-                  <Link href="https://open.kakao.com/o/sl7JVmqh" target="blank">
+                  <Link href={config.kakao} target="blank">
                     <div className="icon_circle">
                       <RiKakaoTalkFill className="icon"/>
                     </div>
                   </Link>
-                  <Link href="mailto:exitinfo08@gmail.com" target="blank">
+                  <Link href={config.email} target="blank">
                     <div className="icon_circle">
                       <MdEmail className="icon"/>
                     </div>
                   </Link>
                 </div>
                 <div className="copy_section">
-                  <span className="copyright">Copyright ⓒ 2025 EXIT Co. All rights reserved.</span>
+                  <span className="copyright">Copyright ⓒ 2025 {config.company_en} All rights reserved.</span>
                 </div>
               </div>
             </div>
