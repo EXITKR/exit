@@ -14,6 +14,18 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  webpack: (config, {isServer}) => {
+    config.module.rules.push({
+      test: /\.yml$/,
+      use: 'yaml-loader'
+    });
+    config.module.rules.push({
+      test: /\.yaml$/,
+      use: 'yaml-loader'
+    })
+
+    return config;
+  },
 };
 
 export default nextConfig;
