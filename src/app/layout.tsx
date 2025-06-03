@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@components/footer/Footer";
+import Header from "@components/header/Header";
 
 export const metadata: Metadata = {
   title: "㈜EXIT | 주식회사 엑시트 :: 합리적인 인증 심사 & 컨설팅 기업",
@@ -15,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Header/>
         {children}
         <Footer/>
       </body>

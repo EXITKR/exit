@@ -1,5 +1,7 @@
 @import "@css/font.css";
 @import "@css/components/footer.css";
+@import "@css/components/header.css";
+@import "@css/pages/introduce.css";
 
 html,
 body {
