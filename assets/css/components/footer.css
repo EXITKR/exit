@@ -4,117 +4,136 @@
     padding: 20px 0 20px;
 
     background: #1c2524;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    .top_section {
-        width: 100%;
-        height: 360px;
-
+    .footer_main {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        .info_section {
-            width: 500px;
+        .top_section {
+            width: 100%;
+            height: 360px;
 
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            .company_title {
-                color: #ededed;
-                font-size: 60px;
-                font-weight: 700;
-            }
-            .info_content {
-                display: flex;
-                flex-direction: column;
-                gap: 5px;
-                span {
-                    color: #ededed;
-                    font-weight: 300;
-                    font-size: 14px;
-                }
-            }
-        }
-        .menu_section {
-            width: 800px;
-            height: 260px;
-
-            display: flex;
-            justify-content: end;
-            .menu {
-                display: flex;
-                flex-direction: column;
-                gap: 24px;
-
-                text-align: center;
-                padding: 0 30px;
-                .menu_title {
-                    color: #ededed;
-                    font-size: 20px;
-                    font-weight: 700;
-                    border-bottom: solid 1px #ededed;
-                    transition: all 0.2s;
-                    &:hover {
-                        cursor: pointer;
-                        color: #637573;
-                        border-bottom: solid 1px #637573;
-                    }
-                }
-                .menu_list {
-                    color: #ededed;
-                    font-size: 16px;
-                    font-weight: 500;
-                    transition: all 0.2s;
-                    &:hover {
-                        cursor: pointer;
-                        color: #637573;
-                    }
-                }
-            }
-        }
-    }
-    .bot_section {
-        width: 100%;
-        height: 50px;
-
-        display: flex;
-        justify-content: space-between;
-        .contact_section {
-            width: 140px;
             display: flex;
             justify-content: space-between;
-            .icon_circle {
-                width: 45px;
-                height: 45px;
 
-                border: solid 2px #ededed;
-                border-radius: 50%;
+            .info_section {
+                width: 500px;
 
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                transition: all 0.2s;
-                .icon {
+                flex-direction: column;
+                gap: 20px;
+
+                .company_title {
                     color: #ededed;
-                    width: 30px;
-                    height: 30px;
+                    font-size: 60px;
+                    font-weight: 700;
                 }
-                &:hover {
-                    border: solid 2px #637573;
-                    .icon {
-                        color: #637573;
+
+                .info_content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    span {
+                        color: #ededed;
+                        font-weight: 300;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .menu_section {
+                width: 800px;
+                height: 260px;
+
+                display: flex;
+                justify-content: end;
+
+                .menu {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+
+                    text-align: center;
+                    padding: 0 30px;
+
+                    .menu_title {
+                        color: #ededed;
+                        font-size: 20px;
+                        font-weight: 700;
+                        border-bottom: solid 1px #ededed;
+                        transition: all 0.2s;
+
+                        &:hover {
+                            cursor: pointer;
+                            color: #637573;
+                            border-bottom: solid 1px #637573;
+                        }
+                    }
+
+                    .menu_list {
+                        color: #ededed;
+                        font-size: 16px;
+                        font-weight: 500;
+                        transition: all 0.2s;
+
+                        &:hover {
+                            cursor: pointer;
+                            color: #637573;
+                        }
                     }
                 }
             }
         }
-        .copy_section {
+
+        .bot_section {
+            width: 100%;
+            height: 50px;
+
             display: flex;
-            align-items: center;
-            .copyright {
-                color: #ededed;
-                font-size: 14px;
-                font-weight: 300;
+            justify-content: space-between;
+
+            .contact_section {
+                width: 140px;
+                display: flex;
+                justify-content: space-between;
+
+                .icon_circle {
+                    width: 45px;
+                    height: 45px;
+
+                    border: solid 2px #ededed;
+                    border-radius: 50%;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all 0.2s;
+
+                    .icon {
+                        color: #ededed;
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    &:hover {
+                        border: solid 2px #637573;
+
+                        .icon {
+                            color: #637573;
+                        }
+                    }
+                }
+            }
+
+            .copy_section {
+                display: flex;
+                align-items: center;
+
+                .copyright {
+                    color: #ededed;
+                    font-size: 14px;
+                    font-weight: 300;
+                }
             }
         }
     }

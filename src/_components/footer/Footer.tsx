@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <>
         <footer id="footer_pc">
-            <div className="inner_main">
+            <div className="inner_main footer_main">
               <div className="top_section">
                 <div className="info_section">
                   <span className="company_title">EXIT</span>

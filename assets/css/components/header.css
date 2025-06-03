@@ -6,12 +6,13 @@
     background: #ffffff;
     border-bottom: solid 1px #ededed;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    .web_logo {
-        width: 180px;
-        height: 60px;
+    .header_main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .web_logo {
+            width: 180px;
+            height: 60px;
+        }
     }
 }
