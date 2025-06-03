@@ -1,9 +1,11 @@
+"use client"
 import Link from "next/link";
-import { BsTelephoneFill } from "react-icons/bs";
+import { useRouter } from "next/navigation";
 import { MdEmail } from "react-icons/md";
 import { RiKakaoTalkFill } from "react-icons/ri";
 
 const Footer = () => {
+  const router = useRouter()
   return (
     <>
         <footer id="footer_pc">
@@ -24,29 +26,29 @@ const Footer = () => {
                 </div>
                 <div className="menu_section">
                   <div className="menu menu_01">
-                    <span className="menu_title">기업 소개</span>
-                    <span className="menu_list">기업 소개</span>
+                    <span className="menu_title" onClick={() => router.push("/")}>기업 소개</span>
+                    <span className="menu_list" onClick={() => router.push("/")}>기업 소개</span>
                   </div>
                   <div className="menu menu_02">
-                    <span className="menu_title">ISO 인증</span>
-                    <span className="menu_list">ISO9001</span>
-                    <span className="menu_list">ISO14001</span>
-                    <span className="menu_list">ISO45001</span>
-                    <span className="menu_list">심사</span>
+                    <span className="menu_title" onClick={() => router.push("/iso_info?index=0")}>ISO 인증</span>
+                    <span className="menu_list" onClick={() => router.push("/iso_info?index=0")}>ISO9001</span>
+                    <span className="menu_list" onClick={() => router.push("/iso_info?index=1")}>ISO14001</span>
+                    <span className="menu_list" onClick={() => router.push("/iso_info?index=2")}>ISO45001</span>
+                    <span className="menu_list" onClick={() => router.push("/iso_info?index=3")}>심사</span>
                   </div>
                   <div className="menu menu_03">
-                    <span className="menu_title">기업 맞춤형 인증</span>
-                    <span className="menu_list">공급망 보안 (SCS)</span>
-                    <span className="menu_list">직원 행동강령 (COC)</span>
-                    <span className="menu_list">정보 보안 (DLP)</span>
+                    <span className="menu_title" onClick={() => router.push("/enterprise_info?index=0")}>기업 맞춤형 인증</span>
+                    <span className="menu_list" onClick={() => router.push("/enterprise_info?index=1")}>공급망 보안 (SCS)</span>
+                    <span className="menu_list" onClick={() => router.push("/enterprise_info?index=2")}>직원 행동강령 (COC)</span>
+                    <span className="menu_list" onClick={() => router.push("/enterprise_info?index=3")}>정보 보안 (DLP)</span>
                   </div>
                   <div className="menu menu_04">
-                    <span className="menu_title">제품 인증</span>
-                    <span className="menu_list">CE / UL</span>
+                    <span className="menu_title" onClick={() => router.push("/product_info?index=0")}>제품 인증</span>
+                    <span className="menu_list" onClick={() => router.push("/product_info?index=0")}>CE / UL</span>
                   </div>
                   <div className="menu menu_05">
-                    <span className="menu_title">경영 컨설팅</span>
-                    <span className="menu_list">경영 컨설팅</span>
+                    <span className="menu_title" onClick={() => router.push("/business_info?index=0")}>경영 컨설팅</span>
+                    <span className="menu_list" onClick={() => router.push("/business_info?index=0")}>경영 컨설팅</span>
                   </div>
                 </div>
               </div>
