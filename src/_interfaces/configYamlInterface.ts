@@ -9,4 +9,6 @@ export interface configYamlInterface {
   fax_number: string;
   email: string;
   kakao: string;
+  description: string,
+  sub_description: string,
 }
