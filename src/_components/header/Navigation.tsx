@@ -1,8 +1,10 @@
 "use client"
+import ActiveBtn from "@components/buttons/ActiveBtn";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const Navigation = () => {
+    const router = useRouter()
   return (
     <>
         <div className="navi_section">
@@ -26,11 +28,13 @@ const Navigation = () => {
                     <span className={usePathname() === "/business_info" ? "navi_text active" : "navi_text"}>경영컨설팅</span>
                 </div>
             </Link>
-            <Link href="/contact_us">
+            {/* <Link href="/contact_us">
                 <div className="navi">
                     <span className={usePathname() === "/contact_us" ? "navi_text active" : "navi_text"}>문의 & 신청</span>
                 </div>
-            </Link>
+            </Link> */}
+            <ActiveBtn style="default" name="문의하기" onClick={() => router.push("/contact_us?index=0")}/>
+            <ActiveBtn style="filled" name="심사 신청하기" onClick={() => router.push("/contact_us?index=1")}/>
         </div>
     </>
   );

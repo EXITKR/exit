@@ -1,0 +1,65 @@
+.active_button {
+    padding: 10px 30px;
+    margin: 5px;
+
+    transition: all 0.2s;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .button_text {
+        font-size: 16px;
+        font-weight: 700;
+
+        text-align: center;
+    }
+
+    &.default {
+        border-radius: 10px;
+        border: solid 2px #537571;
+        background: transparent;
+        .button_text {
+            color: #537571;
+        }
+        &:hover {
+            border: solid 2px #46605d;
+            background: #46605d;
+            .button_text {
+                color: #fff;
+            }
+        }
+    }
+
+    &.filled {
+        border-radius: 10px;
+        border: solid 2px #537571;
+        background: #537571;
+        .button_text {
+            color: #fff;
+        }
+        &:hover {
+            border: solid 2px #46605d;
+            background: #46605d;
+            .button_text {
+                color: #fff;
+            }
+        }
+    }
+
+    &.white {
+        border-radius: 10px;
+        border: solid 2px #fff;
+        background: transparent;
+        .button_text {
+            color: #fff;
+        }
+        &:hover {
+            border: solid 2px #fff;
+            background: #fff;
+            .button_text {
+                color: #46605d;
+            }
+        }
+    }
+}
