@@ -6,17 +6,17 @@ import { usePathname, useRouter } from "next/navigation";
 
 const Navigation = () => {
     const router = useRouter()
-    const onSubmit = async () => {
-        console.log("메일 발송 중")
-        const result = await sendContactEmail(); // <-- Server Action 호출
-        if (result.success) {
-            alert(result.message);
-            console.log("메일 발송 성공")
-        } else {
-            alert(result.message);
-            console.log("메일 발송 실패")
-        }
-    }
+    // const onSubmit = async () => {
+    //     console.log("메일 발송 중")
+    //     const result = await sendContactEmail(); // <-- Server Action 호출
+    //     if (result.success) {
+    //         alert(result.message);
+    //         console.log("메일 발송 성공")
+    //     } else {
+    //         alert(result.message);
+    //         console.log("메일 발송 실패")
+    //     }
+    // }
     return (
         <>
             <div className="navi_section">
