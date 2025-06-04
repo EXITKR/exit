@@ -34,24 +34,24 @@ const Footer = () => {
                   </div>
                   <div className="menu menu_02">
                     <span className="menu_title" onClick={() => router.push("/iso_info?index=0")}>ISO 인증</span>
-                    <span className="menu_list" onClick={() => router.push("/iso_info?index=0")}>ISO9001</span>
-                    <span className="menu_list" onClick={() => router.push("/iso_info?index=1")}>ISO14001</span>
-                    <span className="menu_list" onClick={() => router.push("/iso_info?index=2")}>ISO45001</span>
-                    <span className="menu_list" onClick={() => router.push("/iso_info?index=3")}>심사</span>
+                    {config.iso_info.i01 ? <span className="menu_list" onClick={() => router.push("/iso_info?index=0")}>ISO9001</span> : null}
+                    {config.iso_info.i02 ? <span className="menu_list" onClick={() => router.push("/iso_info?index=1")}>ISO14001</span> : null}
+                    {config.iso_info.i03 ? <span className="menu_list" onClick={() => router.push("/iso_info?index=2")}>ISO45001</span> : null}
+                    {config.iso_info.i04 ? <span className="menu_list" onClick={() => router.push("/iso_info?index=3")}>심사</span> : null}
                   </div>
                   <div className="menu menu_03">
                     <span className="menu_title" onClick={() => router.push("/enterprise_info?index=0")}>기업 맞춤형 인증</span>
-                    <span className="menu_list" onClick={() => router.push("/enterprise_info?index=1")}>공급망 보안 (SCS)</span>
-                    <span className="menu_list" onClick={() => router.push("/enterprise_info?index=2")}>직원 행동강령 (COC)</span>
-                    <span className="menu_list" onClick={() => router.push("/enterprise_info?index=3")}>정보 보안 (DLP)</span>
+                    {config.enterprise_info.e01 ? <span className="menu_list" onClick={() => router.push("/enterprise_info?index=1")}>공급망 보안 (SCS)</span> : null}
+                    {config.enterprise_info.e02 ? <span className="menu_list" onClick={() => router.push("/enterprise_info?index=2")}>직원 행동강령 (COC)</span> : null}
+                    {config.enterprise_info.e03 ? <span className="menu_list" onClick={() => router.push("/enterprise_info?index=3")}>정보 보안 (DLP)</span> : null}
                   </div>
                   <div className="menu menu_04">
                     <span className="menu_title" onClick={() => router.push("/product_info?index=0")}>제품 인증</span>
-                    <span className="menu_list" onClick={() => router.push("/product_info?index=0")}>CE / UL</span>
+                    {config.product_info.p01 ? <span className="menu_list" onClick={() => router.push("/product_info?index=0")}>CE / UL</span> : null}
                   </div>
                   <div className="menu menu_05">
                     <span className="menu_title" onClick={() => router.push("/business_info?index=0")}>경영 컨설팅</span>
-                    <span className="menu_list" onClick={() => router.push("/business_info?index=0")}>경영 컨설팅</span>
+                    {config.business_info.b01 ? <span className="menu_list" onClick={() => router.push("/business_info?index=0")}>경영 컨설팅</span> : null}
                   </div>
                 </div>
               </div>
