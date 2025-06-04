@@ -13,3 +13,24 @@ kakao: 'https://open.kakao.com/o/sl7JVmqh'
 
 description: 주식회사 엑시트(EXIT)는 시스템/ 제품/ 경영 인증컨설팅을 제공하는 인증 심사 및 컨설팅 기업입니다.
 sub_description: 합리적인 인증 심사 & 컨설팅 기업
+
+mission: 우리는 컨설팅만 제공하는 기존 인증컨설팅 서비스를 뛰어넘어 고객이 필요로 하는 인증심사와 컨설팅 솔루션을 제공함으로써 부가가치를 창출하고 다양한 분야의 다각화를 통한 확장을 꾀합니다.
+vision: 인증 심사 및 컨설팅에 신속하고 합리적이며 정확한 솔루션을 제공하여, 고객의 니즈를 충족시키고 신뢰를 주는 파트너가 되자
+slogan: Fast, Reasonable, Accurate는 우리의 슬로건으로 빠르고 합리적이며 정확한 심사와 컨설팅을 제공합니다.
+
+iso_info:
+  i01: true
+  i02: true
+  i03: true
+  i04: true
+
+enterprise_info:
+  e01: true
+  e02: true
+  e03: true
+
+product_info:
+  p01: true
+
+business_info:
+  b01: true
