@@ -3,7 +3,6 @@ import ActiveBtn from "@components/buttons/ActiveBtn";
 import { clientBusinessInterface } from "@interfaces/pagesInterface";
 import { getConfig } from "@utils/Config";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 import client01 from "@imgs/logo/client/client01.png";
@@ -18,8 +17,6 @@ export default function Home() {
       img: client01
     },
   ]
-
-  const [clientBs, setClientBs] = useState<clientBusinessInterface[]>(clientList);
 
   return (
     <>
