@@ -2,7 +2,13 @@
 @import "@css/components/footer.css";
 @import "@css/components/header.css";
 @import "@css/components/activeButton.css";
+
 @import "@css/pages/introduce.css";
+@import "@css/pages/iso_info.css";
+@import "@css/pages/enterprise_info.css";
+@import "@css/pages/product_info.css";
+@import "@css/pages/business_info.css";
+@import "@css/pages/contact_us.css";
 
 html,
 body {
