@@ -18,25 +18,25 @@ const InquiryForm = () => {
                     <div className="form_section input_section">
                         <span className="input_name">이름</span>
                         <div className="input_div">
-                            <input type="text" id="name" name="to_name" required />
+                            <input type="text" id="name" name="to_name" placeholder="입력해주세요." required />
                         </div>
                     </div>
                     <div className="form_section input_section">
                         <span className="input_name">이메일</span>
                         <div className="input_div">
-                            <input type="email" id="email" name="to_email" required />
+                            <input type="email" id="email" name="to_email" placeholder="입력해주세요." required />
                         </div>
                     </div>
                     <div className="form_section input_section">
                         <span className="input_name">제목</span>
                         <div className="input_div">
-                            <input type="text" id="subject" name="to_subject" required />
+                            <input type="text" id="subject" name="to_subject" placeholder="입력해주세요." required />
                         </div>
                     </div>
                     <div className="form_section textarea_section">
                         <span className="input_name">메시지</span>
                         <div className="input_div">
-                            <textarea id="message" name="to_message" required />
+                            <textarea id="message" name="to_message" placeholder="입력해주세요." required />
                         </div>
                     </div>
                     <button type="submit" className="active_button default">

@@ -28,8 +28,8 @@ const Navigation = () => {
                         <span className={usePathname() === "/business_info" ? "navi_text active" : "navi_text"}>경영컨설팅</span>
                     </div>
                 </Link>
-                <ActiveBtn style="default" name="문의하기" onClick={() => router.push("/contact_us?index=0")} />
-                <ActiveBtn style="filled" name="심사 신청하기" onClick={() => router.push("/contact_us?index=1")} />
+                <ActiveBtn style="default" name="문의하기" onClick={() => router.push("/contact_us?index=0")} disabled={false}/>
+                <ActiveBtn style="filled" name="인증 신청하기" onClick={() => router.push("/contact_us?index=1")} disabled={false}/>
             </div>
         </>
     );

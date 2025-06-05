@@ -62,6 +62,24 @@
             }
         }
     }
+
+    &:disabled {
+        border-radius: 10px;
+        border: solid 2px #dbdbdb;
+        background: transparent;
+
+        cursor: unset;
+        .button_text {
+            color: #dbdbdb;
+        }
+        &:hover {
+            border: solid 2px #dbdbdb;
+            background: transparent;
+            .button_text {
+                color: #dbdbdb;
+            }
+        }
+    }
 }
 
 .active_tabs {

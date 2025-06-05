@@ -12,7 +12,7 @@
         align-items: center;
 
         .title {
-            margin-top: 40px;
+            margin-bottom: 40px;
 
             font-size: 60px;
             font-weight: 700;
@@ -20,96 +20,71 @@
         }
 
         .desc {
-            margin-top: 40px;
+            width: 1000px;
+            margin-bottom: 40px;
 
             font-size: 20px;
             font-weight: 500;
             color: #3c3c3c;
+
+            text-align: center;
         }
 
-        .inquiry_form {
-            width: 100%;
-            margin: 40px 0;
-            height: auto;
+        .sort_title {
+            width: 1000px;
+            height: 40px;
+            margin: 40px 0 10px;
+            padding-left: 20px;
+
+            font-size: 18px;
+            font-weight: 700;
+
+            color: #3c3c3c;
+            border-top: solid 2px #537571;
+            border-bottom: solid 2px #537571;
+
             display: flex;
+            align-items: center;
+        }
+
+        .sort_sub_title {
+            width: 1000px;
+            height: 40px;
+            margin: 10px 0 10px;
+            padding-left: 20px;
+
+            font-size: 18px;
+            font-weight: 700;
+
+            color: #3c3c3c;
+            border-top: solid 2px #537571;
+            border-bottom: solid 2px #537571;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .how_to_section {
+            padding: 20px 80px;
+
+            border-radius: 30px;
+
+            background: #fff3ce;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
+            gap: 10px;
+            .how_to {
+                width: 800px;
+                font-size: 18px;
 
-            form {
-                width: 1000px;
-                height: auto;
-                display: flex;
-                flex-direction: column;
-
-                gap: 20px;
-
-                .form_section {
-                    width: 1000px;
-
-                    border-top: solid 2px #537571;
-                    border-bottom: solid 2px #537571;
-
-                    display: flex;
-
-                    .input_name {
-                        width: 200px;
-
-                        font-size: 20px;
-                        font-weight: 500;
-
-                        color: #537571;
-                        border-right: solid 2px #537571;
-                        background: #eaf1f1;
-
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    }
-
-                    .input_div {
-                        width: calc(100% - 200px);
-
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                }
-
-                .input_section {
-                    height: 60px;
-
-                    .input_div {
-                        input {
-                            width: calc(100% - 20px);
-                            height: 50px;
-
-                            font-size: 20px;
-                            font-weight: 500;
-
-                            color: #3c3c3c;
-                        }
-                    }
-                }
-
-                .textarea_section {
-                    height: auto;
-
-                    .input_div {
-                        textarea {
-                            width: calc(100% - 20px);
-                            height: 400px;
-
-                            font-size: 20px;
-                            font-weight: 500;
-
-                            color: #3c3c3c;
-
-                            resize: vertical;
-                        }
-                    }
-                }
-
-                .button_text {
-                    font-size: 20px;
+                color: #3c3c3c;
+                a {
+                    /* border-bottom: solid 2px #3c3c3c; */
+                    text-decoration-line: underline;
+                    text-decoration-color: #3c3c3c;
                 }
             }
         }
