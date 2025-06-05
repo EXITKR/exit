@@ -1,4 +1,9 @@
 #contact_us_page {
-    height: 900px;
     width: 100%;
+    margin: 80px 0 0;
+    background: #eaf1f1;
+    .contact_us_main {
+        height: 900px;
+        background: #fff;
+    }
 }
