@@ -43,3 +43,8 @@ a {
   width: 1280px;
   margin: 0 auto;
 }
+
+input, textarea {
+  outline: none;
+  border: none;
+}
