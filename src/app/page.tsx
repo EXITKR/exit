@@ -24,7 +24,7 @@ export default function Home() {
         <div className="main_section">
           <div className="inner_main main_main">
             <span className="slogan">{config.slogan}</span>
-            <ActiveBtn style="white" name="심사 신청하기" onClick={() => router.push("/contact_us?index=1")} />
+            <ActiveBtn style="white" name="인증 신청하기" onClick={() => router.push("/contact_us?index=1")} disabled={false}/>
           </div>
         </div>
 
@@ -143,8 +143,8 @@ export default function Home() {
             <span className="title">CONTACT</span>
             <span className="desc">신속하고 정확한 솔루션을 제공해 드리겠습니다.</span>
             <div className="btn_div">
-              <ActiveBtn style="default" name="문의하기" onClick={() => router.push("/contact_us?index=0")} />
-              <ActiveBtn style="filled" name="심사 신청하기" onClick={() => router.push("/contact_us?index=1")} />
+              <ActiveBtn style="default" name="문의하기" onClick={() => router.push("/contact_us?index=0")} disabled={false}/>
+              <ActiveBtn style="filled" name="인증 신청하기" onClick={() => router.push("/contact_us?index=1")} disabled={false}/>
             </div>
           </div>
         </div>

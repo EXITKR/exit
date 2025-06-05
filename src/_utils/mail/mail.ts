@@ -14,9 +14,9 @@ export const getMailContent = async (title: string, html: string) => {
 
 export const sendContactEmail = async (formData: FormData, category: string) => {
   const toEmail: string = formData.get('to_email') as string
-  const toUser: string = formData.get('to_user') as string
+  const toName: string = formData.get('to_name') as string
   const toSubject: string = formData.get('to_subject') as string
-  const mailTitle = "[" + category + "] " + toSubject + " - " + toUser + " (" + toEmail + ")"
+  const mailTitle = "[" + category + "] " + toSubject + " - " + toName + " (" + toEmail + ")"
   let mailHtml: string = ""
   if (category === "심사신청") {
     mailHtml = await getRequestForm(formData) as string

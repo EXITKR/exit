@@ -67,8 +67,8 @@ const Footer = () => {
                       <MdEmail className="icon"/>
                     </div>
                   </Link>
-                  <ActiveBtn style="white" name="문의하기" onClick={() => router.push("/contact_us?index=0")}/>
-                  <ActiveBtn style="white" name="심사 신청하기" onClick={() => router.push("/contact_us?index=1")}/>
+                  <ActiveBtn style="white" name="문의하기" onClick={() => router.push("/contact_us?index=0")} disabled={false}/>
+                  <ActiveBtn style="white" name="인증 신청하기" onClick={() => router.push("/contact_us?index=1")} disabled={false}/>
                 </div>
                 <div className="copy_section">
                   <span className="copyright">Copyright ⓒ 2025 {config.company_en} All rights reserved.</span>
