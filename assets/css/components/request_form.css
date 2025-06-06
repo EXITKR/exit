@@ -172,19 +172,26 @@
 
             &.form_1_2_5 {
                 .con {
-                    width: calc(100% - 600px);
+                    width: calc(100% - 800px);
                 }
                 .form_sub {
-                    width: 600px;
+                    width: 800px;
                     .form_sub_sub {
                         border-bottom: solid 2px #537571;
                         .input_name {
-                            width: 200px;
                             border-right: solid 2px #537571;
                         }
                         .input_div {
-                            width: 200px;
                             border-right: solid 2px #537571;
+                        }
+                        .num {
+                            width: 100px;
+                        }
+                        .tas {
+                            width: 200px;
+                        }
+                        .pos {
+                            width: 500px;
                         }
                         & :nth-last-child(1) {
                             border-right: none;
@@ -338,6 +345,80 @@
                     & :nth-last-child(1) {
                         border-bottom: none;
                     }
+                }
+            }
+
+            &.form_2_2_1 {
+                .form_sub {
+                    width: 100%;
+                    .form_sub_sub {
+                        border-bottom: solid 2px #537571;
+                        .input_name {
+                            width: calc(100% - 240px);
+                        }
+
+                        .audit {
+                            width: 200px;
+                        }
+                        .input_div {
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        & :nth-last-child(1) {
+                            border-right: none;
+                        }
+                    }
+                    & :nth-last-child(1) {
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            &.form_2_3_1 {
+                .form_sub {
+                    width: 100%;
+                    .form_sub_sub {
+                        border-bottom: solid 2px #537571;
+                        .input_name {
+                            width: calc((100% - 360px) / 2);
+                        }
+                        .input_div {
+                            width: 360px;
+                        }
+
+                        .audit {
+                            width: 79px;
+                        }
+
+                        .au_id {
+                            width: 40px;
+                        }
+
+                        .br_no {
+                            border-right: none;
+                        }
+
+                        .bl_ye {
+                            border-left: solid 2px #537571;
+                        }
+
+                        & :nth-last-child(1) {
+                            border-right: none;
+                        }
+                    }
+                    & :nth-last-child(1) {
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            &.form_2_3_2 {
+                .input_name {
+                    width: 100%;
+                }
+                .br_no {
+                    border-right: none;
                 }
             }
         }
