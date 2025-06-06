@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "@components/footer/Footer";
 import Header from "@components/header/Header";
 import { getConfig } from "@utils/Config";
+import { Suspense } from "react";
 
 const config = getConfig()
 
@@ -19,9 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header/>
-        {children}
-        <Footer/>
+        <Header />
+        <Suspense>
+          {children}
+        </Suspense>
+        <Footer />
       </body>
     </html>
   );
