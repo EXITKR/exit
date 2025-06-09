@@ -1,9 +1,11 @@
 "use server"
-import { getInquiryForm } from "@utils/mail/inquiryForm";
-import { getRequestForm } from "@utils/mail/requestForm";
+import { getInquiryFromForm } from "@utils/mail/inquiryFromForm";
+import { getRequestFromForm } from "@utils/mail/requestFromForm";
+import { getInquiryToForm } from "@utils/mail/inquiryToForm";
+import { getRequestToForm } from "@utils/mail/requestToForm";
 import nodemailer from "nodemailer";
 
-export const getMailContent = async (title: string, html: string) => {
+export const getToMailContent = async (title: string, html: string) => {
   return {
     from: process.env.NEXT_PUBLIC_SMTP_ID,
     to: process.env.NEXT_PUBLIC_CONTACT_EMAIL,
@@ -12,18 +14,35 @@ export const getMailContent = async (title: string, html: string) => {
   };
 };
 
+export const getFromMailContent = async (title: string, html: string, email: string) => {
+  return {
+    from: process.env.NEXT_PUBLIC_SMTP_ID,
+    to: email,
+    subject: title,
+    html,
+  };
+};
+
 export const sendContactEmail = async (formData: FormData, category: string) => {
-  const toEmail: string = formData.get('to_email') as string
+  let toEmail: string = ""
   const toName: string = formData.get('to_name') as string
   const toSubject: string = formData.get('to_subject') as string
-  const mailTitle = "[" + category + "] " + toSubject + " - " + toName + " (" + toEmail + ")"
-  let mailHtml: string = ""
+  let toMailHtml: string = ""
+  let fromMailHtml: string = ""
   if (category === "심사신청") {
-    mailHtml = await getRequestForm(formData) as string
+    toEmail = formData.get('form112_004') as string
+    toMailHtml = await getRequestToForm(formData) as string
+    fromMailHtml = await getRequestFromForm(formData) as string
   } else {
-    mailHtml = await getInquiryForm(formData) as string
+    toEmail = formData.get('to_email') as string
+    toMailHtml = await getInquiryToForm(formData) as string
+    fromMailHtml = await getInquiryFromForm(formData) as string
   }
-  const mailContent = await getMailContent(mailTitle, mailHtml)
+
+  const mailTitle = "[" + category + "] " + toSubject + " - " + toName + " (" + toEmail + ")"
+
+  const toMailContent = await getToMailContent(mailTitle, toMailHtml)
+  const fromMailContent = await getFromMailContent(mailTitle, fromMailHtml, toEmail)
 
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -36,7 +55,8 @@ export const sendContactEmail = async (formData: FormData, category: string) => 
   });
 
   try {
-    await transporter.sendMail(mailContent);
+    await transporter.sendMail(toMailContent);
+    await transporter.sendMail(fromMailContent);
     return { success: true, message: '메일이 성공적으로 전송되었습니다!'};
   } catch (error) {
     return { success: false, message: '메일 전송에 실패했습니다. 잠시 후 다시 시도해주세요. ' + error };
