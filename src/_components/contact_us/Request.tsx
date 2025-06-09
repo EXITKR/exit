@@ -12,14 +12,35 @@ import Form213 from "@components/contact_us/request/Form213";
 import Form214 from "@components/contact_us/request/Form214";
 import Form215 from "@components/contact_us/request/Form215";
 import Form216 from "@components/contact_us/request/Form216";
+import Form217 from "@components/contact_us/request/Form217";
 import Form221 from "@components/contact_us/request/Form221";
 import Form231 from "@components/contact_us/request/Form231";
+import Form232 from "@components/contact_us/request/Form232";
+import Form241 from "@components/contact_us/request/Form241";
+import Form251 from "@components/contact_us/request/Form251";
+import Form252 from "@components/contact_us/request/Form252";
+import Form261 from "@components/contact_us/request/Form261";
+import Form262 from "@components/contact_us/request/Form262";
+import Form263 from "@components/contact_us/request/Form263";
+import Form311 from "@components/contact_us/request/Form311";
+import Form312 from "@components/contact_us/request/Form312";
+import Form313 from "@components/contact_us/request/Form313";
+import Form314 from "@components/contact_us/request/Form314";
+import Form315 from "@components/contact_us/request/Form315";
+import Form316 from "@components/contact_us/request/Form316";
+import Form321 from "@components/contact_us/request/Form321";
+import Form322 from "@components/contact_us/request/Form322";
+import Form331 from "@components/contact_us/request/Form331";
+import Form332 from "@components/contact_us/request/Form332";
+import Form400 from "@components/contact_us/request/Form400";
 import { sendContactEmail } from "@utils/mail/mail";
 import { useState } from "react";
 
 const RequestForm = () => {
     const [isCompanyList, setCompanyList] = useState<number>(3)
     const [isPositionList, setPositionList] = useState<number>(3)
+    const [isSceneList, setSceneList] = useState<number>(5)
+    const [isProcessList, setProcessList] = useState<number>(3)
     const handleSubmit = async (formData: FormData) => {
         const result = await sendContactEmail(formData, '심사신청');
         if (result.success) {
@@ -52,32 +73,65 @@ const RequestForm = () => {
                     <Form112 />
                     <span className="sort_sub_title" id="1_2">1.2 본사 및 추가 사업장에 대한 인원 정보</span>
                     <Form121 />
-                    <Form122 is_company_list={isCompanyList}/>
+                    <Form122 is_company_list={isCompanyList} />
                     <div className="add_and_rm">
                         <ActiveBtn name="+" style="default" onClick={() => setCompanyList(isCompanyList + 1)} disabled={false} />
                         <ActiveBtn name="-" style="default" onClick={() => setCompanyList(isCompanyList - 1)} disabled={isCompanyList === 0} />
                     </div>
-                    <Form123/>
-                    <Form124/>
-                    <Form125 is_position_list={isPositionList}/>
+                    <Form123 />
+                    <Form124 />
+                    <Form125 is_position_list={isPositionList} />
                     <div className="add_and_rm">
                         <ActiveBtn name="+" style="default" onClick={() => setPositionList(isPositionList + 1)} disabled={false} />
                         <ActiveBtn name="-" style="default" onClick={() => setPositionList(isPositionList - 1)} disabled={isPositionList === 3} />
                     </div>
                     <span className="sort_title" id="2_0">2. 인증 신청 정보</span>
                     <span className="sort_sub_title" id="2_1">2.1 신청 표준 및 활동범위</span>
-                    <Form211/>
-                    <Form212/>
-                    <Form213/>
-                    <Form214/>
-                    <Form215/>
-                    <Form216/>
+                    <Form211 />
+                    <Form212 />
+                    <Form213 />
+                    <Form217 />
+                    <Form214 />
+                    <Form215 />
+                    <Form216 />
                     <span className="sort_sub_title" id="2_2">2.2 통합심사 정보 (해당 시 작성)</span>
-                    <Form221/>
+                    <Form221 />
                     <span className="sort_sub_title" id="2_3">2.3 기관전환 정보 (해당 시 작성)</span>
-                    <Form231/>
+                    <Form231 />
+                    <Form232 />
                     <span className="sort_sub_title" id="2_4">2.4 공통 기재사항</span>
-                    <button type="submit" className="active_button default">
+                    <Form241 />
+                    <span className="sort_sub_title" id="2_5">2.5 인증 관련 정보</span>
+                    <Form251 />
+                    <Form252 />
+                    <span className="sort_sub_title" id="2_6">2.6 첨부서류 체크리스트</span>
+                    <Form261 />
+                    <Form262 />
+                    <Form263 />
+                    <span className="sort_title" id="3_0">3. 추가 기재사항</span>
+                    <span className="sort_sub_title" id="3_1">3.1 환경/안전보건 경영시스템 추가 기재사항</span>
+                    <Form311 />
+                    <Form312 />
+                    <Form313 />
+                    <Form314 />
+                    <Form315 />
+                    <Form316 />
+                    <span className="sort_sub_title" id="3_2">3.2 건설업/감리업 관련 추가 정보</span>
+                    <Form321 is_scene_list={isSceneList} />
+                    <div className="add_and_rm">
+                        <ActiveBtn name="+" style="default" onClick={() => setSceneList(isSceneList + 1)} disabled={false} />
+                        <ActiveBtn name="-" style="default" onClick={() => setSceneList(isSceneList - 1)} disabled={isSceneList === 5} />
+                    </div>
+                    <Form322 />
+                    <span className="sort_sub_title" id="3_3">3.3 TL 9000 관련 추가정보</span>
+                    <Form331 />
+                    <Form332 is_process_list={isProcessList} />
+                    <div className="add_and_rm">
+                        <ActiveBtn name="+" style="default" onClick={() => setProcessList(isProcessList + 1)} disabled={false} />
+                        <ActiveBtn name="-" style="default" onClick={() => setProcessList(isProcessList - 1)} disabled={isProcessList === 3} />
+                    </div>
+                    <Form400 />
+                    <button type="submit" className="submit_btn active_button default">
                         <span className="button_text">발송</span>
                     </button>
                 </form>

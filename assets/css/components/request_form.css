@@ -9,6 +9,7 @@
         width: 1000px;
         height: auto;
         display: flex;
+        align-items: center;
         flex-direction: column;
 
         gap: 20px;
@@ -26,13 +27,10 @@
                 font-weight: 500;
 
                 color: #537571;
-                border-right: solid 2px #537571;
                 background: #eaf1f1;
 
                 display: flex;
                 align-items: center;
-                justify-content: center;
-                text-align: center;
             }
 
             .input_div {
@@ -50,377 +48,6 @@
                     display: flex;
                 }
             }
-
-            &.form_1_1_1 {
-                .input_name {
-                    width: 120px;
-                    border-left: solid 2px #537571;
-                    border-right: none;
-                }
-
-                .input_div {
-                    width: calc((100% - 360px) / 2);
-                }
-
-                & :nth-child(1) {
-                    border-left: none;
-                }
-            }
-
-            &.form_1_1_2 {
-                .input_name {
-                    width: 120px;
-                    border-left: solid 2px #537571;
-                    border-right: none;
-                }
-
-                .con {
-                    border-left: none;
-                }
-
-                .form_sub {
-                    width: calc((100% - 120px) / 2);
-                    .form_sub_sub {
-                        border-bottom: solid 2px #537571;
-                        .input_div {
-                            width: calc(100% - 120px);
-                        }
-                    }
-                    & :nth-last-child(1) {
-                        border-bottom: none;
-                    }
-                }
-            }
-
-            &.form_1_2_1 {
-                .input_name {
-                    text-align: center;
-                }
-                .num {
-                    width: 90px;
-                }
-                .num_b {
-                    width: 180px;
-                }
-                .add {
-                    width: calc(100% - 270px);
-                }
-
-                & :nth-last-child(1) {
-                    border-right: none;
-                }
-            }
-
-            &.form_1_2_2 {
-                .input_name {
-                    width: 90px;
-                }
-
-                .form_sub {
-                    width: calc(100% - 360px);
-                    .form_sub_sub {
-                        border-bottom: solid 2px #537571;
-                        .input_name {
-                            width: 60px;
-                            border-right: solid 2px #537571;
-                        }
-                        .input_div {
-                            width: calc(100% - 60px);
-                            border-right: solid 2px #537571;
-                        }
-                    }
-                    & :nth-last-child(1) {
-                        border-bottom: none;
-                    }
-                }
-
-                .input_div {
-                    width: 90px;
-                    border-right: solid 2px #537571;
-                }
-
-                & :nth-last-child(1) {
-                    border-right: none;
-                }
-            }
-            &.form_1_2_3 {
-                .add {
-                    width: calc(100% - 270px);
-                }
-                .num {
-                    width: 360px;
-                }
-                .input_div {
-                    width: 90px;
-                }
-            }
-
-            &.form_1_2_4 {
-                .add {
-                    width: calc(100% - 270px);
-                }
-                .far {
-                    width: 170px;
-                }
-                .input_div {
-                    width: 55px;
-                }
-                & :nth-last-child(1) {
-                    border-right: none;
-                }
-            }
-
-            &.form_1_2_5 {
-                .con {
-                    width: calc(100% - 800px);
-                }
-                .form_sub {
-                    width: 800px;
-                    .form_sub_sub {
-                        border-bottom: solid 2px #537571;
-                        .input_name {
-                            border-right: solid 2px #537571;
-                        }
-                        .input_div {
-                            border-right: solid 2px #537571;
-                        }
-                        .num {
-                            width: 100px;
-                        }
-                        .tas {
-                            width: 200px;
-                        }
-                        .pos {
-                            width: 500px;
-                        }
-                        & :nth-last-child(1) {
-                            border-right: none;
-                        }
-                    }
-                    
-                    & :nth-last-child(1) {
-                        border-bottom: none;
-                    }
-                }
-            }
-
-            &.form_2_1_1 {
-                .con {
-                    width: 120px;
-                }
-
-                .form_sub {
-                    width: calc((100% - 120px) / 5);
-                    .form_sub_sub {
-                        border-bottom: solid 2px #537571;
-                        .input_name {
-                            width: calc(100% - 40px);
-                        }
-                        .input_div {
-                            width: 40px;
-                            height: 40px;
-                        }
-                        .etc_in {
-                            width: 100%;
-                            border-right: solid 2px #537571;
-                        }
-                        .rr_ti {
-                            border-right: none;
-                        }
-                        .rr_id {
-                            border-right: solid 2px #537571;
-                        }
-
-                        .rr_id_no {
-                            border-right: none;
-                        }
-                    }
-                    & :nth-last-child(1) {
-                        border-bottom: none;
-                    }
-                }
-            }
-
-            &.form_2_1_2 {
-                .input_name {
-                    width: 120px;
-                    a {
-                        text-decoration-line: underline;
-                    }
-                }
-
-                .audit {
-                    width: 200px;
-                }
-                .input_div {
-                    width: 40px;
-                }
-            }
-
-            &.form_2_1_3 {
-                .input_name {
-                    width: 120px;
-                }
-
-                .input_div {
-                    width: calc(100% - 120px);
-                }
-            }
-
-            &.form_2_1_4 {
-                .con {
-                    width: 120px;
-                }
-
-                .form_sub {
-                    width: calc((100% - 120px) / 5);
-                    .form_sub_sub {
-                        border-bottom: solid 2px #537571;
-                        .input_name {
-                            width: calc(100% - 40px);
-                        }
-                        .input_div {
-                            width: 40px;
-                            height: 40px;
-                        }
-                        .etc_in {
-                            width: 100%;
-                            border-right: solid 2px #537571;
-                        }
-
-                        .ty_id_no {
-                            border-right: none;
-                        }
-                    }
-                    & :nth-last-child(1) {
-                        border-bottom: none;
-                    }
-                }
-            }
-
-            &.form_2_1_5 {
-                .input_name {
-                    width: 120px;
-                    a {
-                        text-decoration-line: underline;
-                    }
-                }
-
-                .org {
-                    width: 200px;
-                }
-                .input_div {
-                    width: 40px;;
-                }
-            }
-
-            &.form_2_1_6 {
-                .con {
-                    width: 120px;
-                }
-
-                .form_sub {
-                    width: calc((100% - 120px) / 2);
-                    .form_sub_sub {
-                        border-bottom: solid 2px #537571;
-                        .input_name {
-                            width: 100%;
-                        }
-                        .pdc {
-                            width: calc(50% - 40px);
-                        }
-                        .input_div {
-                            width: 40px;
-                            height: 40px;
-                        }
-                        .etc_in {
-                            width: 100%;
-                            border-right: solid 2px #537571;
-                        }
-
-                        .tl_id_no {
-                            border-right: none;
-                        }
-                    }
-                    & :nth-last-child(1) {
-                        border-bottom: none;
-                    }
-                }
-            }
-
-            &.form_2_2_1 {
-                .form_sub {
-                    width: 100%;
-                    .form_sub_sub {
-                        border-bottom: solid 2px #537571;
-                        .input_name {
-                            width: calc(100% - 240px);
-                        }
-
-                        .audit {
-                            width: 200px;
-                        }
-                        .input_div {
-                            width: 40px;
-                            height: 40px;
-                        }
-
-                        & :nth-last-child(1) {
-                            border-right: none;
-                        }
-                    }
-                    & :nth-last-child(1) {
-                        border-bottom: none;
-                    }
-                }
-            }
-
-            &.form_2_3_1 {
-                .form_sub {
-                    width: 100%;
-                    .form_sub_sub {
-                        border-bottom: solid 2px #537571;
-                        .input_name {
-                            width: calc((100% - 360px) / 2);
-                        }
-                        .input_div {
-                            width: 360px;
-                        }
-
-                        .audit {
-                            width: 79px;
-                        }
-
-                        .au_id {
-                            width: 40px;
-                        }
-
-                        .br_no {
-                            border-right: none;
-                        }
-
-                        .bl_ye {
-                            border-left: solid 2px #537571;
-                        }
-
-                        & :nth-last-child(1) {
-                            border-right: none;
-                        }
-                    }
-                    & :nth-last-child(1) {
-                        border-bottom: none;
-                    }
-                }
-            }
-
-            &.form_2_3_2 {
-                .input_name {
-                    width: 100%;
-                }
-                .br_no {
-                    border-right: none;
-                }
-            }
         }
 
         .add_and_rm {
@@ -432,10 +59,13 @@
         }
 
         .input_section {
-            min-height: 50px;
+            min-height: 40px;
             height: auto;
 
             .input_div {
+                min-height: 40px;
+                height: auto;
+
                 input {
                     width: 100%;
                     height: 40px;
@@ -457,6 +87,13 @@
                 input[type="checkbox"] {
                     width: 20px;
                     height: 20px;
+
+                    cursor: pointer;
+                }
+
+                input[type="file"] {
+                    width: 100%;
+                    height: auto;
 
                     cursor: pointer;
                 }
@@ -482,8 +119,11 @@
             }
         }
 
-        .button_text {
-            font-size: 20px;
+        .submit_btn {
+            width: 200px;
+            .button_text {
+                font-size: 18px;
+            }
         }
     }
 }

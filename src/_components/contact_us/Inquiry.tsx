@@ -39,7 +39,7 @@ const InquiryForm = () => {
                             <textarea id="message" name="to_message" placeholder="입력해주세요." required />
                         </div>
                     </div>
-                    <button type="submit" className="active_button default">
+                    <button type="submit" className="submit_btn active_button default">
                         <span className="button_text">발송</span>
                     </button>
                 </form>

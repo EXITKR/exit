@@ -9,6 +9,7 @@
         width: 1000px;
         height: auto;
         display: flex;
+        align-items: center;
         flex-direction: column;
 
         gap: 20px;
@@ -81,8 +82,11 @@
             }
         }
 
-        .button_text {
-            font-size: 20px;
+        .submit_btn {
+            width: 200px;
+            .button_text {
+                font-size: 18px;
+            }
         }
     }
 }
