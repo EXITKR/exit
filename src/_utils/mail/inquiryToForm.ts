@@ -17,8 +17,7 @@ export const getInquiryToForm = (formData: FormData) => {
                         <td style="padding: 20px; background-color: #ffffff;">
                             <p><strong>${toName}</strong>대표님의 문의가 접수되었습니다.</p>
                             <p>빠른 답변 바랍니다.</p>
-                            <div
-                                style="border-left: 4px solid #537571; padding: 10px; margin: 20px 0; background-color: #e9ecef">
+                            <div style="border-left: 4px solid #537571; padding: 10px; margin: 20px 0; background-color: #e9ecef">
                                 <p><strong>문의 내용:</strong></p>
                                 <p>${toMessage}</p>
                             </div>
