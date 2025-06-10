@@ -6,7 +6,7 @@ const Form232 = () => {
                 * 압축파일 형태로 첨부. (.zip, .rar, .7z)
             </span>
             <div className="input_div w-40">
-                <input type="file" id="ci_05" name="form232_001" accept=".zip, .rar, .7z" />
+                <input type="file" id="ci_05" name="file_02" accept=".zip, .rar, .7z" />
             </div>
         </div>
     )

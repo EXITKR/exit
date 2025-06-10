@@ -40,7 +40,7 @@ const Form261 = () => {
                 <div className="form_sub_sub w-100">
                     <span className="input_name jc-st w-40">* 압축파일 형태로 첨부. (.zip, .rar, .7z)</span>
                     <div className="input_div w-60">
-                        <input type="file" id="ch_08" name="form261_008" accept=".zip, .rar, .7z" />
+                        <input type="file" id="ch_08" name="file_03" accept=".zip, .rar, .7z" />
                     </div>
                 </div>
             </div>
