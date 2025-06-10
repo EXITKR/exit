@@ -10,7 +10,7 @@ export const getInquiryToForm = (formData: FormData) => {
                     style="border-collapse: collapse; margin: 0 auto;">
                     <tr>
                         <td style="padding: 20px; text-align: center;">
-                            <h1>문의 접수 확인</h1>
+                            <h1>문의 접수 확인 요망</h1>
                         </td>
                     </tr>
                     <tr>

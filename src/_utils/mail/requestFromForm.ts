@@ -8,7 +8,7 @@ export const getRequestFromForm = async (formData: FormData) => {
                 <table width="600" cellPadding="0" cellSpacing="0" role="presentation" style="border-collapse: collapse; margin: 0 auto;">
                     <tr>
                         <td style="padding: 20px; text-align: center;">
-                            <h1>인증 신청서 접수 확인</h1>
+                            <h1>인증 신청서 접수 완료</h1>
                         </td>
                     </tr>
                     <tr>

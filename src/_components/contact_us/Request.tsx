@@ -44,6 +44,9 @@ const RequestForm = () => {
     const [isPositionList, setPositionList] = useState<number>(3)
     const [isSceneList, setSceneList] = useState<number>(5)
     const [isProcessList, setProcessList] = useState<number>(3)
+
+    const [submitBtnStatus, setSubmitBtnStatus] = useState<boolean>(false)
+    const [submitBtnName, setSubmitBtnName] = useState<string>("발송")
     const prepareInputsForCapture = (node: HTMLElement): OriginalInputState[] => {
         const inputs = node.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>('input, textarea');
         const originalStates: OriginalInputState[] = [];
@@ -136,15 +139,16 @@ const RequestForm = () => {
     }
 
     const handleSubmit = async (formData: FormData) => {
+        setSubmitBtnStatus(true)
         const fileRes: attachmentsPathInterface[] = []
 
         const pdf = await handleChangeImage()
-        console.log("파일 변환중")
+        setSubmitBtnName("PDF 생성중...")
         const pdfDataUrl = await convertFileToBase64(pdf as File)
         fileRes.push({ filename: "EXQM-IA01_인증신청서_및_설문서.pdf", path: pdfDataUrl as string})
-        console.log("파일 변환 완료")
+        setSubmitBtnName("PDF 생성완료...")
 
-        console.log("파일 변환중")
+        setSubmitBtnName("첨부파일 확인중...")
         for (let i = 1; i <= 8; i++) {
             const file = formData.get('file_' + i.toString().padStart(2, '0')) as File
             if (file.name !== "") {
@@ -153,14 +157,17 @@ const RequestForm = () => {
             }
         }
 
-        console.log(fileRes)
-        console.log("파일 변환완료")
+        setSubmitBtnName("파일 변환완료...")
 
-        console.log("메일로 파일 전송 중")
+        setSubmitBtnName("메일 발송중...")
         const result = await sendContactEmail(formData, '인증신청', fileRes);
         if (result.success) {
+            setSubmitBtnStatus(false)
+            setSubmitBtnName("발송")
             alert(result.message);
         } else {
+            setSubmitBtnStatus(false)
+            setSubmitBtnName("발송")
             alert(result.message);
         }
     }
@@ -275,8 +282,8 @@ const RequestForm = () => {
                     <div id="request_form_14" className="request_form">
                         <Form400 />
                     </div>
-                    <button type="submit" className="submit_btn active_button default">
-                        <span className="button_text">발송</span>
+                    <button type="submit" className="submit_btn active_button default" disabled={submitBtnStatus}>
+                        <span className="button_text">{submitBtnName}</span>
                     </button>
                 </form>
             </div>
