@@ -4,6 +4,17 @@ import { getRequestFromForm } from "@utils/mail/requestFromForm";
 import { getInquiryToForm } from "@utils/mail/inquiryToForm";
 import { getRequestToForm } from "@utils/mail/requestToForm";
 import nodemailer from "nodemailer";
+import { attachmentsPathInterface } from "@interfaces/pagesInterface";
+
+export const getRequestMailContent = async (title: string, html: string, files: attachmentsPathInterface[]) => {
+  return {
+    from: process.env.NEXT_PUBLIC_SMTP_ID,
+    to: process.env.NEXT_PUBLIC_CONTACT_EMAIL,
+    subject: title,
+    html,
+    attachments: files
+  };
+};
 
 export const getToMailContent = async (title: string, html: string) => {
   return {
@@ -23,25 +34,42 @@ export const getFromMailContent = async (title: string, html: string, email: str
   };
 };
 
-export const sendContactEmail = async (formData: FormData, category: string) => {
+export const sendContactEmail = async (formData: FormData, category: string, files: attachmentsPathInterface[]) => {
   let toEmail: string = ""
-  const toName: string = formData.get('to_name') as string
-  const toSubject: string = formData.get('to_subject') as string
+  let toName: string = ""
+  let toSubject: string = ""
   let toMailHtml: string = ""
   let fromMailHtml: string = ""
-  if (category === "심사신청") {
+
+  let toMailContent: {
+    from: string | undefined,
+    to: string | undefined,
+    subject: string | undefined,
+    html: string | undefined,
+    attachments?: attachmentsPathInterface[] | undefined
+  }
+  if (category === "인증신청") {
+    const company = formData.get('form111_001') as string 
+    toName = formData.get('form112_001') as string
     toEmail = formData.get('form112_004') as string
+    toSubject = "인증신청서 및 설문서 접수 <" + company + ">"
     toMailHtml = await getRequestToForm(formData) as string
     fromMailHtml = await getRequestFromForm(formData) as string
   } else {
+    toName = formData.get('to_name') as string
     toEmail = formData.get('to_email') as string
+    toSubject = formData.get('to_subject') as string
     toMailHtml = await getInquiryToForm(formData) as string
     fromMailHtml = await getInquiryFromForm(formData) as string
   }
 
   const mailTitle = "[" + category + "] " + toSubject + " - " + toName + " (" + toEmail + ")"
 
-  const toMailContent = await getToMailContent(mailTitle, toMailHtml)
+  if (category === "인증신청") {
+    toMailContent = await getRequestMailContent(mailTitle, toMailHtml, files)
+  } else {
+    toMailContent = await getToMailContent(mailTitle, toMailHtml)
+  }
   const fromMailContent = await getFromMailContent(mailTitle, fromMailHtml, toEmail)
 
   const transporter = nodemailer.createTransport({

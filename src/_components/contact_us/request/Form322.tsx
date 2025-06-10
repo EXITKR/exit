@@ -5,7 +5,7 @@ const Form322 = () => {
                 * 별지 첨부
             </span>
             <div className="input_div w-70">
-                <input type="file" id="sc_f" name="form322_001" />
+                <input type="file" id="sc_f" name="file_08" />
             </div>
         </div>
     )

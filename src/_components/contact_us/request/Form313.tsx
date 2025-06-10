@@ -78,7 +78,7 @@ const Form313 = () => {
                         * 위탁 처리시 위탁 계약서 사본 첨부
                     </span>
                     <div className="input_div w-60">
-                        <input type="file" id="wn_07" name="form313_005" />
+                        <input type="file" id="wn_07" name="file_06" />
                     </div>
                 </div>
                 <div className="form_sub_sub w-100">

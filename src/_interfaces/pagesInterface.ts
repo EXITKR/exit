@@ -8,3 +8,16 @@ export interface clientBusinessInterface {
 export interface activeTabsInterface {
   name: string;
 }
+
+export interface attachmentsPathInterface {
+  filename: string,
+  path: string;
+}
+
+export interface OriginalInputState {
+  element: HTMLInputElement | HTMLTextAreaElement;
+  originalValue: string;
+  originalPlaceholder: string;
+  originalColor: string;
+  originalWeight: string;
+}

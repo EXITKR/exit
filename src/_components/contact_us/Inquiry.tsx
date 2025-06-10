@@ -2,7 +2,7 @@ import { sendContactEmail } from "@utils/mail/mail";
 
 const InquiryForm = () => {
     const handleSubmit = async (formData: FormData) => {
-        const result = await sendContactEmail(formData, '일반문의');
+        const result = await sendContactEmail(formData, '일반문의', []);
         if (result.success) {
             alert(result.message);
         } else {
