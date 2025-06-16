@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     .button_text {
         font-size: 16px;
         font-weight: 700;
@@ -19,12 +20,15 @@
         border-radius: 10px;
         border: solid 2px #537571;
         background: transparent;
+
         .button_text {
             color: #537571;
         }
+
         &:hover {
             border: solid 2px #46605d;
             background: #46605d;
+
             .button_text {
                 color: #fff;
             }
@@ -35,12 +39,15 @@
         border-radius: 10px;
         border: solid 2px #537571;
         background: #537571;
+
         .button_text {
             color: #fff;
         }
+
         &:hover {
             border: solid 2px #46605d;
             background: #46605d;
+
             .button_text {
                 color: #fff;
             }
@@ -51,12 +58,15 @@
         border-radius: 10px;
         border: solid 2px #fff;
         background: transparent;
+
         .button_text {
             color: #fff;
         }
+
         &:hover {
             border: solid 2px #fff;
             background: #fff;
+
             .button_text {
                 color: #46605d;
             }
@@ -69,12 +79,15 @@
         background: transparent;
 
         cursor: unset;
+
         .button_text {
             color: #dbdbdb;
         }
+
         &:hover {
             border: solid 2px #dbdbdb;
             background: transparent;
+
             .button_text {
                 color: #dbdbdb;
             }
@@ -88,6 +101,7 @@
     border-bottom: solid 2px #537571;
 
     display: flex;
+
     .tab {
         height: 60px;
         padding: 0 30px;
@@ -101,6 +115,7 @@
 
         cursor: pointer;
         transition: all 0.2s;
+
         .tab_text {
             font-size: 18px;
             font-weight: 500;
@@ -109,13 +124,23 @@
 
         &.active {
             background: #fff;
+
             .tab_text {
                 color: #537571;
+            }
+
+            &:hover {
+                background: #fff;
+
+                .tab_text {
+                    color: #537571;
+                }
             }
         }
 
         &:hover {
             background: #46605d;
+
             .tab_text {
                 color: #fff;
             }

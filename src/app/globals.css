@@ -2,6 +2,7 @@
 @import "@css/components/footer.css";
 @import "@css/components/header.css";
 @import "@css/components/buttons.css";
+@import "@css/components/content_box.css";
 @import "@css/components/inquiry_form.css";
 @import "@css/components/request_form.css";
 
@@ -35,6 +36,14 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
 }
 
 @media (prefers-color-scheme: dark) {

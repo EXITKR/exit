@@ -21,3 +21,21 @@ export interface OriginalInputState {
   originalColor: string;
   originalWeight: string;
 }
+
+export interface ImageDataListInterface {
+  image: StaticImageData;
+  name: string;
+  source: string;
+}
+
+export interface ContentListInterface {
+  image_list: ImageDataListInterface[];
+  content: string;
+}
+
+export interface ContentBoxInterface {
+  title: string;
+  background: string;
+  content: string;
+  content_list: ContentListInterface[];
+}
