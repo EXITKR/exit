@@ -2,6 +2,7 @@
 @import "@css/components/footer.css";
 @import "@css/components/header.css";
 @import "@css/components/buttons.css";
+@import "@css/components/content_box.css";
 @import "@css/components/inquiry_form.css";
 @import "@css/components/request_form.css";
 
@@ -37,6 +38,14 @@ a {
   text-decoration: none;
 }
 
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -58,4 +67,12 @@ input::placeholder,
 textarea::placeholder {
   color: #cccccc;
   font-weight: 500;
+}
+
+.dp-block {
+  display: block;
+}
+
+.dp-none {
+  display: none;
 }

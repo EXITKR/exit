@@ -3,27 +3,37 @@ import ActiveBtn from "@components/buttons/ActiveBtn";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 
-const Navigation = () => {
+const Navigation = (props: {
+    setMouseOver: (index: number) => void
+}) => {
     const router = useRouter()
     return (
         <>
             <div className="navi_section">
-                <Link href="/iso_info">
+                <Link href="/iso_info"
+                    onMouseOver={() => props.setMouseOver(1)}
+                    onMouseOut={() => props.setMouseOver(0)}>
                     <div className="navi">
                         <span className={usePathname() === "/iso_info" ? "navi_text active" : "navi_text"}>ISO 인증</span>
                     </div>
                 </Link>
-                <Link href="/enterprise_info">
+                <Link href="/enterprise_info"
+                    onMouseOver={() => props.setMouseOver(2)}
+                    onMouseOut={() => props.setMouseOver(0)}>
                     <div className="navi">
                         <span className={usePathname() === "/enterprise_info" ? "navi_text active" : "navi_text"}>기업 맞춤형 인증</span>
                     </div>
                 </Link>
-                <Link href="/product_info">
+                <Link href="/product_info"
+                    onMouseOver={() => props.setMouseOver(3)}
+                    onMouseOut={() => props.setMouseOver(0)}>
                     <div className="navi">
                         <span className={usePathname() === "/product_info" ? "navi_text active" : "navi_text"}>제품인증</span>
                     </div>
                 </Link>
-                <Link href="/business_info">
+                <Link href="/business_info"
+                    onMouseOver={() => props.setMouseOver(4)}
+                    onMouseOut={() => props.setMouseOver(0)}>
                     <div className="navi">
                         <span className={usePathname() === "/business_info" ? "navi_text active" : "navi_text"}>경영컨설팅</span>
                     </div>
