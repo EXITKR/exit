@@ -39,3 +39,14 @@ export interface ContentBoxInterface {
   content: string;
   content_list: ContentListInterface[];
 }
+
+export interface NavigationSubInterface {
+  url: string;
+  name: string;
+}
+
+export interface NavigationInterface {
+  url: string;
+  name: string;
+  sub: NavigationSubInterface[]
+}

@@ -4,6 +4,7 @@ import WebLogo from "@imgs/logo/web_logo.png"
 import Image from "next/image";
 import Navigation from "@components/header/Navigation";
 import { useState } from "react";
+import HeaderSub from "@components/header/HeaderSub";
 
 const Header = () => {
   const [onMouse, setOnMouse] = useState<number>(0)
@@ -16,12 +17,7 @@ const Header = () => {
                 </Link>
                 <Navigation setMouseOver={(index: number) => setOnMouse(index)}/>
             </div>
-            <div className={"header_sub " + (onMouse !== 0 ? "dp-block" : "dp-none")}
-              onMouseOver={() => setOnMouse(1)}
-              onMouseOut={() => setOnMouse(0)}>
-              <div className="header_sub_main">
-              </div>
-            </div>
+            <HeaderSub onMouse={onMouse} setMouseOver={(index: number) => setOnMouse(index)}/>
         </header>
     </>
   );
