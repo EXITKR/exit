@@ -15,25 +15,4 @@ export interface configYamlInterface {
   mission: string,
   vision: string,
   slogan: string,
-
-  iso_info: {
-    i01: boolean
-    i02: boolean
-    i03: boolean
-    i04: boolean
-  }
-
-  enterprise_info: {
-    e01: boolean
-    e02: boolean
-    e03: boolean
-  }
-
-  product_info: {
-    p01: boolean
-  }
-
-  business_info: {
-    b01: boolean
-  }
 }

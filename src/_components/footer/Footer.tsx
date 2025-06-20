@@ -5,6 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { RiKakaoTalkFill } from "react-icons/ri";
 import { getConfig } from "@utils/Config";
 import ActiveBtn from "@components/buttons/ActiveBtn";
+import { navigationList } from "@components/header/NavigationList";
 
 const Footer = () => {
   const router = useRouter()
@@ -15,7 +16,7 @@ const Footer = () => {
         <div className="inner_main footer_main">
           <div className="top_section">
             <div className="info_section">
-              <span className="company_title">{config.company_en}</span>
+              <span className="company_title" onClick={() => router.push("/")}>{config.company_en}</span>
               <div className="info_content">
                 <span className="company_name">{config.company_kr}</span>
                 <span className="company_ceo">대표이사 :: {config.ceo}</span>
@@ -28,31 +29,14 @@ const Footer = () => {
               </div>
             </div>
             <div className="menu_section">
-              <div className="menu menu_01">
-                <span className="menu_title" onClick={() => router.push("/")}>기업 소개</span>
-                <span className="menu_list" onClick={() => router.push("/")}>기업 소개</span>
-              </div>
-              <div className="menu menu_02">
-                <span className="menu_title" onClick={() => router.push("/iso_info?index=0")}>ISO 인증</span>
-                {config.iso_info.i01 ? <span className="menu_list" onClick={() => router.push("/iso_info?index=0")}>ISO9001</span> : null}
-                {config.iso_info.i02 ? <span className="menu_list" onClick={() => router.push("/iso_info?index=1")}>ISO14001</span> : null}
-                {config.iso_info.i03 ? <span className="menu_list" onClick={() => router.push("/iso_info?index=2")}>ISO45001</span> : null}
-                {config.iso_info.i04 ? <span className="menu_list" onClick={() => router.push("/iso_info?index=3")}>심사</span> : null}
-              </div>
-              <div className="menu menu_03">
-                <span className="menu_title" onClick={() => router.push("/enterprise_info?index=0")}>기업 맞춤형 인증</span>
-                {config.enterprise_info.e01 ? <span className="menu_list" onClick={() => router.push("/enterprise_info?index=1")}>공급망 보안 (SCS)</span> : null}
-                {config.enterprise_info.e02 ? <span className="menu_list" onClick={() => router.push("/enterprise_info?index=2")}>직원 행동강령 (COC)</span> : null}
-                {config.enterprise_info.e03 ? <span className="menu_list" onClick={() => router.push("/enterprise_info?index=3")}>정보 보안 (DLP)</span> : null}
-              </div>
-              <div className="menu menu_04">
-                <span className="menu_title" onClick={() => router.push("/product_info?index=0")}>제품 인증</span>
-                {config.product_info.p01 ? <span className="menu_list" onClick={() => router.push("/product_info?index=0")}>CE / UL</span> : null}
-              </div>
-              <div className="menu menu_05">
-                <span className="menu_title" onClick={() => router.push("/business_info?index=0")}>경영 컨설팅</span>
-                {config.business_info.b01 ? <span className="menu_list" onClick={() => router.push("/business_info?index=0")}>경영 컨설팅</span> : null}
-              </div>
+              {navigationList.map((val, idx) => (
+                <div className={"menu menu_" + (idx + 1).toString().padStart(2, '0')} key={idx}>
+                  <span className="menu_title" onClick={() => router.push(val.url)}>{val.name}</span>
+                  {val.sub.map((item, index) => (
+                    <span className="menu_list" onClick={() => router.push(item.url)} key={index}>{item.name}</span>
+                  ))}
+                </div>
+              ))}
             </div>
           </div>
           <div className="bot_section">
