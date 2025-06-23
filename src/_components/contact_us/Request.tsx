@@ -39,14 +39,15 @@ import { toPng } from "html-to-image";
 import jsPDF from "jspdf";
 import { useState } from "react";
 
-const RequestForm = () => {
+const RequestForm = (props: {
+    setLoading: (status: boolean) => void
+    setMessage: (message: string) => void
+}) => {
     const [isCompanyList, setCompanyList] = useState<number>(3)
     const [isPositionList, setPositionList] = useState<number>(3)
     const [isSceneList, setSceneList] = useState<number>(5)
     const [isProcessList, setProcessList] = useState<number>(3)
 
-    const [submitBtnStatus, setSubmitBtnStatus] = useState<boolean>(false)
-    const [submitBtnName, setSubmitBtnName] = useState<string>("발송")
     const prepareInputsForCapture = (node: HTMLElement): OriginalInputState[] => {
         const inputs = node.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>('input, textarea');
         const originalStates: OriginalInputState[] = [];
@@ -85,6 +86,7 @@ const RequestForm = () => {
             return false
         }
 
+        props.setMessage("데이터를 PDF로 변환 중...")
         const originalInputStates = prepareInputsForCapture(node)
 
         const imgWidth = 210;
@@ -93,6 +95,7 @@ const RequestForm = () => {
         let curHeight = padding;
 
         for (let i = 1; i <= 14; i++) {
+            props.setMessage("데이터를 PDF로 변환 중...(" + i + "/14)")
             console.log("이미지 변환중 " + i)
             const subNode = document.getElementById('request_form_' + i.toString().padStart(2, '0'));
             if (subNode === null) {
@@ -113,6 +116,8 @@ const RequestForm = () => {
             doc.addImage(subNodeImg, 'PNG', padding, curHeight, 200, imageHeight);
             curHeight += imageHeight + padding;
         }
+
+        props.setMessage("PDF로 최적화 중...")
 
         const pdf = new File([doc.output("blob")], "EXQM-IA01_인증신청서_및_설문서.pdf", {
             type: "application/pdf",
@@ -138,17 +143,19 @@ const RequestForm = () => {
         return dataUrl
     }
 
-    const handleSubmit = async (formData: FormData) => {
-        setSubmitBtnStatus(true)
+    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        props.setLoading(true)
+        props.setMessage("시작하기 전 몸푸는 중...")
+        const form = event.currentTarget;
+        const formData = new FormData(form);
+
         const fileRes: attachmentsPathInterface[] = []
 
         const pdf = await handleChangeImage()
-        setSubmitBtnName("PDF 생성중...")
         const pdfDataUrl = await convertFileToBase64(pdf as File)
         fileRes.push({ filename: "EXQM-IA01_인증신청서_및_설문서.pdf", path: pdfDataUrl as string})
-        setSubmitBtnName("PDF 생성완료...")
 
-        setSubmitBtnName("첨부파일 확인중...")
         for (let i = 1; i <= 8; i++) {
             const file = formData.get('file_' + i.toString().padStart(2, '0')) as File
             if (file.name !== "") {
@@ -157,17 +164,13 @@ const RequestForm = () => {
             }
         }
 
-        setSubmitBtnName("파일 변환완료...")
-
-        setSubmitBtnName("메일 발송중...")
+        props.setMessage("메일을 발송하는 중...")
         const result = await sendContactEmail(formData, '인증신청', fileRes);
         if (result.success) {
-            setSubmitBtnStatus(false)
-            setSubmitBtnName("발송")
+            props.setLoading(false)
             alert(result.message);
         } else {
-            setSubmitBtnStatus(false)
-            setSubmitBtnName("발송")
+            props.setLoading(false)
             alert(result.message);
         }
     }
@@ -187,9 +190,7 @@ const RequestForm = () => {
                 <span className="how_to"><a href="#3_0">[3. 추가 기재사항]</a> 항목은 해당되는 경우만 작성 바랍니다.</span>
             </div>
             <div className="request_forms" id="request_form">
-                <form action={handleSubmit}>
-                    <input type="hidden" id="company_list" name="company_list" value={isCompanyList.toString()} />
-                    <input type="hidden" id="position_list" name="position_list" value={isPositionList.toString()} />
+                <form onSubmit={handleSubmit}>
                     <div id="request_form_01" className="request_form">
                         <span className="sort_title" id="1_0">1. 기본정보</span>
                         <span className="sort_sub_title" id="1_1">1.1 일반정보</span>
@@ -282,8 +283,8 @@ const RequestForm = () => {
                     <div id="request_form_14" className="request_form">
                         <Form400 />
                     </div>
-                    <button type="submit" className="submit_btn active_button default" disabled={submitBtnStatus}>
-                        <span className="button_text">{submitBtnName}</span>
+                    <button type="submit" className="submit_btn active_button default">
+                        <span className="button_text">전송</span>
                     </button>
                 </form>
             </div>

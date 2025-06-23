@@ -1,11 +1,22 @@
 import { sendContactEmail } from "@utils/mail/mail";
 
-const InquiryForm = () => {
-    const handleSubmit = async (formData: FormData) => {
+const InquiryForm = (props: {
+    setLoading: (status: boolean) => void
+    setMessage: (message: string) => void
+}) => {
+    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        props.setLoading(true)
+        props.setMessage("시작하기 전 몸푸는 중...")
+        const form = event.currentTarget;
+        const formData = new FormData(form);
+        props.setMessage("메일을 발송하는 중...")
         const result = await sendContactEmail(formData, '일반문의', []);
         if (result.success) {
+            props.setLoading(false)
             alert(result.message);
         } else {
+            props.setLoading(false)
             alert(result.message);
         }
     }
@@ -14,7 +25,7 @@ const InquiryForm = () => {
             <span className="title">문의하기</span>
             <span className="desc">다양한 문의를 기다리고 있습니다.</span>
             <div className="inquiry_form">
-                <form action={handleSubmit}>
+                <form onSubmit={handleSubmit}>
                     <div className="form_section input_section">
                         <span className="input_name">이름</span>
                         <div className="input_div">
