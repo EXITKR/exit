@@ -1,0 +1,120 @@
+@media screen and (max-width: 1280px) {
+    #header_pc {
+        height: 60px;
+
+        .header_main {
+            a {
+                width: 195px;
+                height: 60px;
+                margin-left: 20px;
+                .web_logo {
+                    width: 195px;
+                    height: 60px;
+                }
+            }
+
+            .navi_section {
+                display: none;
+            }
+
+            .menu_icon {
+                width: 26px;
+                height: 26px;
+                margin-right: 20px;
+
+                color: #3c3c3c;
+
+                display: block;
+            }
+        }
+
+        .header_sub {
+            width: 100%;
+            height: auto;
+
+            background: rgba(255, 255, 255, 0.9);
+            border-bottom: solid 2px #ededed;
+
+            transition: all 0.2s;
+
+            .header_sub_main {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                .header_sub_top {
+                    width: 100%;
+                    padding: 10px 0;
+
+                    border-bottom: solid 2px #ededed;
+
+                    display: flex;
+                    justify-content: end;
+
+                    .header_sub_navi {
+                        width: 160px;
+                        margin: 0 20px;
+
+                        /* border-left: solid 2px #ededed;
+                    border-right: solid 2px #ededed; */
+
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+
+                        a {
+                            width: 100%;
+                            height: 40px;
+
+                            text-align: center;
+
+                            .navi {
+                                width: 100%;
+                                height: 40px;
+                                line-height: 40px;
+
+                                transition: all 0.2s;
+
+                                .navi_text {
+                                    color: #3c3c3c;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                }
+
+                                &:hover {
+                                    background: #537571;
+
+                                    .navi_text {
+                                        font-weight: 500;
+                                        color: #ededed;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .header_sub_bot {
+                    width: 100%;
+                    padding: 10px 0;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+                }
+            }
+
+            &.header-on {
+                visibility: visible;
+
+                opacity: 1;
+            }
+
+            &.header-no {
+                visibility: hidden;
+
+                opacity: 0;
+            }
+        }
+    }
+}
