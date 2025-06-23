@@ -1,0 +1,22 @@
+@media screen and (max-width: 1000px) {
+    .active_button {
+        padding: 10px 20px;
+
+        .button_text {
+            font-size: 14px;
+        }
+    }
+
+    .active_tabs {
+        height: 40px;
+
+        .tab {
+            height: 40px;
+            padding: 0 20px;
+
+            .tab_text {
+                font-size: 14px;
+            }
+        }
+    }
+}

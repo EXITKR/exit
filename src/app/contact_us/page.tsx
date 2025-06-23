@@ -13,21 +13,45 @@ export default function Home() {
     { name: "인증 신청" },
   ]
   const [isTabIdx, setTabIdx] = useState<number>(0)
+  const [windowWidth, setWindowWidth] = useState<number>(0);
 
   useEffect(() => {
     const index = params.get('index')
     setTabIdx(Number(index))
   }, [params])
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
+      handleResize();
+
+      window.addEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, []);
+
+  useEffect(() => {
+    if (windowWidth <= 1000 && isTabIdx !== 0) {
+      setTabIdx(0)
+    }
+  }, [windowWidth, isTabIdx])
   return (
     <>
       <div id="contact_us_page">
         <div className="inner_main contact_us_main">
-          <ActiveTab tabs={tabList} index={isTabIdx} setIndex={(idx: number) => setTabIdx(idx)} />
+          {windowWidth > 1000
+            ?
+            <ActiveTab tabs={tabList} index={isTabIdx} setIndex={(idx: number) => setTabIdx(idx)} />
+            : null}
 
           {isTabIdx === 0 ?
-          <InquiryForm/>
-          :
-          <RequestForm/>
+            <InquiryForm />
+            :
+            <RequestForm />
           }
         </div>
       </div>
