@@ -9,12 +9,7 @@ import { FiMenu } from "react-icons/fi";
 
 const Header = () => {
   const ref = useRef<HTMLDivElement | null>(null);
-
   const [onMouse, setOnMouse] = useState<boolean>(false)
-
-  useEffect(() => {
-    console.log(onMouse)
-  }, [onMouse])
 
   useEffect(() => {
         const handleClickOutside = (event: {target: any}) => {
