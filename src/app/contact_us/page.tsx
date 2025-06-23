@@ -2,6 +2,7 @@
 import ActiveTab from "@components/buttons/ActiveTab";
 import InquiryForm from "@components/contact_us/Inquiry";
 import RequestForm from "@components/contact_us/Request";
+import Loading from "@components/Loading";
 import { activeTabsInterface } from "@interfaces/pagesInterface";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -14,6 +15,8 @@ export default function Home() {
   ]
   const [isTabIdx, setTabIdx] = useState<number>(0)
   const [windowWidth, setWindowWidth] = useState<number>(0);
+  const [isLoading, setLoading] = useState<boolean>(false)
+  const [isMessage, setMessage] = useState<string>("")
 
   useEffect(() => {
     const index = params.get('index')
@@ -39,8 +42,13 @@ export default function Home() {
       setTabIdx(0)
     }
   }, [windowWidth, isTabIdx])
+
+  useEffect(() => {
+    console.log(isLoading)
+  }, [isLoading])
   return (
     <>
+      {isLoading ? <Loading message={isMessage}/> : null}
       <div id="contact_us_page">
         <div className="inner_main contact_us_main">
           {windowWidth > 1000
@@ -49,9 +57,15 @@ export default function Home() {
             : null}
 
           {isTabIdx === 0 ?
-            <InquiryForm />
+            <InquiryForm
+              setLoading={(status: boolean) => setLoading(status)}
+              setMessage={(message: string) => setMessage(message)}
+            />
             :
-            <RequestForm />
+            <RequestForm
+              setLoading={(status: boolean) => setLoading(status)}
+              setMessage={(message: string) => setMessage(message)}
+            />
           }
         </div>
       </div>
