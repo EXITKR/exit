@@ -16,9 +16,8 @@ export default function Home() {
 
   useEffect(() => {
     const index = params.get('index')
-    console.log(index)
     setTabIdx(Number(index))
-  }, [])
+  }, [params])
   return (
     <>
       <div id="contact_us_page">

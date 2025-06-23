@@ -12,8 +12,8 @@ const Header = () => {
   const [onMouse, setOnMouse] = useState<boolean>(false)
 
   useEffect(() => {
-        const handleClickOutside = (event: {target: any}) => {
-            if (ref && !ref.current?.contains(event.target)) {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (ref && !ref.current?.contains(event.target as Node)) {
                 setOnMouse(false);
             }
         }
