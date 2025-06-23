@@ -1,0 +1,25 @@
+@import "@css/screen/tablet/components/footer.css";
+@import "@css/screen/tablet/components/header.css";
+@import "@css/screen/tablet/components/content_box.css";
+@import "@css/screen/tablet/components/inquiry_form.css";
+@import "@css/screen/tablet/components/request_form.css";
+
+@import "@css/screen/tablet/pages/introduce.css";
+@import "@css/screen/tablet/pages/iso_info.css";
+@import "@css/screen/tablet/pages/enterprise_info.css";
+@import "@css/screen/tablet/pages/product_info.css";
+@import "@css/screen/tablet/pages/business_info.css";
+@import "@css/screen/tablet/pages/contact_us.css";
+
+@import "@css/screen/mobile/components/footer.css";
+@import "@css/screen/mobile/components/header.css";
+@import "@css/screen/mobile/components/buttons.css";
+@import "@css/screen/mobile/components/content_box.css";
+@import "@css/screen/mobile/components/inquiry_form.css";
+
+@import "@css/screen/mobile/pages/introduce.css";
+@import "@css/screen/mobile/pages/iso_info.css";
+@import "@css/screen/mobile/pages/enterprise_info.css";
+@import "@css/screen/mobile/pages/product_info.css";
+@import "@css/screen/mobile/pages/business_info.css";
+@import "@css/screen/mobile/pages/contact_us.css";

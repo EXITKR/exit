@@ -1,0 +1,13 @@
+@media screen and (max-width: 1280px) {
+  .request_forms {
+    form {
+      .form_section {
+        width: 900px;
+      }
+
+      .add_and_rm {
+        width: 900px;
+      }
+    }
+  }
+}

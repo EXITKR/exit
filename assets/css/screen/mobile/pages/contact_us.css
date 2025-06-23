@@ -1,0 +1,30 @@
+@media screen and (max-width: 1000px) {
+    #contact_us_page {
+        margin: 40px 0 0;
+
+        .contact_us_main {
+            .title {
+                font-size: 40px;
+            }
+            .desc {
+                width: calc(100vw - 10px);
+                font-size: 16px;
+            }
+
+            .sort_title {
+                width: calc(100vw - 10px);
+            }
+
+            .sort_sub_title {
+                width: calc(100vw - 10px);
+            }
+
+            .how_to_section {
+                width: calc(100vw - 10px);
+                .how_to {
+                    width: calc(100vw - 30px);
+                }
+            }
+        }
+    }
+}

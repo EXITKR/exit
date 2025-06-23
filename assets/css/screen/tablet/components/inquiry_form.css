@@ -1,0 +1,11 @@
+@media screen and (max-width: 1280px) {
+    .inquiry_form {
+        form {
+            width: 900px;
+
+            .form_section {
+                width: 900px;
+            }
+        }
+    }
+}

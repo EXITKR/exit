@@ -5,23 +5,23 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 const HeaderSub = (props: {
-    onMouse: number,
-    setMouseOver: (index: number) => void
+    onMouse: boolean,
+    setMouseOver: (status: boolean) => void
 }) => {
     const router = useRouter()
     return (
         <>
-            <div className={"header_sub " + (props.onMouse !== 0 ? "header-on" : "header-no")}
-                onMouseOver={() => props.setMouseOver(1)}
-                onMouseOut={() => props.setMouseOver(0)}>
+            <div className={"header_sub " + (props.onMouse ? "header-on" : "header-no")}
+                onMouseOver={() => props.setMouseOver(true)}
+                onMouseOut={() => props.setMouseOver(false)}>
                 <div className="inner_main header_sub_main">
                     <div className="header_sub_top">
                         {navigationList.map((val, idx) => (
                             <div className="header_sub_navi" key={idx}>
                                 {val.sub.map((item, index) => (
                                     <Link href={item.url} key={index}
-                                        onMouseOver={() => props.setMouseOver(index + 1)}
-                                        onMouseOut={() => props.setMouseOver(0)}>
+                                        onMouseOver={() => props.setMouseOver(true)}
+                                        onMouseOut={() => props.setMouseOver(false)}>
                                         <div className="navi">
                                             <span className="navi_text">{item.name}</span>
                                         </div>

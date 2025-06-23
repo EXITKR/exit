@@ -7,6 +7,7 @@
         height: 800px;
         background: url("../../imgs/background/main_background.png");
         background-size: cover;
+        background-position: center;
         .main_main {
             height: 100%;
             display: flex;
@@ -46,6 +47,8 @@
                 font-size: 20px;
 
                 color: #537571;
+
+                text-align: center;
             }
         }
     }
@@ -252,6 +255,7 @@
 
                     background: url("../../imgs/background/route_01.png");
                     background-size: cover;
+                    background-position: center;
 
                     transition: all 0.2s;
 
@@ -284,15 +288,19 @@
 
                     &.nav_01 {
                         background: url("../../imgs/background/route_01.png");
+                        background-position: center;
                     }
                     &.nav_02 {
                         background: url("../../imgs/background/route_02.png");
+                        background-position: center;
                     }
                     &.nav_03 {
                         background: url("../../imgs/background/route_03.png");
+                        background-position: center;
                     }
                     &.nav_04 {
                         background: url("../../imgs/background/route_04.png");
+                        background-position: center;
                     }
 
                     &:hover {

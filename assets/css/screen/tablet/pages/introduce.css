@@ -1,0 +1,62 @@
+@media screen and (max-width: 1280px) {
+    #introduce_page {
+        margin: 60px 0 0;
+
+        .main_section {
+            height: 500px;
+
+            .main_main {
+                padding: 40px 20px 40px;
+
+                .slogan {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .vision_section {
+            .vision_main {
+                padding: 40px 20px 40px;
+            }
+        }
+
+        .history_section {
+            .history_main {
+                padding: 40px 20px 40px;
+
+                .history_div {
+                    .history_bar {
+                        width: 320px;
+                    }
+                }
+            }
+        }
+
+        .mission_section {
+            .mission_main {
+                padding: 40px 20px 40px;
+                .nav_div {
+                    .nav {
+                        width: 220px;
+                    }
+                }
+            }
+        }
+
+        .trust_section {
+            .trust_main {
+                padding: 40px 20px 40px;
+
+                .trust_list {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+        }
+
+        .contact_section {
+            .contact_main {
+                padding: 40px 20px 40px;
+            }
+        }
+    }
+}

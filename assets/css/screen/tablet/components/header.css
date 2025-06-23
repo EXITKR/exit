@@ -1,0 +1,46 @@
+@media screen and (max-width: 1280px) {
+    #header_pc {
+        height: 60px;
+
+        .header_main {
+            a {
+                width: 195px;
+                height: 60px;
+                margin-left: 20px;
+                .web_logo {
+                    width: 195px;
+                    height: 60px;
+                }
+            }
+
+            .navi_section {
+                display: none;
+            }
+
+            .menu_icon {
+                width: 26px;
+                height: 26px;
+                margin-right: 20px;
+
+                color: #3c3c3c;
+
+                display: block;
+            }
+        }
+
+        .header_sub {
+            width: 100%;
+
+            .header_sub_main {
+                .header_sub_top {
+                    justify-content: space-between;
+
+                    .header_sub_navi {
+                        width: 180px;
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -13,12 +13,22 @@
 @import "@css/pages/business_info.css";
 @import "@css/pages/contact_us.css";
 
+@import "@css/screen/screen.css";
+
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
   scroll-padding-top: 80px;
   scroll-behavior: smooth;
+
+  @media screen and (max-width: 1280px) {
+    scroll-padding-top: 60px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    scroll-padding-top: 40px;
+  }
 }
 
 body {
@@ -55,6 +65,10 @@ img {
 .inner_main {
   width: 1280px;
   margin: 0 auto;
+
+  @media screen and (max-width: 1280px) {
+    width: 100%;
+  }
 }
 
 input,
