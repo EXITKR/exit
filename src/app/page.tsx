@@ -7,6 +7,7 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 import client01 from "@imgs/logo/client/client01.png";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const router = useRouter()
@@ -18,13 +19,34 @@ export default function Home() {
     },
   ]
 
+  const [windowWidth, setWindowWidth] = useState<number>(0);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
+      handleResize();
+
+      window.addEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, []);
+
   return (
     <>
       <div id="introduce_page">
         <div className="main_section">
           <div className="inner_main main_main">
             <span className="slogan">{config.slogan}</span>
-            <ActiveBtn style="white" name="인증 신청하기" onClick={() => router.push("/contact_us?index=1")} disabled={false}/>
+            {windowWidth > 1000
+              ?
+              <ActiveBtn style="white" name="인증 신청하기" onClick={() => router.push("/contact_us?index=1")} disabled={false} />
+              :
+              <ActiveBtn style="white" name="문의하기" onClick={() => router.push("/contact_us?index=0")} disabled={false} />
+            }
           </div>
         </div>
 
@@ -131,7 +153,7 @@ export default function Home() {
             <div className="trust_list">
               {clientList.map((item, index) => (
                 <div className="trust_div" key={index}>
-                  <Image src={item.img} alt={item.name} className="trust_img"/>
+                  <Image src={item.img} alt={item.name} className="trust_img" />
                 </div>
               ))}
             </div>
@@ -143,8 +165,13 @@ export default function Home() {
             <span className="title">CONTACT</span>
             <span className="desc">신속하고 정확한 솔루션을 제공해 드리겠습니다.</span>
             <div className="btn_div">
-              <ActiveBtn style="default" name="문의하기" onClick={() => router.push("/contact_us?index=0")} disabled={false}/>
-              <ActiveBtn style="filled" name="인증 신청하기" onClick={() => router.push("/contact_us?index=1")} disabled={false}/>
+              <ActiveBtn style="default" name="문의하기" onClick={() => router.push("/contact_us?index=0")} disabled={false} />
+              {windowWidth > 1000
+                ?
+                <ActiveBtn style="filled" name="인증 신청하기" onClick={() => router.push("/contact_us?index=1")} disabled={false} />
+                :
+                null
+              }
             </div>
           </div>
         </div>
