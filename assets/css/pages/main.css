@@ -2,15 +2,14 @@
     width: 100%;
     margin: 80px 0 0;
 
-    .main_section { 
+    .main_section {
         width: 100%;
         height: 800px;
-        background-size: cover;
-        background-position: center;
 
         animation-name: backgrounds;
         animation-iteration-count: infinite;
         animation-duration: 30s;
+
         .main_main {
             height: 100%;
             display: flex;
@@ -19,6 +18,7 @@
             flex-direction: column;
 
             gap: 40px;
+
             .slogan {
                 color: #fff;
                 font-size: 40px;
@@ -32,6 +32,7 @@
         width: 100%;
         height: 400px;
         background: #eaf1f1;
+
         .vision_main {
             height: 100%;
             display: flex;
@@ -40,12 +41,14 @@
             flex-direction: column;
 
             gap: 40px;
+
             .icon {
                 width: 30px;
                 height: 30px;
 
                 color: #537571;
             }
+
             .vision {
                 font-size: 20px;
 
@@ -60,6 +63,7 @@
         width: 100%;
         height: 400px;
         background: #fff;
+
         .mission_main {
             height: 100%;
             display: flex;
@@ -67,16 +71,19 @@
             align-items: center;
             justify-content: center;
             gap: 40px;
+
             .title {
                 font-size: 80px;
                 font-weight: 900;
                 text-align: center;
             }
+
             .description {
                 font-size: 24px;
                 font-weight: 500;
                 text-align: center;
             }
+
             .mission {
                 font-size: 20px;
                 font-weight: 300;
@@ -89,6 +96,7 @@
         width: 100%;
         height: auto;
         background: #fff;
+
         .history_main {
             height: 100%;
             display: flex;
@@ -96,6 +104,7 @@
             align-items: center;
             gap: 40px;
             padding: 40px 0 40px;
+
             .title {
                 font-size: 60px;
                 font-weight: 700;
@@ -107,12 +116,13 @@
                 font-weight: 500;
                 color: #3c3c3c;
             }
-            
+
             .history_div {
                 width: 100%;
 
                 display: flex;
                 justify-content: center;
+
                 .history_bar {
                     width: 380px;
 
@@ -128,17 +138,20 @@
                         align-items: center;
 
                         gap: 20px;
+
                         .bar_div {
                             width: 100%;
                             height: 40px;
 
                             display: flex;
                             align-items: center;
+
                             .bar {
                                 width: 170px;
                                 height: 20px;
                                 background: #537571;
                             }
+
                             .circle {
                                 width: 40px;
                                 height: 40px;
@@ -148,6 +161,7 @@
                                 border: solid 10px #537571;
                             }
                         }
+
                         .year {
                             font-size: 40px;
                             font-weight: 300;
@@ -161,16 +175,19 @@
                         display: flex;
                         flex-direction: column;
                         color: #3c3c3c;
+
                         .step {
                             font-size: 26px;
                             font-weight: 700;
                             margin-bottom: 18px;
                         }
+
                         .consulting {
                             font-size: 20px;
                             font-weight: 500;
                             margin-bottom: 16px;
                         }
+
                         .consulting_li {
                             font-size: 16px;
                             font-weight: 300;
@@ -182,34 +199,41 @@
                         .history_bar_div {
                             .bar_div {
                                 border-left: solid 1px #ededed;
+
                                 .bar {
                                     background: #92d2ca;
                                 }
+
                                 .circle {
                                     border-color: #92d2ca;
                                 }
                             }
                         }
                     }
+
                     &.second {
                         .history_bar_div {
                             .bar_div {
                                 .bar {
                                     background: #65c3b8;
                                 }
+
                                 .circle {
                                     border-color: #65c3b8;
                                 }
                             }
                         }
                     }
+
                     &.third {
                         .history_bar_div {
                             .bar_div {
                                 border-right: solid 1px #ededed;
+
                                 .bar {
                                     background: #43aea1;
                                 }
+
                                 .circle {
                                     border-color: #43aea1;
                                 }
@@ -225,6 +249,7 @@
         width: 100%;
         height: auto;
         background: #eaf1f1;
+
         .mission_main {
             height: 100%;
             display: flex;
@@ -232,6 +257,7 @@
             align-items: center;
             gap: 40px;
             padding: 40px 0 40px;
+
             .title {
                 font-size: 60px;
                 font-weight: 700;
@@ -269,6 +295,7 @@
                     border: solid 1px #fff;
 
                     cursor: pointer;
+
                     .name_div {
                         width: 100%;
                         height: 60px;
@@ -293,14 +320,17 @@
                         background: url("../../imgs/background/route_01.png");
                         background-position: center;
                     }
+
                     &.nav_02 {
                         background: url("../../imgs/background/route_02.png");
                         background-position: center;
                     }
+
                     &.nav_03 {
                         background: url("../../imgs/background/route_03.png");
                         background-position: center;
                     }
+
                     &.nav_04 {
                         background: url("../../imgs/background/route_04.png");
                         background-position: center;
@@ -310,14 +340,14 @@
                         .name_div {
                             width: 100%;
                             height: 100%;
-                        
+
                             background: #fff;
                             border-radius: 10px 10px 10px 10px;
 
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                    }
+                        }
                     }
                 }
             }
@@ -328,6 +358,7 @@
         width: 100%;
         height: auto;
         background: #fff;
+
         .trust_main {
             height: 100%;
             display: flex;
@@ -335,6 +366,7 @@
             align-items: center;
             gap: 40px;
             padding: 40px 0 40px;
+
             .title {
                 font-size: 60px;
                 font-weight: 700;
@@ -361,6 +393,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+
                     .trust_img {
                         width: 150px;
                         height: 50px;
@@ -374,6 +407,7 @@
         width: 100%;
         height: auto;
         background: #eaf1f1;
+
         .contact_main {
             height: 100%;
             display: flex;
@@ -381,6 +415,7 @@
             align-items: center;
             gap: 40px;
             padding: 40px 0 40px;
+
             .title {
                 font-size: 60px;
                 font-weight: 700;
@@ -404,19 +439,33 @@
 }
 
 @keyframes backgrounds {
-  0% {
-    background: url("../../imgs/background/main_background_01.png");
-  }
-  25% {
-    background: url("../../imgs/background/main_background_02.png");
-  }
-  50% {
-    background: url("../../imgs/background/main_background_03.png");
-  }
-  75% {
-    background: url("../../imgs/background/main_background_04.png");
-  }
-  100% {
-    background: url("../../imgs/background/main_background_01.png");
-  }
+    0% {
+        background: url("../../imgs/background/main_background_01.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    25% {
+        background: url("../../imgs/background/main_background_02.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    50% {
+        background: url("../../imgs/background/main_background_03.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    75% {
+        background: url("../../imgs/background/main_background_04.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    100% {
+        background: url("../../imgs/background/main_background_01.png");
+        background-size: cover;
+        background-position: center;
+    }
 }
