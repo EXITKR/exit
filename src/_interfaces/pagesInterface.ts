@@ -50,3 +50,11 @@ export interface NavigationInterface {
   name: string;
   sub: NavigationSubInterface[]
 }
+
+export interface RoadmapInterface {
+  sort: string;
+  year: string;
+  step: string;
+  consulting: string;
+  consulting_li: string[];
+}
