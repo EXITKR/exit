@@ -5,6 +5,7 @@
 @import "@css/screen/tablet/components/request_form.css";
 
 @import "@css/screen/tablet/pages/main.css";
+@import "@css/screen/tablet/pages/company_info.css";
 @import "@css/screen/tablet/pages/iso_info.css";
 @import "@css/screen/tablet/pages/enterprise_info.css";
 @import "@css/screen/tablet/pages/product_info.css";
@@ -18,6 +19,7 @@
 @import "@css/screen/mobile/components/inquiry_form.css";
 
 @import "@css/screen/mobile/pages/main.css";
+@import "@css/screen/mobile/pages/company_info.css";
 @import "@css/screen/mobile/pages/iso_info.css";
 @import "@css/screen/mobile/pages/enterprise_info.css";
 @import "@css/screen/mobile/pages/product_info.css";

@@ -2,11 +2,11 @@ import { NavigationInterface } from "@interfaces/pagesInterface";
 
 export const navigationList: NavigationInterface[] = [
     {
-        url: "/business_info",
+        url: "/company_info",
         name: "기업 소개",
         sub: [
             {
-                url: "/business_info",
+                url: "/company_info",
                 name: "기업 소개",
             }
         ]
