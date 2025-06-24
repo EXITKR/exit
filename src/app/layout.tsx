@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     url: "https://exitco.kr",
     images: [
       {
-        url: "../../assets/imgs/logo/exit_og.png",
-        width: "1200",
-        height: "630",
+        url: "https://raw.githubusercontent.com/EXITKR/exit/refs/heads/main/assets/imgs/logo/exit_og.png",
+        width: "1100",
+        height: "740",
         alt: "exit_og"
       }
     ],
