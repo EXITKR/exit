@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link";
-import WebLogo from "@imgs/logo/web_logo.png"
+import WebLogo from "@imgs/logo/web_logo_2.png"
 import Image from "next/image";
 import Navigation from "@components/header/Navigation";
 import { useEffect, useRef, useState } from "react";
