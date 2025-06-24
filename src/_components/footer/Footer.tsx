@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { MdEmail } from "react-icons/md";
+import { MdEmail, MdSms } from "react-icons/md";
 import { RiKakaoTalkFill } from "react-icons/ri";
 import { getConfig } from "@utils/Config";
 import ActiveBtn from "@components/buttons/ActiveBtn";
@@ -49,6 +49,11 @@ const Footer = () => {
               <Link href={"mailto:" + config.email} target="blank">
                 <div className="icon_circle">
                   <MdEmail className="icon" />
+                </div>
+              </Link>
+              <Link href={"sms:" + config.tel_number} target="blank">
+                <div className="icon_circle">
+                  <MdSms className="icon" />
                 </div>
               </Link>
               <ActiveBtn style="white ctr_mb" name="문의하기" onClick={() => router.push("/contact_us?index=0")} disabled={false} />
