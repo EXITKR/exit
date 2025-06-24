@@ -97,6 +97,7 @@
             .contact_section {
                 width: 600px;
                 display: flex;
+                align-items: center;
                 gap: 10px;
 
                 .icon_circle {
