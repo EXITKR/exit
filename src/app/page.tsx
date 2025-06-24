@@ -72,7 +72,7 @@ export default function Home() {
 
   return (
     <>
-      <div id="introduce_page">
+      <div id="main_page">
         <div className="main_section">
           <div className="inner_main main_main">
             <span className="slogan">{config.slogan}</span>
