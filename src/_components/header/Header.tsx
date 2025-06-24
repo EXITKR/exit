@@ -8,12 +8,13 @@ import HeaderSub from "@components/header/HeaderSub";
 import { FiMenu } from "react-icons/fi";
 
 const Header = () => {
-  const ref = useRef<HTMLDivElement | null>(null);
-  const [onMouse, setOnMouse] = useState<boolean>(false)
+    const ref = useRef<HTMLDivElement | null>(null);
+    const [windowWidth, setWindowWidth] = useState<number>(0);
+    const [onMouse, setOnMouse] = useState<boolean>(false)
 
-  useEffect(() => {
+    useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
-            if (ref && !ref.current?.contains(event.target as Node)) {
+            if (ref && !ref.current?.contains(event.target as Node) && windowWidth > 1000) {
                 setOnMouse(false);
             }
         }
@@ -21,21 +22,35 @@ const Header = () => {
         return () => {
             document.removeEventListener('click', handleClickOutside);
         };
-    }, [ref])
-  return (
-    <>
-        <header id="header_pc" ref={ref}>
-            <div className="inner_main header_main">
-                <Link href="/" className="">
-                    <Image src={WebLogo} alt="엑시트 로고" className="web_logo"/>
-                </Link>
-                <Navigation setMouseOver={(status) => setOnMouse(status)}/>
-                <FiMenu className="menu_icon" onClick={() => setOnMouse(!onMouse)}/>
-            </div>
-            <HeaderSub onMouse={onMouse} setMouseOver={(status: boolean) => setOnMouse(status)}/>
-        </header>
-    </>
-  );
+    }, [ref, windowWidth])
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const handleResize = () => {
+                setWindowWidth(window.innerWidth);
+            };
+            handleResize();
+
+            window.addEventListener('resize', handleResize);
+            return () => {
+                window.removeEventListener('resize', handleResize);
+            };
+        }
+    }, []);
+    return (
+        <>
+            <header id="header_pc" ref={ref}>
+                <div className="inner_main header_main">
+                    <Link href="/" className="">
+                        <Image src={WebLogo} alt="엑시트 로고" className="web_logo" />
+                    </Link>
+                    <Navigation setMouseOver={(status) => setOnMouse(status)} />
+                    <FiMenu className="menu_icon" onClick={() => setOnMouse(!onMouse)} />
+                </div>
+                <HeaderSub onMouse={onMouse} setMouseOver={(status: boolean) => setOnMouse(status)} onMobile={windowWidth} />
+            </header>
+        </>
+    );
 }
 
 export default Header
