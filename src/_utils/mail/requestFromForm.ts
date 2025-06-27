@@ -24,6 +24,14 @@ export const getRequestFromForm = async (formData: FormData) => {
                         </td>
                     </tr>
                     <tr>
+                        <td style="padding: 20px; background-color: #ffffff; font-size: 12px; color: #bdbdbd;">
+                            <p>본 메일의 발신인 메일 주소는 발신전용 메일입니다.</p>
+                            <p>따라서 회신 내용을 확인할 수 없습니다.</p>
+                            <p>추가문의 : <a href="mailto:exitinfo08@gmail.com" target="_blank" style="color: #bdbdbd;">exitinfo08@gmail.com</a></p>
+                            <p>홈페이지 : <a href="https://www.exitco.kr" target="_blank" style="color: #bdbdbd;">exitco.kr</a></p>
+                        </td>
+                    </tr>
+                    <tr>
                         <td style="padding: 20px; background-color: #f4f4f4; text-align: center; font-size: 12px; color: #777;">
                             <p>&copy; 2025 EXIT Co. All rights reserved.</p>
                         </td>

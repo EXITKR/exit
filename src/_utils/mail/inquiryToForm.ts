@@ -24,13 +24,6 @@ export const getInquiryToForm = (formData: FormData) => {
                         </td>
                     </tr>
                     <tr>
-                        <td style="padding: 20px; display: flex; justify-content: center;">
-                            <a href="${"mailto:" + toEmail}" target="_blank" style="outline: none; border: none; background-color: #537571; padding: 10px 30px; cursor: pointer; color: inherit; text-decoration: none; border-radius: 5px;">
-                                <span style="color: #fff; font-size: 18px; font-weight: 700;">답변하기</span>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
                         <td
                             style="padding: 20px; background-color: #f4f4f4; text-align: center; font-size: 12px; color: #777;">
                             <p>&copy; 2025 EXIT Co. All rights reserved.</p>
