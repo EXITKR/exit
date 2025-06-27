@@ -1,6 +1,5 @@
 export const getInquiryToForm = (formData: FormData) => {
     const toName: string = formData.get('to_name') as string
-    const toEmail: string = formData.get('to_email') as string
     const toMessage: string = formData.get('to_message') as string
     return `
     <table width="100%" cellPadding="0" cellSpacing="0" role="presentation">
