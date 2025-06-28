@@ -17,12 +17,12 @@ export const getRequestToForm = async (formData: FormData) => {
                             <p>빠른 답변 바랍니다.</p>
                             <div style="border-left: 4px solid #537571; padding: 10px; margin: 20px 0; background-color: #e9ecef">
                                 <p><strong>추가 문의 내용:</strong></p>
-                                <p>${toMessage}</p>
+                                <pre>${toMessage}</pre>
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        <td style="padding: 20px; background-color: #f4f4f4; text-align: center; font-size: 12px; color: #777;">
+                        <td style="padding: 20px; background-color: #1c2524; text-align: center; font-size: 12px; color: #fff;">
                             <p>&copy; 2025 EXIT Co. All rights reserved.</p>
                         </td>
                     </tr>
