@@ -113,6 +113,7 @@
       height: auto;
 
       .input_div {
+        padding: 8px 0 0;
         textarea {
           width: 100%;
           height: 300px;
