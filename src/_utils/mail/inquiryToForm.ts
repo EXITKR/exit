@@ -14,17 +14,17 @@ export const getInquiryToForm = (formData: FormData) => {
                     </tr>
                     <tr>
                         <td style="padding: 20px; background-color: #ffffff;">
-                            <p><strong>${toName}</strong>대표님의 문의가 접수되었습니다.</p>
+                            <p><strong>${toName}</strong>&nbsp;대표님의 문의가 접수되었습니다.</p>
                             <p>빠른 답변 바랍니다.</p>
                             <div style="border-left: 4px solid #537571; padding: 10px; margin: 20px 0; background-color: #e9ecef">
                                 <p><strong>문의 내용:</strong></p>
-                                <p>${toMessage}</p>
+                                <pre>${toMessage}</pre>
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td
-                            style="padding: 20px; background-color: #f4f4f4; text-align: center; font-size: 12px; color: #777;">
+                            style="padding: 20px; background-color: #1c2524; text-align: center; font-size: 12px; color: #fff;">
                             <p>&copy; 2025 EXIT Co. All rights reserved.</p>
                         </td>
                     </tr>
