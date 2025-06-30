@@ -60,6 +60,10 @@ const Footer = () => {
               <ActiveBtn style="white ctr_mb" name="인증 신청하기" onClick={() => router.push("/contact_us?index=1")} disabled={false} />
             </div>
             <div className="copy_section">
+              <div className="terms_section">
+                <span className="terms" onClick={() => router.push("/terms_of_use")}>이용약관</span>
+                <span className="terms" onClick={() => router.push("/privacy_policy")}>개인정보처리방침</span>
+              </div>
               <span className="copyright">&copy; 2025 {config.company_en} All rights reserved.</span>
             </div>
           </div>
