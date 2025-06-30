@@ -29,7 +29,7 @@ export interface ImageDataListInterface {
 }
 
 export interface ContentListInterface {
-  image_list: ImageDataListInterface[];
+  image_list?: ImageDataListInterface[];
   content: string;
 }
 

@@ -19,7 +19,7 @@ const ContentBox = (props: {
             <div className="content_box_contents">
                 {props.content_box.content_list.map((item, idx) => (
                     <div className="contents_div" key={idx}>
-                        {item.image_list.map((val, index) => (
+                        {item.image_list?.map((val, index) => (
                             <div className="image_div" key={index}>
                                 <Image className="image" src={val.image} alt={val.name} />
                                 <span className="source_text">{val.source}</span>

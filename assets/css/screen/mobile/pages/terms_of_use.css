@@ -1,0 +1,7 @@
+@media screen and (max-width: 1000px) {
+    #terms_of_use_page {
+        height: auto;
+        width: 100%;
+        margin: 40px 0 0;
+    }
+}
