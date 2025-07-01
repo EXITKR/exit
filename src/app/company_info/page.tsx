@@ -1,5 +1,9 @@
 import ContentBox from "@components/content_ui/Content";
 import { contentDummy } from "@components/contents/ContentDummy";
+import { getMetadata } from "@utils/Metadata";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = getMetadata("기업 소개")
 
 export default function Home() {
   return (

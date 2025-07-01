@@ -38,6 +38,10 @@ import { sendContactEmail } from "@utils/mail/mail";
 import { toPng } from "html-to-image";
 import jsPDF from "jspdf";
 import { useState } from "react";
+import { getMetadata } from "@utils/Metadata";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = getMetadata("인증 신청하기")
 
 const RequestForm = (props: {
     setLoading: (status: boolean) => void
