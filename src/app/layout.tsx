@@ -2,32 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@components/footer/Footer";
 import Header from "@components/header/Header";
-import { getConfig } from "@utils/Config";
 import { Suspense } from "react";
+import { getMetadata } from "@utils/Metadata";
 
-const config = getConfig()
-
-export const metadata: Metadata = {
-  title: config.company_kr + " - " + config.sub_description,
-  description: config.description,
-  icons: {
-    icon: "/favicon.ico"
-  },
-  openGraph: {
-    title: config.company_kr + " - " + config.sub_description,
-    description: config.description,
-    url: "https://exitco.kr",
-    images: [
-      {
-        url: "https://raw.githubusercontent.com/EXITKR/exit/refs/heads/main/assets/imgs/logo/exit_og.png",
-        width: "1100",
-        height: "740",
-        alt: "exit_og"
-      }
-    ],
-    locale: "ko_KR"
-  },
-};
+export const metadata: Metadata = getMetadata(null)
 
 export default function RootLayout({
   children,
