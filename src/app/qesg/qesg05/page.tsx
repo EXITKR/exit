@@ -1,5 +1,5 @@
 import ContentBox from "@components/content_ui/Content";
-import { contentDummy } from "@components/contents/ContentDummy";
+import { contentQesg05 } from "@components/contents/ContentQesg";
 import { getMetadata } from "@utils/Metadata";
 import type { Metadata } from "next";
 
@@ -10,7 +10,7 @@ export default function Home() {
     <>
     <div id="content_page">
       <div className="inner_main">
-        <ContentBox content_box={contentDummy} />
+        <ContentBox content_box={contentQesg05} />
       </div>
     </div>
     </>
