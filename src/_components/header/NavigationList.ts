@@ -2,69 +2,95 @@ import { NavigationInterface } from "@interfaces/pagesInterface";
 
 export const navigationList: NavigationInterface[] = [
     {
-        url: "/company_info",
-        name: "기업 소개",
+        url: "/qesg/qesg01",
+        name: "공급망 ESG 심사 ",
         sub: [
             {
-                url: "/company_info",
-                name: "기업 소개",
-            }
+                url: "/qesg/qesg01",
+                name: "개요 및 정의",
+            },
+            {
+                url: "/qesg/qesg02",
+                name: "이슈",
+            },
+            {
+                url: "/qesg/qesg03",
+                name: "전략",
+            },
+            {
+                url: "/qesg/qesg04",
+                name: "중요성",
+            },
+            {
+                url: "/qesg/qesg05",
+                name: "ISO26000",
+            },
         ]
     },
     {
-        url: "/iso_info",
-        name: "ISO 인증",
+        url: "/scs/scs01",
+        name: "맞춤형 공급망 보안",
         sub: [
             {
-                url: "/iso_info",
+                url: "/scs/scs01",
+                name: "맞춤형 공급망 보안이란?",
+            },
+            {
+                url: "/scs/scs02",
+                name: "개인정보보호 시스템 구축",
+            },
+            {
+                url: "/scs/scs03",
+                name: "데이터손실방지 시스템",
+            },
+            {
+                url: "/scs/scs04",
+                name: "ISO27001",
+            },
+            {
+                url: "/scs/scs05",
+                name: "C-TPAT / AEO",
+            },
+            {
+                url: "/scs/scs06",
+                name: "COC (Code Of Conduct)",
+            },
+        ]
+    },
+    {
+        url: "/iso/iso01",
+        name: "시스템 인증",
+        sub: [
+            {
+                url: "/iso/iso01",
                 name: "ISO9001",
             },
             {
-                url: "/iso_info",
+                url: "/iso/iso02",
                 name: "ISO14001",
             },
             {
-                url: "/iso_info",
+                url: "/iso/iso03",
                 name: "ISO45001",
             },
-        ]
-    },
-    {
-        url: "/enterprise_info",
-        name: "기업맞춤형 인증",
-        sub: [
             {
-                url: "/enterprise_info",
-                name: "공급망 보안 (SCS)",
-            },
-            {
-                url: "/enterprise_info",
-                name: "직원 행동강령 (COC)",
-            },
-            {
-                url: "/enterprise_info",
-                name: "정보 보안 (DLP)",
-            },
-        ]
-    },
-    {
-        url: "/product_info",
-        name: "제품 인증",
-        sub: [
-            {
-                url: "/product_info",
+                url: "/iso/iso04",
                 name: "CE / UL",
             },
         ]
     },
     {
-        url: "/business_info",
-        name: "경영 컨설팅",
+        url: "/overview",
+        name: "회사소개",
         sub: [
             {
-                url: "/business_info",
-                name: "경영 컨설팅",
-            }
+                url: "/overview",
+                name: "OVERVIEW",
+            },
+            {
+                url: "/contact_us",
+                name: "CONTACT US",
+            },
         ]
     },
 ]

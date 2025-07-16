@@ -37,7 +37,7 @@ export interface ContentBoxInterface {
   title: string;
   background: string;
   content: string;
-  content_list: ContentListInterface[];
+  content_list?: ContentListInterface[];
 }
 
 export interface NavigationSubInterface {

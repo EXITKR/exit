@@ -8,10 +8,7 @@
 
 @import "@css/pages/main.css";
 @import "@css/pages/company_info.css";
-@import "@css/pages/iso_info.css";
-@import "@css/pages/enterprise_info.css";
-@import "@css/pages/product_info.css";
-@import "@css/pages/business_info.css";
+@import "@css/pages/content_page.css";
 @import "@css/pages/contact_us.css";
 @import "@css/pages/terms_of_use.css";
 @import "@css/pages/privacy_policy.css";

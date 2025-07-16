@@ -53,6 +53,10 @@
                     .header_sub_navi {
                         width: 180px;
                         margin: 0 10px;
+
+                        .navi_title {
+                            font-weight: 500;
+                        }
                     }
                 }
             }

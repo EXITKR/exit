@@ -20,6 +20,18 @@ const HeaderSub = (props: {
                     <div className="header_sub_top">
                         {navigationList.map((val, idx) => (
                             <div className="header_sub_navi" key={idx}>
+                                {props.onMobile <= 1000
+                                ? <Link href={val.url} key={idx}
+                                        onMouseOver={() => props.setMouseOver(true)}
+                                        onMouseOut={() => props.setMouseOver(false)}
+                                        onClick={() => props.setMouseOver(false)}
+                                    >
+                                        <div className="navi">
+                                            <span className="navi_title">{val.name}</span>
+                                        </div>
+                                    </Link>
+                                : null
+                                }
                                 {val.sub.map((item, index) => (
                                     <Link href={item.url} key={index}
                                         onMouseOver={() => props.setMouseOver(true)}

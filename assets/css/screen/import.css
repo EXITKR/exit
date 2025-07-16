@@ -6,10 +6,7 @@
 
 @import "@css/screen/tablet/pages/main.css";
 @import "@css/screen/tablet/pages/company_info.css";
-@import "@css/screen/tablet/pages/iso_info.css";
-@import "@css/screen/tablet/pages/enterprise_info.css";
-@import "@css/screen/tablet/pages/product_info.css";
-@import "@css/screen/tablet/pages/business_info.css";
+@import "@css/screen/tablet/pages/content_page.css";
 @import "@css/screen/tablet/pages/contact_us.css";
 @import "@css/screen/tablet/pages/terms_of_use.css";
 @import "@css/screen/tablet/pages/privacy_policy.css";
@@ -22,10 +19,7 @@
 
 @import "@css/screen/mobile/pages/main.css";
 @import "@css/screen/mobile/pages/company_info.css";
-@import "@css/screen/mobile/pages/iso_info.css";
-@import "@css/screen/mobile/pages/enterprise_info.css";
-@import "@css/screen/mobile/pages/product_info.css";
-@import "@css/screen/mobile/pages/business_info.css";
+@import "@css/screen/mobile/pages/content_page.css";
 @import "@css/screen/mobile/pages/contact_us.css";
 @import "@css/screen/mobile/pages/terms_of_use.css";
 @import "@css/screen/mobile/pages/privacy_policy.css";
