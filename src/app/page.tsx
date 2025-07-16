@@ -126,7 +126,7 @@ export default function Home() {
             <span className="title">MISSON</span>
             <span className="desc">{config.mission}</span>
             <div className="nav_div">
-              {navigationList.filter((item, index) => index !== 0).map((item, index) => (
+              {navigationList.filter((item, index) => index !== 3).map((item, index) => (
                 <div className={"nav nav_" + (index + 1).toString().padStart(2, "0")} key={index}>
                   <div className="name_div">
                     <span className="name" onClick={() => router.push(item.url)}>{item.name}</span>

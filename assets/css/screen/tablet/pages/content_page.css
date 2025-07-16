@@ -1,0 +1,7 @@
+@media screen and (max-width: 1280px) {
+    #content_page {
+        height: auto;
+        width: 100%;
+        margin: 60px 0 0;
+    }
+}

@@ -1,5 +1,5 @@
 import ContentBox from "@components/content_ui/Content";
-import { contentDummy } from "@components/contents/ContentDummy";
+import { contentPrivacyPolicy } from "@components/contents/ContentPrivacyPolicy";
 import { getMetadata } from "@utils/Metadata";
 import type { Metadata } from "next";
 
@@ -10,7 +10,7 @@ export default function Home() {
     <>
     <div id="privacy_policy_page">
       <div className="inner_main">
-        <ContentBox content_box={contentDummy} />
+        <ContentBox content_box={contentPrivacyPolicy} />
       </div>
     </div>
     </>

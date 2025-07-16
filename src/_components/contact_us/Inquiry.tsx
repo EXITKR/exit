@@ -2,7 +2,7 @@ import { sendContactEmail } from "@utils/mail/mail";
 import { getMetadata } from "@utils/Metadata";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = getMetadata("문의하기")
+export const metadata: Metadata = getMetadata("일반문의")
 
 const InquiryForm = (props: {
     setLoading: (status: boolean) => void

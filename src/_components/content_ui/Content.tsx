@@ -13,11 +13,16 @@ const ContentBox = (props: {
                     </span>
                 </div>
             </div>
-            <div className="content_box_content">
-                <pre className="content_text">{props.content_box.content}</pre>
-            </div>
+            {props.content_box.content
+                ?
+                <div className="content_box_content">
+                    <pre className="content_text">{props.content_box.content}</pre>
+                </div>
+                :
+                null
+            }
             <div className="content_box_contents">
-                {props.content_box.content_list.map((item, idx) => (
+                {props.content_box.content_list && props.content_box.content_list.map((item, idx) => (
                     <div className="contents_div" key={idx}>
                         {item.image_list?.map((val, index) => (
                             <div className="image_div" key={index}>
@@ -26,6 +31,12 @@ const ContentBox = (props: {
                             </div>
                         ))}
                         <div className="content_div">
+                            {item.content
+                                ?
+                                <span className="content_title">{item.title}</span>
+                                :
+                                null
+                            }
                             <pre className="content_text">{item.content}</pre>
                         </div>
                     </div>

@@ -30,14 +30,15 @@ export interface ImageDataListInterface {
 
 export interface ContentListInterface {
   image_list?: ImageDataListInterface[];
+  title?: string;
   content: string;
 }
 
 export interface ContentBoxInterface {
   title: string;
   background: string;
-  content: string;
-  content_list: ContentListInterface[];
+  content?: string;
+  content_list?: ContentListInterface[];
 }
 
 export interface NavigationSubInterface {
