@@ -4,7 +4,7 @@ import ExitImage from "@imgs/contents/exit.png";
 import type { Metadata } from "next";
 import Image from "next/image";
 
-export const metadata: Metadata = getMetadata("회사소개")
+export const metadata: Metadata = getMetadata("CEO 인사말")
 
 export default function Home() {
   return (
