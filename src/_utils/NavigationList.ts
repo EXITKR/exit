@@ -7,46 +7,50 @@ export const navigationList: NavigationInterface[] = [
         sub: [
             {
                 url: "/qesg/qesg01",
-                name: "개요 및 정의",
+                name: "공급망 ESG는 무엇인가?",
             },
             {
                 url: "/qesg/qesg02",
-                name: "이슈",
+                name: "공급망 ESG 이슈",
             },
             {
                 url: "/qesg/qesg03",
-                name: "전략",
+                name: "공급망 ESG 전략",
             },
             {
                 url: "/qesg/qesg04",
-                name: "중요성",
+                name: "공급망 ESG 중요성",
             },
             {
                 url: "/qesg/qesg05",
-                name: "ISO26000",
+                name: "ISO 26000과의 연계성",
             },
         ]
     },
     {
         url: "/scs/scs01",
-        name: "맞춤형 공급망 보안",
+        name: "Customized SCS(Supply Chain Security)",
         sub: [
             {
                 url: "/scs/scs01",
-                name: "맞춤형 공급망 보안이란?",
+                name: "Customized SCS(맞춤형 공급망 보안)는 무엇인가?",
             },
             {
                 url: "/scs/scs02",
-                name: "개인정보보호 시스템 구축",
+                name: "정보보호서비스",
             },
-            {
-                url: "/scs/scs03",
-                name: "데이터손실방지 시스템",
-            },
-            {
-                url: "/scs/scs04",
-                name: "ISO27001",
-            },
+            // {
+            //     url: "/scs/scs02",
+            //     name: "개인정보보호 시스템 및 프로세스 구축",
+            // },
+            // {
+            //     url: "/scs/scs03",
+            //     name: "DLP( Data Loss Prevention) 시스템",
+            // },
+            // {
+            //     url: "/scs/scs04",
+            //     name: "ISO 27001",
+            // },
             {
                 url: "/scs/scs05",
                 name: "C-TPAT / AEO",
@@ -75,7 +79,7 @@ export const navigationList: NavigationInterface[] = [
             },
             {
                 url: "/iso/iso04",
-                name: "CE / UL",
+                name: "ISO 기타 (CE / UL)",
             },
         ]
     },

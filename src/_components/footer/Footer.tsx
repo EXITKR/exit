@@ -5,7 +5,6 @@ import { MdEmail, MdSms } from "react-icons/md";
 import { RiKakaoTalkFill } from "react-icons/ri";
 import { getConfig } from "@utils/Config";
 import ActiveBtn from "@components/buttons/ActiveBtn";
-import { navigationList } from "@utils/NavigationList";
 
 const Footer = () => {
   const router = useRouter()
@@ -28,7 +27,7 @@ const Footer = () => {
                 <span className="company_mail">e-mail :: {config.email}</span>
               </div>
             </div>
-            <div className="menu_section">
+            {/* <div className="menu_section">
               {navigationList.map((val, idx) => (
                 <div className={"menu menu_" + (idx + 1).toString().padStart(2, '0')} key={idx}>
                   <span className="menu_title" onClick={() => router.push(val.url)}>{val.name}</span>
@@ -37,7 +36,7 @@ const Footer = () => {
                   ))}
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
           <div className="bot_section">
             <div className="contact_section">

@@ -1,6 +1,6 @@
 import { contentOverview } from "@utils/contents/ContentOverview";
 import { getMetadata } from "@utils/Metadata";
-import ExitImage from "@imgs/contents/exit.png";
+import SignImage from "@imgs/contents/sign.png";
 import type { Metadata } from "next";
 import Image from "next/image";
 
@@ -39,7 +39,7 @@ export default function Home() {
                   <span className="fw-500">
                     ㈜EXIT 대표 이승준
                   </span>
-                  <Image className="exit" src={ExitImage} alt="인감" />
+                  <Image className="exit" src={SignImage} alt="인감" />
                 </div>
               </span>
             </div>
