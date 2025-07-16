@@ -1,6 +1,5 @@
 "use client"
 import ActiveBtn from "@components/buttons/ActiveBtn";
-import { RoadmapInterface } from "@interfaces/pagesInterface";
 import { getConfig } from "@utils/Config";
 import { useRouter } from "next/navigation";
 import Image from "next/image";

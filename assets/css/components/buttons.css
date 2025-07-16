@@ -102,6 +102,8 @@
 
     display: flex;
 
+    margin: 0 0 20px;
+
     .tab {
         height: 60px;
         padding: 0 30px;
