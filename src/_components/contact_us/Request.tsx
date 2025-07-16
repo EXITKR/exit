@@ -40,6 +40,7 @@ import jsPDF from "jspdf";
 import { useState } from "react";
 import { getMetadata } from "@utils/Metadata";
 import type { Metadata } from "next";
+import Form218 from "@components/contact_us/request/Form218";
 
 export const metadata: Metadata = getMetadata("인증 신청하기")
 
@@ -223,15 +224,15 @@ const RequestForm = (props: {
                         <span className="sort_title" id="2_0">2. 인증 신청 정보</span>
                         <span className="sort_sub_title" id="2_1">2.1 신청 표준 및 활동범위</span>
                         <Form211 />
+                        <Form218 />
                         <Form212 />
                         <Form213 />
                         <Form217 />
                         <Form214 />
                         <Form215 />
-                        <Form216 />
                     </div>
                     <div id="request_form_05" className="request_form">
-                        <span className="sort_sub_title" id="2_2">2.2 통합심사 정보 (해당 시 작성)</span>
+                        <span className="sort_sub_title" id="2_2">2.2 시스템 인증 심사 정보 (해당 시 작성)</span>
                         <Form221 />
                     </div>
                     <div id="request_form_06" className="request_form">
@@ -274,15 +275,6 @@ const RequestForm = (props: {
                     </div>
                     <div id="request_form_12" className="request_form">
                         <Form322 />
-                    </div>
-                    <div id="request_form_13" className="request_form">
-                        <span className="sort_sub_title" id="3_3">3.3 TL 9000 관련 추가정보</span>
-                        <Form331 />
-                        <Form332 is_process_list={isProcessList} />
-                    </div>
-                    <div className="add_and_rm">
-                        <ActiveBtn name="+" style="default" onClick={() => setProcessList(isProcessList + 1)} disabled={false} />
-                        <ActiveBtn name="-" style="default" onClick={() => setProcessList(isProcessList - 1)} disabled={isProcessList === 3} />
                     </div>
                     <div id="request_form_14" className="request_form">
                         <Form400 />

@@ -25,7 +25,7 @@ const Form221 = () => {
                     <span className="input_name jc-ct w-15">아니오</span>
                 </div>
                 <div className="form_sub_sub w-100 bt-on">
-                    <span className="input_name jc-st w-60 br-on">3) 내무심사를 통합적인 접근방법으로 실행합니까?</span>
+                    <span className="input_name jc-st w-60 br-on">3) 내부심사를 통합적인 접근방법으로 실행합니까?</span>
                     <div className="input_div w-5">
                         <input type="radio" id="total_audit_03" name="form221_003" value="true" />
                     </div>
