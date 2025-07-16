@@ -2,7 +2,7 @@ import { ContentBoxInterface } from "@interfaces/pagesInterface";
 
 export const contentIso01: ContentBoxInterface = {
   title: "ISO 9001",
-  background: 'dummy_title',
+  background: 'iso_title',
   content: `ISO 9001은 국제표준화기구(ISO)에서 제정한 품질경영시스템에 대한 국제규격으로 품질 경영시스템(QMS)을 구축, 실행, 유지 및 지속적으로 개선하는 방법을 정의합니다.
 
 ISO 9001은 조직이 효과적인 프로세스를 구축하고 직원을 훈련시키며, 고객에게 제품 또는 서비스를 일관되게 제공하고 품질을 지속적으로 개선할 수 있도록 지원하는 시스템입니다.
@@ -11,7 +11,7 @@ ISO 9001은 조직이 효과적인 프로세스를 구축하고 직원을 훈련
 
 export const contentIso02: ContentBoxInterface = {
   title: "ISO 14001",
-  background: 'dummy_title',
+  background: 'iso_title',
   content: `ISO 14001은 국제표준화기구(ISO)에서 제정한 환경경영시스템에 관한 국제규격으로 기업이 환경성과를 지속적으로 개선하기 위해 환경경영시스템(EMS)을 구축하고 운영하도록 요구하는 것입니다.
 
 ISO 14001은 조직이 환경경영시스템을 설계 및 구현하고, 환경성과를 지속적으로 개선할 수 있는 프레임워크를 제공하며, 이를 통해 환경 위험을 효과적으로 관리하고, 관련 법적 요건을 준수하며, 환경 목표 달성을 위한 적극적인 조치를 취하고 있는 등 지속적으로 가능한 경영을 효율적으로 관리할 수 있도록 합니다.`,
@@ -19,7 +19,7 @@ ISO 14001은 조직이 환경경영시스템을 설계 및 구현하고, 환경�
 
 export const contentIso03: ContentBoxInterface = {
   title: "ISO 45001",
-  background: 'dummy_title',
+  background: 'iso_title',
   content: `ISO 45001은 국제표준화기구(ISO)가 제정한 세계 최초의 국제 산업안전보건 경영시스템(OH&S)으로 사업장에서 발생할 수 있는 각종 위험을 사전 예측 및 예방하고, 작업자 안전을 위한 실용적인 솔루션을 제공하는 산업 보건 및 안전 관리 경영시스템의 국제 표준입니다.
 
 ISO 45001은 산업안전보건 정책, 목표, 계획, 실행, 운영, 감사 및 검토에 대한 기준을 수립하고, 핵심요소로 리더십의 헌신, 근로자 참여, 위험 식별 및 평가, 법률 및 규정준수, 비상 계획, 사고 조사 및 지속적 개선 등의 표준이 포함되어 있습니다.`,
@@ -27,7 +27,7 @@ ISO 45001은 산업안전보건 정책, 목표, 계획, 실행, 운영, 감사 �
 
 export const contentIso04: ContentBoxInterface = {
   title: "CE / UL",
-  background: 'dummy_title',
+  background: 'iso_title',
   content: ``,
   content_list: [
     {

@@ -36,7 +36,31 @@
         .dummy_title {
             background:
                 linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                url("../../imgs/background/route_05.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .qesg_title {
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
                 url("../../imgs/background/route_01.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .scs_title {
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                url("../../imgs/background/route_02.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .iso_title {
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                url("../../imgs/background/route_03.png");
             background-size: cover;
             background-position: center;
         }
@@ -45,7 +69,7 @@
     .content_box_content {
         width: 100%;
         height: auto;
-        padding: 40px 0 160px;
+        padding: 40px 0;
 
         border-bottom: solid 1px #ededed;
 
