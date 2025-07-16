@@ -11,7 +11,6 @@ import Form212 from "@components/contact_us/request/Form212";
 import Form213 from "@components/contact_us/request/Form213";
 import Form214 from "@components/contact_us/request/Form214";
 import Form215 from "@components/contact_us/request/Form215";
-import Form216 from "@components/contact_us/request/Form216";
 import Form217 from "@components/contact_us/request/Form217";
 import Form221 from "@components/contact_us/request/Form221";
 import Form231 from "@components/contact_us/request/Form231";
@@ -30,8 +29,6 @@ import Form315 from "@components/contact_us/request/Form315";
 import Form316 from "@components/contact_us/request/Form316";
 import Form321 from "@components/contact_us/request/Form321";
 import Form322 from "@components/contact_us/request/Form322";
-import Form331 from "@components/contact_us/request/Form331";
-import Form332 from "@components/contact_us/request/Form332";
 import Form400 from "@components/contact_us/request/Form400";
 import { attachmentsPathInterface, OriginalInputState } from "@interfaces/pagesInterface";
 import { sendContactEmail } from "@utils/mail/mail";
@@ -51,7 +48,6 @@ const RequestForm = (props: {
     const [isCompanyList, setCompanyList] = useState<number>(3)
     const [isPositionList, setPositionList] = useState<number>(3)
     const [isSceneList, setSceneList] = useState<number>(5)
-    const [isProcessList, setProcessList] = useState<number>(3)
 
     const prepareInputsForCapture = (node: HTMLElement): OriginalInputState[] => {
         const inputs = node.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>('input, textarea');
