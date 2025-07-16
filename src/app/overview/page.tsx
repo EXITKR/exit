@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <div id="content_page">
-        <div className="inner_main overview_main">
+        <div className="inner_main page_inner overview_main">
           <div className="content_box">
             <div className="content_box_title">
               <div className={"title_div " + contentOverview.background}>

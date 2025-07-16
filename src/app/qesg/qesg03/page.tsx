@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
     <div id="content_page">
-      <div className="inner_main">
+      <div className="inner_main page_inner">
         <ContentBox content_box={contentQesg03} />
       </div>
     </div>

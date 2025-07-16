@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
     <div id="privacy_policy_page">
-      <div className="inner_main">
+      <div className="inner_main page_inner">
         <ContentBox content_box={contentPrivacyPolicy} />
       </div>
     </div>
