@@ -3,7 +3,7 @@ import { contentDummy } from "@components/contents/ContentDummy";
 import { getMetadata } from "@utils/Metadata";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = getMetadata("더미 데이터")
+export const metadata: Metadata = getMetadata("공급망 ESG 심사 개요 및 정의")
 
 export default function Home() {
   return (

@@ -3,7 +3,7 @@ import { contentDummy } from "@components/contents/ContentDummy";
 import { getMetadata } from "@utils/Metadata";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = getMetadata("더미 데이터")
+export const metadata: Metadata = getMetadata("개인정보보호 시스템 및 프로세스 구축")
 
 export default function Home() {
   return (
