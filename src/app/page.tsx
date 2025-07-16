@@ -1,9 +1,8 @@
 "use client"
 import ActiveBtn from "@components/buttons/ActiveBtn";
-import { clientBusinessInterface, RoadmapInterface } from "@interfaces/pagesInterface";
+import { RoadmapInterface } from "@interfaces/pagesInterface";
 import { getConfig } from "@utils/Config";
 import { useRouter } from "next/navigation";
-import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { navigationList } from "@components/header/NavigationList";
@@ -75,14 +74,6 @@ export default function Home() {
               :
               <ActiveBtn style="white" name="문의하기" onClick={() => router.push("/contact_us?index=0")} disabled={false} />
             }
-          </div>
-        </div>
-
-        <div className="vision_section">
-          <div className="inner_main vision_main">
-            <FaQuoteLeft className="icon" />
-            <span className="vision">{config.vision}</span>
-            <FaQuoteRight className="icon" />
           </div>
         </div>
 
