@@ -8,19 +8,20 @@ export const getRequestFromForm = async (formData: FormData) => {
                 <table width="600" cellPadding="0" cellSpacing="0" role="presentation" style="border-collapse: collapse; margin: 0 auto;">
                     <tr>
                         <td style="padding: 20px; text-align: center;">
-                            <h1>인증 신청서 접수 완료</h1>
+                            <h1>컨설팅 신청서 접수 완료</h1>
                         </td>
                     </tr>
                     <tr>
                         <td style="padding: 20px; background-color: #ffffff;">
-                            <p>안녕하세요, <strong>${toName}</strong>&nbsp;대표님!</p>
-                            <p>귀사의 심사 신청이 성공적으로 접수되었습니다. 최대한 빠르게 확인 후 연락드리겠습니다.</p>
+                            <p>안녕하세요, <strong>${toName}</strong>&nbsp;님!</p>
+                            <p>귀사의 인증컨설팅 신청서가 성공적으로 접수되었습니다.</p>
+                            <p>최대한 빠르게 확인 후 연락드리겠습니다.</p>
                             <div style="border-left: 4px solid #537571; padding: 10px; margin: 20px 0; background-color: #e9ecef">
-                                <p><strong>추가 문의 내용:</strong></p>
+                                <p><strong>추가 문의 내용</strong></p>
                                 <pre>${toMessage}</pre>
                             </div>
                             <p>감사합니다.</p>
-                            <p>엑시트 드림</p>
+                            <p>㈜EXIT 대표이사 드림</p>
                         </td>
                     </tr>
                     <tr>
