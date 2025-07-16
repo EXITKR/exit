@@ -5,7 +5,7 @@ import { MdEmail, MdSms } from "react-icons/md";
 import { RiKakaoTalkFill } from "react-icons/ri";
 import { getConfig } from "@utils/Config";
 import ActiveBtn from "@components/buttons/ActiveBtn";
-import { navigationList } from "@components/header/NavigationList";
+import { navigationList } from "@utils/NavigationList";
 
 const Footer = () => {
   const router = useRouter()

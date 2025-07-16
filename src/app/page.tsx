@@ -1,24 +1,16 @@
 "use client"
 import ActiveBtn from "@components/buttons/ActiveBtn";
-import { clientBusinessInterface, RoadmapInterface } from "@interfaces/pagesInterface";
+import { RoadmapInterface } from "@interfaces/pagesInterface";
 import { getConfig } from "@utils/Config";
 import { useRouter } from "next/navigation";
-import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
-
-import client01 from "@imgs/logo/client/client01.png";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { navigationList } from "@components/header/NavigationList";
+import { navigationList } from "@utils/NavigationList";
+import { clientList } from "@utils/ClientList";
 
 export default function Home() {
   const router = useRouter()
   const config = getConfig()
-  const clientList: clientBusinessInterface[] = [
-    {
-      name: "웰크론",
-      img: client01
-    },
-  ]
   const roadmapList: RoadmapInterface[] = [
     {
       sort: "first",
@@ -85,14 +77,6 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="vision_section">
-          <div className="inner_main vision_main">
-            <FaQuoteLeft className="icon" />
-            <span className="vision">{config.vision}</span>
-            <FaQuoteRight className="icon" />
-          </div>
-        </div>
-
         <div className="history_section">
           <div className="inner_main history_main">
             <span className="title">ROADMAP</span>
@@ -141,10 +125,10 @@ export default function Home() {
           <div className="inner_main trust_main">
             <span className="title">CLIENTS</span>
             <span className="desc">엑시트를 신뢰하는 고객기업 입니다.</span>
-            <div className="trust_list">
+            <div className={"trust_list " + (clientList.length < 5 ? ("grid_" + clientList.length) : "grid_5")}>
               {clientList.map((item, index) => (
                 <div className="trust_div" key={index}>
-                  <Image src={item.img} alt={item.name} className="trust_img" />
+                  <Image src={item.img} alt={item.name} className="trust_img " />
                 </div>
               ))}
             </div>

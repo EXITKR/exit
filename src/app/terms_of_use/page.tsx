@@ -1,5 +1,5 @@
 import ContentBox from "@components/content_ui/Content";
-import { contentTermsOfUse } from "@components/contents/ContentTermsOfUse";
+import { contentTermsOfUse } from "@utils/contents/ContentTermsOfUse";
 import { getMetadata } from "@utils/Metadata";
 import type { Metadata } from "next";
 
@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
     <div id="terms_of_use_page">
-      <div className="inner_main">
+      <div className="inner_main page_inner">
         <ContentBox content_box={contentTermsOfUse} />
       </div>
     </div>

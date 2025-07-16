@@ -1,16 +1,16 @@
-import { contentOverview } from "@components/contents/ContentOverview";
+import { contentOverview } from "@utils/contents/ContentOverview";
 import { getMetadata } from "@utils/Metadata";
 import ExitImage from "@imgs/contents/exit.png";
 import type { Metadata } from "next";
 import Image from "next/image";
 
-export const metadata: Metadata = getMetadata("회사소개")
+export const metadata: Metadata = getMetadata("CEO 인사말")
 
 export default function Home() {
   return (
     <>
       <div id="content_page">
-        <div className="inner_main overview_main">
+        <div className="inner_main page_inner overview_main">
           <div className="content_box">
             <div className="content_box_title">
               <div className={"title_div " + contentOverview.background}>

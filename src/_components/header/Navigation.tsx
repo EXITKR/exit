@@ -1,5 +1,5 @@
 "use client"
-import { navigationList } from "@components/header/NavigationList";
+import { navigationList } from "@utils/NavigationList";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 

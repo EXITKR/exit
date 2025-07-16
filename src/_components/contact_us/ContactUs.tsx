@@ -50,7 +50,7 @@ const ContactUs = () => {
         <>
             {isLoading ? <Loading message={isMessage} /> : null}
             <div id="contact_us_page">
-                <div className="inner_main contact_us_main">
+                <div className="inner_main page_inner contact_us_main">
                     {windowWidth > 1000
                         ?
                         <ActiveTab tabs={tabList} index={isTabIdx} setIndex={(idx: number) => setTabIdx(idx)} />
