@@ -1,6 +1,6 @@
 "use client"
 import ActiveBtn from "@components/buttons/ActiveBtn";
-import { navigationList } from "@components/header/NavigationList";
+import { navigationList } from "@utils/NavigationList";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 

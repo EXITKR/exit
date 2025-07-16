@@ -1,5 +1,5 @@
 import ContentBox from "@components/content_ui/Content";
-import { contentTermsOfUse } from "@components/contents/ContentTermsOfUse";
+import { contentTermsOfUse } from "@utils/contents/ContentTermsOfUse";
 import { getMetadata } from "@utils/Metadata";
 import type { Metadata } from "next";
 

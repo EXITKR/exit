@@ -5,7 +5,7 @@ import { getConfig } from "@utils/Config";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { navigationList } from "@components/header/NavigationList";
+import { navigationList } from "@utils/NavigationList";
 import { clientList } from "@utils/ClientList";
 
 export default function Home() {

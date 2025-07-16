@@ -1,5 +1,5 @@
 import ContentBox from "@components/content_ui/Content";
-import { contentScs03 } from "@components/contents/ContentScs";
+import { contentScs03 } from "@utils/contents/ContentScs";
 import { getMetadata } from "@utils/Metadata";
 import type { Metadata } from "next";
 

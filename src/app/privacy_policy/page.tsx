@@ -1,5 +1,5 @@
 import ContentBox from "@components/content_ui/Content";
-import { contentPrivacyPolicy } from "@components/contents/ContentPrivacyPolicy";
+import { contentPrivacyPolicy } from "@utils/contents/ContentPrivacyPolicy";
 import { getMetadata } from "@utils/Metadata";
 import type { Metadata } from "next";
 

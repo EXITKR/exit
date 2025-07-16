@@ -1,4 +1,4 @@
-import { contentOverview } from "@components/contents/ContentOverview";
+import { contentOverview } from "@utils/contents/ContentOverview";
 import { getMetadata } from "@utils/Metadata";
 import ExitImage from "@imgs/contents/exit.png";
 import type { Metadata } from "next";
