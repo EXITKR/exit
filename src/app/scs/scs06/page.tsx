@@ -1,5 +1,5 @@
 import ContentBox from "@components/content_ui/Content";
-import { contentScs06 } from "@utils/contents/ContentScs";
+import { contentScs07 } from "@utils/contents/ContentScs";
 import { getMetadata } from "@utils/Metadata";
 import type { Metadata } from "next";
 
@@ -10,7 +10,7 @@ export default function Home() {
     <>
     <div id="content_page">
       <div className="inner_main page_inner">
-        <ContentBox content_box={contentScs06} />
+        <ContentBox content_box={contentScs07} />
       </div>
     </div>
     </>
