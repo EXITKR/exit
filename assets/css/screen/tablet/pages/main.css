@@ -3,41 +3,52 @@
         margin: 60px 0 0;
 
         .main_section {
-            height: 500px;
+            height: calc(100vw * (800 / 1280));
 
             .main_main {
-                padding: 40px 20px 40px;
+                padding: 0 20px 0;
 
-                .slogan {
-                    font-size: 30px;
-                }
-            }
-        }
+                .slogan_section {
+                    width: calc(100vw * (900 / 1280));
+                    height: calc(100vw * (600 / 1280));
 
-        .vision_section {
-            .vision_main {
-                padding: 40px 20px 40px;
-            }
-        }
+                    border-right: solid calc(100vw * (4 / 1280)) #fff;
 
-        .history_section {
-            .history_main {
-                padding: 40px 20px 40px;
+                    .slogan {
+                        line-height: calc(100vw * (150 / 1280));
+                        padding: 0 calc(100vw * (40 / 1280)) 0 0;
 
-                .history_div {
-                    .history_bar {
-                        width: 320px;
+                        -webkit-text-stroke-width: calc(100vw * (1 / 1280));
+                        font-size: calc(100vw * (140 / 1280));
                     }
                 }
-            }
-        }
 
-        .mission_section {
-            .mission_main {
-                padding: 40px 20px 40px;
-                .nav_div {
-                    .nav {
-                        width: 300px;
+                .button_section {
+                    width: calc(100vw * (480 / 1280));
+                    height: calc(100vw * (600 / 1280));
+
+                    border-bottom: solid calc(100vw * (1 / 1280)) #fff;
+
+
+                    .button_tab {
+                        height: calc(100vw * (200 / 1280));
+
+                        border-top: solid calc(100vw * (1 / 1280)) #fff;
+                        border-right: solid calc(100vw * (1 / 1280)) #fff;
+
+                        .btn_icon {
+                            width: calc(100vw * (60 / 1280));
+                            height: calc(100vw * (60 / 1280));
+                            margin: 0 calc(100vw * (30 / 1280));
+                        }
+
+                        .btn_text {
+                            font-size: calc(100vw * (40 / 1280));
+                        }
+
+                        &:hover {
+                            background: rgba(255, 255, 255, 0.3);
+                        }
                     }
                 }
             }
@@ -45,16 +56,6 @@
 
         .trust_section {
             .trust_main {
-                padding: 40px 20px 40px;
-
-                .trust_list {
-                    grid-template-columns: repeat(1, 1fr);
-                }
-            }
-        }
-
-        .contact_section {
-            .contact_main {
                 padding: 40px 20px 40px;
             }
         }
