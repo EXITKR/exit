@@ -1,5 +1,4 @@
 "use client"
-import ActiveBtn from "@components/buttons/ActiveBtn";
 import { getConfig } from "@utils/Config";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
@@ -7,6 +6,7 @@ import { useEffect, useState } from "react";
 import { clientList } from "@utils/ClientList";
 import { FaBuilding } from "react-icons/fa6";
 import { IoDocumentText } from "react-icons/io5";
+import Title from "@components/Title";
 
 export default function Home() {
   const router = useRouter()
@@ -52,9 +52,8 @@ export default function Home() {
         </div>
 
         <div className="trust_section">
+          <Title title="OUR CLIENTS" desc="엑시트를 신뢰하는 고객기업 입니다."/>
           <div className="inner_main trust_main">
-            <span className="title">OUR CLIENTS</span>
-            <span className="desc">엑시트를 신뢰하는 고객기업 입니다.</span>
             <div className={"trust_list " + (clientList.length < 5 ? ("grid_" + clientList.length) : "grid_5")}>
               {clientList.map((item, index) => (
                 <div className="trust_div" key={index}>
