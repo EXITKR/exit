@@ -3,22 +3,24 @@ import { getMetadata } from "@utils/Metadata";
 import SignImage from "@imgs/contents/sign.png";
 import type { Metadata } from "next";
 import Image from "next/image";
+import Title from "@components/Title";
 
 export const metadata: Metadata = getMetadata("CEO 인사말")
 
 export default function Home() {
   return (
     <>
-      <div id="content_page">
+      <div id="overview_page">
+        <Title title="OVERVIEW" desc="CEO 인사말"/>
         <div className="inner_main page_inner overview_main">
           <div className="content_box">
-            <div className="content_box_title">
+            {/* <div className="content_box_title">
               <div className={"title_div " + contentOverview.background}>
                 <span className="title_text">
                   CEO 인사말
                 </span>
               </div>
-            </div>
+            </div> */}
             <div className="content_box_content">
               <span className="content_text">안녕하십니까.
                 <br /><br />
@@ -26,7 +28,7 @@ export default function Home() {
                 <br /><br />
                 오늘날 기업을 둘러싼 환경은 빠르게 변화하고 있습니다. 시장 환경에서 안정적이고 신뢰할 수 있는 공급망 확보는 기업 가치 극대화의 핵심 요소 중 하나입니다. ESG 경영은 이제 선택이 아닌 생존 전략이며, 공급망 전반에 걸쳐 투명하고 책임 있는 경영이 필수가 되었습니다.
                 <br /><br />
-                <span className="fw-500">
+                <span className="fw-500 tx-30">
                   저희 ㈜EXIT는 기업의 공급망 보안(정보보호서비스) 강화에 있어 차별화된 역량을 보유하고 있습니다.
                 </span>
                 <br /><br />

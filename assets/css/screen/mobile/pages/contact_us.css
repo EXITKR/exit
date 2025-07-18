@@ -7,14 +7,6 @@
         }
 
         .contact_us_main {
-            .title {
-                font-size: 40px;
-            }
-            .desc {
-                width: calc(100vw - 10px);
-                font-size: 16px;
-            }
-
             .sort_title {
                 width: calc(100vw - 10px);
             }
