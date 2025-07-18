@@ -53,7 +53,7 @@ export default function Home() {
 
         <div className="trust_section">
           <div className="inner_main trust_main">
-            <span className="title">Our Clients</span>
+            <span className="title">OUR CLIENTS</span>
             <span className="desc">엑시트를 신뢰하는 고객기업 입니다.</span>
             <div className={"trust_list " + (clientList.length < 5 ? ("grid_" + clientList.length) : "grid_5")}>
               {clientList.map((item, index) => (
