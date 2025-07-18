@@ -6,13 +6,13 @@ const ContentBox = (props: {
 }) => {
     return (
         <div className="content_box">
-            <div className="content_box_title">
+            {/* <div className="content_box_title">
                 <div className={"title_div " + props.content_box.background}>
                     <span className="title_text">
                         {props.content_box.title}
                     </span>
                 </div>
-            </div>
+            </div> */}
             {props.content_box.content
                 ?
                 <div className="content_box_content">
