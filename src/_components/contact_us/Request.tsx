@@ -178,8 +178,6 @@ const RequestForm = (props: {
 
     return (
         <>
-            <span className="title">인증 신청 및 설문</span>
-            <span className="desc">귀 사의 무궁한 번영을 기원합니다. 본 양식은 계약 검토를 통한 심사 일수를 정확하게 산정하기 위한 것이니 해당되는 모든 항목을 정확하게 기록하여 주시기 바랍니다. 인증심사 중 기재된 정보와 다를 경우, 상황에 따라 심사 프로그램이 변경 될 수 있음을 안내해 드립니다.</span>
             <span className="sort_title">작성법</span>
             <div className="how_to_section">
                 <span className="how_to"><a href="#1_0">[1. 기본정보]</a> 항목은 필수 기재 사항입니다.</span>
