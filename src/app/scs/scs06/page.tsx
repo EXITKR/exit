@@ -14,7 +14,7 @@ export default function Home() {
           <div className="content_box">
             <div className="content_box_content">
               <span className="content_text">
-                <span className="fw-500 tx-30">COC는 조직이나 기업이 구성원들에게 기대하는 행동 기준을 명확히 정의하는 규범입니</span>
+                <span className="fw-500 tx-30">COC는 조직이나 기업이 구성원들에게 기대하는 행동 기준을 명확히 정의하는 규범입니다.</span>
                 <br /><br />
                 공급업체를 위한 행동강령(COC)은 아동노동, 강제노동, 차별 금지 등 국제노동기준의 준수 여부를 포함한 노동·인권 관련 항목과 함께, 작업장 안전, 법정 근로 조건, 복리후생 이행 등 현장 관리 실태 전반을 종합적으로 평가하는 기준입니다.
                 <br /><br />
