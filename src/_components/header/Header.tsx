@@ -5,24 +5,12 @@ import Image from "next/image";
 import Navigation from "@components/header/Navigation";
 import { useEffect, useRef, useState } from "react";
 import HeaderSub from "@components/header/HeaderSub";
-import { FiMenu } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
 
 const Header = () => {
     const ref = useRef<HTMLDivElement | null>(null);
     const [windowWidth, setWindowWidth] = useState<number>(0);
     const [onMouse, setOnMouse] = useState<boolean>(false)
-
-    useEffect(() => {
-        const handleClickOutside = (event: MouseEvent) => {
-            if (ref && !ref.current?.contains(event.target as Node) && windowWidth > 1000) {
-                setOnMouse(false);
-            }
-        }
-        document.addEventListener('click', handleClickOutside);
-        return () => {
-            document.removeEventListener('click', handleClickOutside);
-        };
-    }, [ref, windowWidth])
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
@@ -37,6 +25,14 @@ const Header = () => {
             };
         }
     }, []);
+
+    useEffect(() => {
+        if (onMouse) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+    }, [onMouse])
     return (
         <>
             <header id="header_pc" ref={ref}>
@@ -44,8 +40,17 @@ const Header = () => {
                     <Link href="/" className="">
                         <Image src={WebLogo} alt="엑시트 로고" className="web_logo" />
                     </Link>
-                    <Navigation setMouseOver={(status) => setOnMouse(status)} />
-                    <FiMenu className="menu_icon" onClick={() => setOnMouse(!onMouse)} />
+                    <div className="header_navi_section">
+                        <Navigation setMouseOver={(status: boolean) => setOnMouse(status)}/>
+                        <div className="hamburger">
+                            {onMouse
+                                ?
+                                <FiX className="menu_icon" onClick={() => setOnMouse(!onMouse)} />
+                                :
+                                <FiMenu className="menu_icon" onClick={() => setOnMouse(!onMouse)} />
+                            }
+                        </div>
+                    </div>
                 </div>
                 <HeaderSub onMouse={onMouse} setMouseOver={(status: boolean) => setOnMouse(status)} onMobile={windowWidth} />
             </header>

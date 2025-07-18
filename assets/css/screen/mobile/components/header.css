@@ -14,41 +14,37 @@
                 }
             }
 
-            .navi_section {
-                display: none;
-            }
+            .header_navi_section {
+                .navi_section {
+                    display: none;
+                }
 
-            .menu_icon {
-                width: 24px;
-                height: 24px;
-                margin-right: 20px;
+                .hamburger {
+                    width: 40px;
+                    height: 40px;
 
-                color: #3c3c3c;
-
-                display: block;
+                    .menu_icon {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
             }
         }
 
         .header_sub {
-            width: 100%;
             height: calc(100vh - 40px);
-
-            background: rgba(255, 255, 255, 0.97);
-
-            position: fixed;
 
             .header_sub_main {
                 .header_sub_top {
-                    height: calc(100vh - 40px - 78px);
+                    height: calc(100vh - 40px);
+                    margin-top: unset;
 
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: start;
-                    gap: 30px;
 
-                    overflow-y: auto;
-                    overflow-x: hidden;
+                    overflow-y: scroll;
 
                     .header_sub_navi {
                         width: 180px;

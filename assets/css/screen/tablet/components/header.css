@@ -13,31 +13,47 @@
                 }
             }
 
-            .navi_section {
-                display: none;
-            }
+            .header_navi_section {
+                .navi_section {
+                    height: 60px;
+                    margin: 0 10px;
 
-            .menu_icon {
-                width: 26px;
-                height: 26px;
-                margin-right: 20px;
+                    .navi {
+                        height: 60px;
+                        margin: 10px;
+                    }
+                }
 
-                color: #3c3c3c;
+                .hamburger {
+                    width: 60px;
+                    height: 60px;
 
-                display: block;
+                    .menu_icon {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
             }
         }
 
         .header_sub {
-            width: 100%;
+            height: calc(100vh - 60px);
 
             .header_sub_main {
+
                 .header_sub_top {
-                    justify-content: space-between;
+                    gap: 40px;
 
                     .header_sub_navi {
-                        width: 200px;
-                        margin: 0 10px;
+                        .navi {
+                            .navi_title {
+                                font-size: 20px;
+                            }
+
+                            .navi_text {
+                                font-size: 14px;
+                            }
+                        }
                     }
                 }
             }
