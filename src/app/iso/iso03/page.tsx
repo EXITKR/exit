@@ -1,3 +1,4 @@
+import PaginationBtn from "@components/buttons/PaginationBtn";
 import ContentBox from "@components/content_ui/Content";
 import Title from "@components/Title";
 import { contentIso03 } from "@utils/contents/ContentIso";
@@ -22,6 +23,14 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <PaginationBtn
+          prev_name="ISO 14001"
+          prev_url="/iso/iso02"
+          prev_disabled={false}
+          next_name="ISO 기타 (CE / UL)"
+          next_url="/iso/iso04"
+          next_disabled={false}
+        />
       </div>
     </>
   );

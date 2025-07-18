@@ -1,5 +1,6 @@
 "use client"
 import ActiveTab from "@components/buttons/ActiveTab";
+import PaginationBtn from "@components/buttons/PaginationBtn";
 import ContentBox from "@components/content_ui/Content";
 import Title from "@components/Title";
 import { activeTabsInterface } from "@interfaces/pagesInterface";
@@ -79,6 +80,14 @@ export default function Home() {
           <ActiveTab tabs={tabList} index={isTabIdx} setIndex={(idx: number) => setTabIdx(idx)} />
           {switchContent()}
         </div>
+        <PaginationBtn
+          prev_name="ISO 45001"
+          prev_url="/iso/iso03"
+          prev_disabled={false}
+          next_name=""
+          next_url=""
+          next_disabled={true}
+        />
       </div>
     </>
   );

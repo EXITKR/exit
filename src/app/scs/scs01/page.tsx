@@ -1,3 +1,4 @@
+import PaginationBtn from "@components/buttons/PaginationBtn";
 import ContentBox from "@components/content_ui/Content";
 import Title from "@components/Title";
 import { contentScs01 } from "@utils/contents/ContentScs";
@@ -37,6 +38,14 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <PaginationBtn
+          prev_name=""
+          prev_url=""
+          prev_disabled={true}
+          next_name="정보보호서비스"
+          next_url="/scs/scs02"
+          next_disabled={false}
+        />
       </div>
     </>
   );

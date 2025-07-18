@@ -1,5 +1,6 @@
 "use client"
 import ActiveTab from "@components/buttons/ActiveTab";
+import PaginationBtn from "@components/buttons/PaginationBtn";
 import ContentBox from "@components/content_ui/Content";
 import Title from "@components/Title";
 import { activeTabsInterface } from "@interfaces/pagesInterface";
@@ -52,7 +53,7 @@ export default function Home() {
               <span className="content_text">
                 ISO 27001은 규모와 활동분야에 관계없이 모든 기업에 정보보안관리시스템을 구축, 구현, 유지 및 지속적으로 개선하기 위한 국제표준입니다. 기업의 조직이 소유하거나 처리하는 데이터의 보안과 관련된 위험을 관리하는 시스템을 구축하여 정보보안 리스크를 관리하고 있음을 입증하는데 사용됩니다.
                 <br /><br />
-                <span className="fw-500 tx-30">ISO 27001은 사이버 범죄가 증가하고 새로운 위협이 끊임없이 등장함에 따라 조직이 위험을 인식하고 취약점을 사전에 파악해여 해결할 수 있도록 지원합니다.</span>
+                <span className="fw-500 tx-30">ISO 27001은 사이버 범죄가 증가하고 새로운 위협이 끊임없이 등장함에 따라 조직이 위험을 인식하고 취약점을 사전에 파악하여 해결할 수 있도록 지원합니다.</span>
               </span>
             </div>
           </div>
@@ -96,6 +97,14 @@ export default function Home() {
           <ActiveTab tabs={tabList} index={isTabIdx} setIndex={(idx: number) => setTabIdx(idx)} />
           {switchContent()}
         </div>
+        <PaginationBtn
+          prev_name="Customized SCS (맞춤형 공급망 보안)는 무엇인가?"
+          prev_url="/scs/scs01"
+          prev_disabled={false}
+          next_name="C-TPAT / AEO"
+          next_url="/scs/scs05"
+          next_disabled={false}
+        />
       </div>
     </>
   );

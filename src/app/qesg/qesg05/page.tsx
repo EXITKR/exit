@@ -1,3 +1,4 @@
+import PaginationBtn from "@components/buttons/PaginationBtn";
 import ContentBox from "@components/content_ui/Content";
 import Title from "@components/Title";
 import { contentQesg05 } from "@utils/contents/ContentQesg";
@@ -24,6 +25,14 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <PaginationBtn
+          prev_name="공급망 ESG 중요성"
+          prev_url="/qesg/qesg04"
+          prev_disabled={false}
+          next_name=""
+          next_url=""
+          next_disabled={true}
+        />
       </div>
     </>
   );

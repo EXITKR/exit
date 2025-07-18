@@ -160,3 +160,93 @@
         }
     }
 }
+
+.pagination {
+    height: 120px;
+    margin: 20px 0 20px;
+
+    display: flex;
+    align-items: center;
+
+    .pagination_inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        border-top: solid 2px #ededed;
+
+        .pagi_button {
+            width: auto;
+            height: 40px;
+            margin: 20px 0;
+            padding: 0 20px;
+
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            cursor: pointer;
+
+            .button_text {
+                font-size: 18px;
+                font-weight: 700;
+
+                color: #3c3c3c;
+
+                text-align: center;
+            }
+
+            .button_text:after {
+                display: block;
+                content: '';
+                border-bottom: solid 3px #537571;
+                transform: scaleX(0);
+                transition: transform 250ms ease-in-out;
+            }
+
+
+            .pagi_icon {
+                width: 30px;
+                height: 30px;
+                color: #537571;
+            }
+
+            &.disabled {
+                cursor: default;
+                .button_text {
+                    color: #ededed;
+                }
+
+                .pagi_icon {
+                    width: 30px;
+                    height: 30px;
+                    color: #ededed;
+                }
+            }
+
+            &:first-child {
+                justify-content: start;
+            }
+
+            &:last-child {
+                justify-content: end;
+            }
+
+            &:hover {
+                &:first-child {
+                    .button_text:after {
+                        transform: scaleX(1);
+                        transform-origin: 100% 50%;
+                    }
+                }
+
+                &:last-child {
+                    .button_text:after {
+                        transform: scaleX(1);
+                        transform-origin: 0% 50%;
+                    }
+                }
+            }
+        }
+    }
+}

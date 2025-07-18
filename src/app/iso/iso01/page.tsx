@@ -1,3 +1,4 @@
+import PaginationBtn from "@components/buttons/PaginationBtn";
 import ContentBox from "@components/content_ui/Content";
 import Title from "@components/Title";
 import { contentIso01 } from "@utils/contents/ContentIso";
@@ -24,6 +25,14 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <PaginationBtn
+          prev_name=""
+          prev_url=""
+          prev_disabled={true}
+          next_name="ISO 14001"
+          next_url="/iso/iso02"
+          next_disabled={false}
+        />
       </div>
     </>
   );

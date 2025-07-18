@@ -1,3 +1,4 @@
+import PaginationBtn from "@components/buttons/PaginationBtn";
 import Title from "@components/Title";
 import { getMetadata } from "@utils/Metadata";
 import type { Metadata } from "next";
@@ -32,6 +33,14 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <PaginationBtn
+          prev_name="공급망 ESG는 무엇인가?"
+          prev_url="/qesg/qesg01"
+          prev_disabled={false}
+          next_name="공급망 ESG 전략"
+          next_url="/qesg/qesg03"
+          next_disabled={false}
+        />
       </div>
     </>
   );
