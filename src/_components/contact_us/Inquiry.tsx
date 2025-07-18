@@ -26,8 +26,6 @@ const InquiryForm = (props: {
     }
     return (
         <>
-            <span className="title">문의하기</span>
-            <span className="desc">다양한 문의를 기다리고 있습니다.</span>
             <div className="inquiry_form">
                 <form onSubmit={handleSubmit}>
                     <div className="form_section input_section">

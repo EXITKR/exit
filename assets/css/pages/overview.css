@@ -1,16 +1,27 @@
-.overview_main {
-    .fw-500 {
-        font-weight: 500;
+#overview_page {
+    width: 100%;
+    margin: 80px 0 0;
+    
+    .title_section {
+        height: 400px;
+
+        background:
+            linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+            url("../../imgs/background/title03.jpg");
+        background-size: cover;
+        background-position: 50% 40%;
     }
 
-    .ceo {
-        display: flex;
-        justify-content: start;
-        align-items: center;
+    .overview_main {
+        .ceo {
+            display: flex;
+            justify-content: start;
+            align-items: center;
 
-        .exit {
-            width: 100px;
-            height: 60px;
+            .exit {
+                width: 120px;
+                height: 60px;
+            }
         }
     }
 }

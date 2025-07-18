@@ -1,0 +1,11 @@
+@media screen and (max-width: 1000px) {
+    #scs_page {
+        height: auto;
+        width: 100%;
+        margin: 40px 0 0;
+
+        .title_section {
+            height: 200px;
+        }
+    }
+}

@@ -8,6 +8,9 @@
 
 @import "@css/pages/main.css";
 @import "@css/pages/overview.css";
+@import "@css/pages/qesg_page.css";
+@import "@css/pages/scs_page.css";
+@import "@css/pages/iso_page.css";
 @import "@css/pages/content_page.css";
 @import "@css/pages/contact_us.css";
 @import "@css/pages/terms_of_use.css";

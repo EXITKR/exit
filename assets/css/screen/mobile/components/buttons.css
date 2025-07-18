@@ -15,7 +15,40 @@
             padding: 0 20px;
 
             .tab_text {
-                font-size: 14px;
+                font-size: 12px;
+                text-align: center;
+
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+
+    .pagination {
+        .pagination_inner {
+            display: block;
+
+            .pagi_button {
+                .button_text {
+                    width: calc(100vw - 80px);
+
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                &:first-child {
+                    .button_text {
+                        text-align: start;
+                    }
+                }
+
+                &:last-child {
+                    .button_text {
+                        text-align: end;
+                    }
+                }
             }
         }
     }

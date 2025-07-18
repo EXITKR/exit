@@ -17,62 +17,89 @@
             height: 60px;
         }
 
-        .navi_section {
-            height: 80px;
-
+        .header_navi_section {
             display: flex;
-            align-items: center;
-            justify-content: end;
-
-            .navi {
-                width: 200px;
+            .navi_section {
                 height: 80px;
-                padding: 10px 0 10px;
-                margin: 20px;
+
+                display: flex;
+                align-items: center;
+                justify-content: end;
+
+                margin: 0 20px;
+
+                .navi {
+                    width: 140px;
+                    height: 80px;
+                    padding: 10px 0 10px;
+                    margin: 20px;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    transition: all 0.2s;
+                    cursor: pointer;
+
+                    .navi_text {
+                        color: #3c3c3c;
+                        font-size: 18px;
+                        font-weight: 400;
+
+                        &.active {
+                            color: #537571;
+                            font-weight: 700;
+                        }
+                    }
+
+                    &:hover {
+                        background: #537571;
+
+                        .navi_text {
+                            font-weight: 500;
+                            color: #ededed;
+                        }
+
+                        & .header_sub {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            .hamburger {
+                width: 80px;
+                height: 80px;
+
+                background: #537571;
 
                 display: flex;
                 align-items: center;
                 justify-content: center;
 
+                cursor: pointer;
+
                 transition: all 0.2s;
 
-                .navi_text {
-                    color: #3c3c3c;
-                    font-size: 18px;
-                    font-weight: 400;
+                .menu_icon {
+                    width: 40px;
+                    height: 40px;
 
-                    &.active {
-                        color: #537571;
-                        font-weight: 700;
-                    }
+                    color: #fff;
                 }
 
                 &:hover {
-                    background: #537571;
-
-                    .navi_text {
-                        font-weight: 500;
-                        color: #ededed;
-                    }
-
-                    & .header_sub {
-                        display: block;
-                    }
+                    background: #46605d;
                 }
             }
-        }
-
-        .menu_icon {
-            display: none;   
         }
     }
 
     .header_sub {
         width: 100%;
-        height: auto;
+        height: calc(100vh - 80px);
 
-        background: rgba(255, 255, 255, 0.9);
-        border-bottom: solid 2px #ededed;
+        background: rgba(255, 255, 255, 0.95);
 
         transition: all 0.2s;
 
@@ -83,66 +110,65 @@
 
             .header_sub_top {
                 width: 100%;
+                margin-top: 60px;
                 padding: 10px 0;
 
-                border-bottom: solid 2px #ededed;
-
-                display: flex;
-                justify-content: end;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 80px;
 
                 .header_sub_navi {
-                    width: 200px;
+                    width: 100%;
                     margin: 0 20px;
 
-                    /* border-left: solid 2px #ededed;
-                    border-right: solid 2px #ededed; */
-
                     display: flex;
-                    align-items: center;
                     flex-direction: column;
 
-                    a {
+                    .navi {
                         width: 100%;
-                        height: 80px;
-
-                        text-align: center;
+                        height: auto;
 
                         display: flex;
                         align-items: center;
+                        justify-content: center;
 
-                        .navi {
-                            width: 100%;
+                        transition: all 0.2s;
+                        cursor: pointer;
+
+                        .navi_title {
                             height: 80px;
-                            line-height: 30px;
+                            margin-bottom: 20px;
 
-                            transition: all 0.2s;
+                            color: #537571;
+                            font-size: 24px;
+                            font-weight: 500;
 
+                            text-align: center;
+                            white-space: pre-wrap;
+                        }
+
+                        .navi_text {
+                            margin-bottom: 20px;
+
+                            color: #3c3c3c;
+                            font-size: 18px;
+                            font-weight: 300;
+
+                            text-align: center;
+                            white-space: pre-wrap;
+                        }
+
+                        &:hover {
                             .navi_text {
-                                color: #3c3c3c;
-                                font-size: 16px;
-                                font-weight: 400;
+                                font-weight: 500;
+                                color: #537571;
                             }
-
-                            &:hover {
-                                background: #537571;
-
-                                .navi_text {
-                                    font-weight: 500;
-                                    color: #ededed;
-                                }
-                            }
+                        }
+                        &:has(.navi_title) {
+                            cursor: default;
                         }
                     }
                 }
-            }
-
-            .header_sub_bot {
-                width: 100%;
-                padding: 10px 0;
-
-                display: flex;
-                align-items: center;
-                justify-content: end;
             }
         }
 

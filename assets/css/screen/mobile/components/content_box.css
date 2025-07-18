@@ -19,6 +19,7 @@
 
         .content_box_content {
             padding: 20px 10px 80px;
+
             .content_text {
                 font-size: 14px;
             }
@@ -42,7 +43,7 @@
                 }
 
                 .content_div {
-                    padding: 20px 10px;
+                    padding: 10px 10px;
 
                     .content_title {
                         font-size: 16px;
@@ -52,6 +53,22 @@
                         font-size: 14px;
                     }
                 }
+            }
+        }
+    }
+
+    .title_section {
+        height: auto;
+
+        .title_main {
+            padding: 40px 20px 40px;
+
+            .title {
+                font-size: 24px;
+            }
+
+            .desc {
+                font-size: 16px;
             }
         }
     }

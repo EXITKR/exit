@@ -1,0 +1,65 @@
+#iso_page {
+    height: auto;
+    width: 100%;
+    margin: 80px 0 0;
+
+    .title_section {
+        height: 400px;
+
+        background:
+            linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+            url("../../imgs/background/title07.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    &.quality_page {
+        .title_section {
+            background:
+                linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+                url("../../imgs/background/title07.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    &.environment_page {
+        .title_section {
+            background:
+                linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+                url("../../imgs/background/title08.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    &.safe_page {
+        .title_section {
+            background:
+                linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+                url("../../imgs/background/title09.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    &.ce_page {
+        .title_section {
+            background:
+                linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+                url("../../imgs/background/title10.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    &.ul_page {
+        .title_section {
+            background:
+                linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+                url("../../imgs/background/title11.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}

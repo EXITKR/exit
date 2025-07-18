@@ -9,7 +9,7 @@ const ActiveTab = (props: {
     <>
         <div className="active_tabs">
             {props.tabs.map((item, idx) => (
-                <div key={idx} className={props.index === idx ? "tab active" : "tab"} onClick={() => props.setIndex(idx)}>
+                <div key={idx} className={"tab " + (props.index === idx ? "active " : " ") + "tab_" + props.tabs.length} onClick={() => props.setIndex(idx)}>
                     <span className="tab_text">{item.name}</span>
                 </div>
             ))}
