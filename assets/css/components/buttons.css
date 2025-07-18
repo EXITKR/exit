@@ -98,11 +98,11 @@
 .active_tabs {
     width: 100%;
     height: 60px;
+    margin: 80px 0 80px;
+
     border-bottom: solid 2px #537571;
 
     display: flex;
-
-    margin: 0 0 20px;
 
     .tab {
         height: 60px;
@@ -110,10 +110,9 @@
 
         display: flex;
         align-items: center;
+        justify-content: center;
 
-        background: #537571;
-        border-top: solid 2px #537571;
-        border-right: solid 2px #537571;
+        background: #ededed;
 
         cursor: pointer;
         transition: all 0.2s;
@@ -124,18 +123,30 @@
             color: #aeaeae;
         }
 
+        &.tab_2 {
+            width: calc(100% / 2);
+        }
+
+        &.tab_3 {
+            width: calc(100% / 3);
+        }
+
+        &.tab_4 {
+            width: calc(100% / 4);
+        }
+
         &.active {
-            background: #fff;
+            background: #537571;
 
             .tab_text {
-                color: #537571;
+                color: #fff;
             }
 
             &:hover {
-                background: #fff;
+                background: #537571;
 
                 .tab_text {
-                    color: #537571;
+                    color: #fff;
                 }
             }
         }
