@@ -26,11 +26,11 @@ const Footer = () => {
                   <MdEmail className="icon" />
                 </div>
               </Link>
-              <Link href={"sms:" + config.tel_number} target="blank">
+              {/* <Link href={"sms:" + config.tel_number} target="blank">
                 <div className="icon_circle">
                   <MdSms className="icon" />
                 </div>
-              </Link>
+              </Link> */}
               <ActiveBtn style="white ctr_mb" name="문의하기" onClick={() => router.push("/contact_us?index=0")} disabled={false} />
               <ActiveBtn style="white ctr_mb" name="인증 신청하기" onClick={() => router.push("/contact_us?index=1")} disabled={false} />
             </div>
@@ -43,7 +43,7 @@ const Footer = () => {
                 <span className="company_number">사업자 등록 번호 :: {config.bs_number}</span>
               </div>
               <div className="info_content">
-                <span className="company_tel">Tel :: {config.tel_number}</span>
+                {/* <span className="company_tel">Tel :: {config.tel_number}</span> */}
                 <span className="company_fax">Fax :: {config.fax_number}</span>
                 <span className="company_mail">e-mail :: {config.email}</span>
               </div>
