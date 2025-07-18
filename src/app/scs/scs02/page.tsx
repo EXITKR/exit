@@ -1,10 +1,8 @@
 "use client"
 import ActiveTab from "@components/buttons/ActiveTab";
 import PaginationBtn from "@components/buttons/PaginationBtn";
-import ContentBox from "@components/content_ui/Content";
 import Title from "@components/Title";
 import { activeTabsInterface } from "@interfaces/pagesInterface";
-import { contentScs02, contentScs03, contentScs04 } from "@utils/contents/ContentScs";
 import { useState } from "react";
 
 export default function Home() {

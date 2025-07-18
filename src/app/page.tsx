@@ -1,8 +1,6 @@
 "use client"
-import { getConfig } from "@utils/Config";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import { clientList } from "@utils/ClientList";
 import { FaBuilding } from "react-icons/fa6";
 import { IoDocumentText } from "react-icons/io5";
@@ -10,23 +8,6 @@ import Title from "@components/Title";
 
 export default function Home() {
   const router = useRouter()
-  const config = getConfig()
-
-  const [windowWidth, setWindowWidth] = useState<number>(0);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const handleResize = () => {
-        setWindowWidth(window.innerWidth);
-      };
-      handleResize();
-
-      window.addEventListener('resize', handleResize);
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }
-  }, []);
 
   return (
     <>

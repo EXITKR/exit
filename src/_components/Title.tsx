@@ -1,5 +1,3 @@
-import { SyncLoader } from "react-spinners";
-
 const Title = (props: {
     title: string,
     desc: string

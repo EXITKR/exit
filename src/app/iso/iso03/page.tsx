@@ -1,7 +1,5 @@
 import PaginationBtn from "@components/buttons/PaginationBtn";
-import ContentBox from "@components/content_ui/Content";
 import Title from "@components/Title";
-import { contentIso03 } from "@utils/contents/ContentIso";
 import { getMetadata } from "@utils/Metadata";
 import type { Metadata } from "next";
 

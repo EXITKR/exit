@@ -1,4 +1,3 @@
-import { contentOverview } from "@utils/contents/ContentOverview";
 import { getMetadata } from "@utils/Metadata";
 import SignImage from "@imgs/contents/sign.png";
 import type { Metadata } from "next";
@@ -14,13 +13,6 @@ export default function Home() {
         <Title title="OVERVIEW" desc="CEO 인사말"/>
         <div className="inner_main page_inner overview_main">
           <div className="content_box">
-            {/* <div className="content_box_title">
-              <div className={"title_div " + contentOverview.background}>
-                <span className="title_text">
-                  CEO 인사말
-                </span>
-              </div>
-            </div> */}
             <div className="content_box_content">
               <span className="content_text">안녕하십니까.
                 <br /><br />

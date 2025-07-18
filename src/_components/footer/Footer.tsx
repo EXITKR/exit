@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { MdEmail, MdSms } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 import { RiKakaoTalkFill } from "react-icons/ri";
 import { getConfig } from "@utils/Config";
 import ActiveBtn from "@components/buttons/ActiveBtn";

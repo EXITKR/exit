@@ -1,7 +1,5 @@
 import PaginationBtn from "@components/buttons/PaginationBtn";
-import ContentBox from "@components/content_ui/Content";
 import Title from "@components/Title";
-import { contentQesg04 } from "@utils/contents/ContentQesg";
 import { getMetadata } from "@utils/Metadata";
 import type { Metadata } from "next";
 
