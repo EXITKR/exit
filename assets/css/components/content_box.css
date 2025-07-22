@@ -39,6 +39,7 @@
 
         &.w-50 {
             width: 50%;
+            border-left: solid 5px #537571;
         }
 
         &:hover {
