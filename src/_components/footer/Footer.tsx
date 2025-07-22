@@ -39,7 +39,7 @@ const Footer = () => {
             <div className="info_section">
               <div className="info_content">
                 <span className="company_name">{config.company_kr}</span>
-                <span className="company_ceo">대표이사 & 개인정보관리 책임자 :: {config.ceo}</span>
+                <span className="company_ceo">대표이사 :: {config.ceo}</span>
                 <span className="company_number">사업자 등록 번호 :: {config.bs_number}</span>
               </div>
               <div className="info_content">
