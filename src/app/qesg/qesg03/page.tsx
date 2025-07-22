@@ -14,7 +14,13 @@ export default function Home() {
           <div className="content_box">
             <div className="content_box_content w-100">
               <span className="content_text">
-                <span className="fw-500 tx-30">공급망 ESG 전략은 기업의 지속가능한 성장을 위해 환경(Environment), 사회(Social), 지배구조(Governance) 요소를 공급망 관리에 통합하는 것을 의미합니다.</span>
+                <span className="fw-500 tx-30">
+                  공급망 ESG 전략은 기업의 지속가능한 성장을 위해
+                  <br />
+                  환경(Environment), 사회(Social), 지배구조(Governance) 요소를
+                  <br />
+                  공급망 관리에 통합하는 것을 의미합니다.
+                </span>
               </span>
             </div>
             <div className="content_box_content w-50">
