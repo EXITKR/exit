@@ -7,7 +7,7 @@
         height: 400px;
 
         background:
-            linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+            linear-gradient(45deg, rgba(83, 117, 113, 0.85), rgba(165, 203, 198, 0.85)),
             url("../../imgs/background/title05.jpg");
         background-size: cover;
         background-position: center;
@@ -16,7 +16,7 @@
     &.coc_page {
         .title_section {
             background:
-                linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+                linear-gradient(45deg, rgba(83, 117, 113, 0.85), rgba(165, 203, 198, 0.85)),
                 url("../../imgs/background/title06.jpg");
             background-size: cover;
             background-position: center;
