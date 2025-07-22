@@ -15,13 +15,34 @@
     .content_box_content {
         width: 100%;
         height: auto;
-        padding: 40px 0;
+        padding: 40px 20px;
+        margin: 30px 0 0;
+
+        background: #fff;
+        box-shadow: 5px 5px 20px #dee3e3,
+            -5px -5px 20px #ffffff;
+
+        border-radius: 5px;
+
+        transition: transform 0.2s;
+        transform: translateY(0);
 
         .content_text {
-            white-space: pre-wrap;
-
             font-size: 16px;
             font-weight: 300;
+        }
+
+        &.w-100 {
+            width: 100%;
+            text-align: center;
+        }
+
+        &.w-50 {
+            width: 50%;
+        }
+
+        &:hover {
+            transform: translateY(-5px);
         }
     }
 

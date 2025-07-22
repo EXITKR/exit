@@ -12,16 +12,26 @@ export default function Home() {
         <Title title="공급망 ESG 이슈" desc="공급망 ESG 심사" />
         <div className="inner_main page_inner">
           <div className="content_box">
-            <div className="content_box_content">
+            <div className="content_box_content w-100">
               <span className="content_text">
                 <span className="fw-500 tx-30">
                   그동안 공급망을 적절하게 관리하는 것은 개별 기업 차원의 이슈로 여겨졌으나,
                   <br />
-                  팬데믹 이후 전 세계적으로 공급망이 붕괴되는 혼란을 경험하면서 이제는 필수 재화나 전략물자에 대한 공급망 리스크 관리가 국가적으로 중대한 과제로 부상하고 있습니다.
+                  팬데믹 이후 전 세계적으로 공급망이 붕괴되는 혼란을 경험하면서
+                  <br />
+                  이제는 필수 재화나 전략물자에 대한 공급망 리스크 관리가
+                  <br />
+                  국가적으로 중대한 과제로 부상하고 있습니다.
                 </span>
-                <br /><br />
+              </span>
+            </div>
+            <div className="content_box_content w-50">
+              <span className="content_text">
                 기업에 대한 ESG 평가는 미국, EU 등을 중심으로 공급망 실사를 의무화하는 등 공급망 리스크 관리를 중점적으로 관리하는 추세입니다. 따라서 글로벌 기업들은 이에 대응하기위해 공급망 관리 시스템을 구축하고 있습니다.
-                <br /><br />
+              </span>
+            </div>
+            <div className="content_box_content w-50">
+              <span className="content_text">
                 EU는 기업의 지속가능한 <span className="fw-500">공급망 실사지침(CSDDD), 탄소국경조정제도(CBAM), 넷제로 산업법, 메탄 배출 제한 가스 수입법, 에코 디자인 규정, 자연 복원법</span> 등이 입법이 되었습니다.
                 <br />
                 특히 CSDDD는 일정규모 이상 기업의 공급망 내 환경·사회적 영향(인권과 환경 보호 의무를 의무화) 실사를 의무화하는 제도입니다.

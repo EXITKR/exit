@@ -18,10 +18,20 @@
         }
 
         .content_box_content {
-            padding: 20px 10px 80px;
+            padding: 20px 10px 20px;
+            margin: 20px 10px 0;
 
             .content_text {
                 font-size: 14px;
+            }
+
+            &.w-100 {
+                width: calc(100% - 20px);
+                text-align: center;
+            }
+
+            &.w-50 {
+                width: calc(100% - 20px);
             }
         }
 
