@@ -12,7 +12,7 @@ export default function Home() {
         <Title title="공급망 ESG 중요성" desc="공급망 ESG 심사" />
         <div className="inner_main page_inner">
           <div className="content_box">
-            <div className="content_box_content w-100">
+            <div className="content_box_content title">
               <span className="content_text">
                 <span className="fw-500 tx-30">
                   최근 글로벌 기업(상장사·대기업 등)은 여러 이해관계자(소비자, 투자자, 정부, 글로벌 고객사 등)로부터
@@ -21,7 +21,7 @@ export default function Home() {
                 </span>
               </span>
             </div>
-            <div className="content_box_content w-50 sect_point">
+            <div className="content_box_content desc_4 sect_point">
               <span className="content_text">
                 특히 최근 EU에서 공식 채택된 기업 지속가능성 실사 지침(CSDDD)은 전 세계 기업들에게 환경 및 인권 리스크에 대한 실질적인 관리 책임을 요구하고 있으며, 기업들은 글로벌 기준에 부합하는 대응 역량을 갖추는 것이 시급한 과제가 되었습니다.
               </span>

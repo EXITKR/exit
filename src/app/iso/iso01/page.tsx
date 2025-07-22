@@ -12,7 +12,7 @@ export default function Home() {
         <Title title="ISO 9001" desc="시스템 인증" />
         <div className="inner_main page_inner">
           <div className="content_box">
-            <div className="content_box_content w-100">
+            <div className="content_box_content title">
               <span className="content_text">
                 <span className="fw-500 tx-30">
                   ISO 9001은 국제표준화기구(ISO)에서 제정한 품질경영시스템에 대한 국제규격으로
@@ -21,12 +21,12 @@ export default function Home() {
                 </span>
               </span>
             </div>
-            <div className="content_box_content w-50 sect_point">
+            <div className="content_box_content desc_1 sect_point">
               <span className="content_text">
                 ISO 9001은 조직이 효과적인 프로세스를 구축하고 직원을 훈련시키며, 고객에게 제품 또는 서비스를 일관되게 제공하고 품질을 지속적으로 개선할 수 있도록 지원하는 시스템입니다.
               </span>
             </div>
-            <div className="content_box_content w-50 sect_point">
+            <div className="content_box_content desc_2 sect_point">
               <span className="content_text">
                 이 규격은 조직의 품질경영시스템 요구사항을 정의하며, 이를 통해 조직은 품질 목표를 달성하고 고객 만족도를 높일 수 있습니다.
               </span>
