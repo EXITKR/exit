@@ -19,7 +19,7 @@ export default function Home() {
             <div className="content_box_content w-100">
               <span className="content_text">
                 <span className="fw-500 tx-30">
-                  미국 세관에서 실시하는 C-TPAT(Customs Trade Partnership Against Terrorism) 프로그램은
+                  미국 세관에서 실시하는 C-TPAT (Customs Trade Partnership Against Terrorism) 프로그램은
                   <br />
                   알 카에다에 의한 9.11 테러 후에 발효된 미국 세관당국과 미국 내 수입 관련 기업 간의 테러방지 협약이며,
                   <br />
@@ -71,7 +71,7 @@ export default function Home() {
             <div className="content_box_content w-100">
               <span className="content_text">
                 <span className="fw-500 tx-30">
-                  미국 세관에서 실시하는 C-TPAT(Customs Trade Partnership Against Terrorism) 프로그램은
+                  미국 세관에서 실시하는 C-TPAT (Customs Trade Partnership Against Terrorism) 프로그램은
                   <br />
                   알 카에다에 의한 9.11 테러 후에 발효된 미국 세관당국과 미국 내 수입 관련 기업 간의 테러방지 협약이며,
                   <br />

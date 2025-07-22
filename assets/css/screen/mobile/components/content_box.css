@@ -1,5 +1,9 @@
 @media screen and (max-width: 1000px) {
     .content_box {
+        .tx-30 {
+            font-size: 16px;
+        }
+
         .content_box_title {
             height: 60px;
 
