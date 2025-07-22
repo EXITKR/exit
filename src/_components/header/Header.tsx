@@ -42,12 +42,12 @@ const Header = () => {
                     </Link>
                     <div className="header_navi_section">
                         <Navigation setMouseOver={(status: boolean) => setOnMouse(status)}/>
-                        <div className="hamburger">
+                        <div className="hamburger" onClick={() => setOnMouse(!onMouse)}>
                             {onMouse
                                 ?
-                                <FiX className="menu_icon" onClick={() => setOnMouse(!onMouse)} />
+                                <FiX className="menu_icon" />
                                 :
-                                <FiMenu className="menu_icon" onClick={() => setOnMouse(!onMouse)} />
+                                <FiMenu className="menu_icon" />
                             }
                         </div>
                     </div>

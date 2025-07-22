@@ -5,9 +5,11 @@ const Title = (props: {
     return (
         <>
             <div className="title_section">
-                <div className="inner_main title_main">
-                    <span className="title">{props.title}</span>
-                    <span className="desc">{props.desc}</span>
+                <div className="title_blur">
+                    <div className="inner_main title_main">
+                        <span className="title">{props.title}</span>
+                        <span className="desc">{props.desc}</span>
+                    </div>
                 </div>
             </div>
         </>

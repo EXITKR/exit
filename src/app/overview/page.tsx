@@ -3,6 +3,7 @@ import SignImage from "@imgs/contents/sign.png";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Title from "@components/Title";
+import ImgOverview from "@imgs/contents/overview.jpg"
 
 export const metadata: Metadata = getMetadata("CEO 인사말")
 
@@ -13,8 +14,9 @@ export default function Home() {
         <Title title="OVERVIEW" desc="CEO 인사말"/>
         <div className="inner_main page_inner overview_main">
           <div className="content_box">
-            <div className="content_box_content">
-              <span className="content_text">안녕하십니까.
+            <div className="content_box_content desc_1 sect_point">
+              <span className="content_text">
+                안녕하십니까.
                 <br /><br />
                 ㈜EXIT 대표 이승준입니다.
                 <br /><br />
@@ -36,6 +38,9 @@ export default function Home() {
                   <Image className="exit" src={SignImage} alt="인감" />
                 </div>
               </span>
+            </div>
+            <div className="content_img content_img_2">
+              <Image src={ImgOverview} alt="dummy" className="img"/>
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ const ContentBox = (props: {
     content_box: ContentBoxInterface
 }) => {
     return (
-        <div className="content_box">
+        <div className="content_box d-flex">
             {/* <div className="content_box_title">
                 <div className={"title_div " + props.content_box.background}>
                     <span className="title_text">

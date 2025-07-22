@@ -85,7 +85,8 @@
                     }
 
                     &:hover {
-                        background: rgba(255, 255, 255, 0.3);
+                        background: rgba(255, 255, 255, 0.1);
+                        backdrop-filter: blur(10px);
                     }
                 }
             }
@@ -96,10 +97,14 @@
         width: 100%;
         height: auto;
         background:
-                linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
-                url("../../imgs/background/title01.jpg");
+            linear-gradient(45deg, rgba(83, 117, 113, 0.85), rgba(165, 203, 198, 0.85)),
+            url("../../imgs/background/title01.jpg");
         background-size: cover;
         background-position: center;
+
+        .title_blur {
+            backdrop-filter: unset;
+        }
 
         .trust_main {
             height: 100%;
@@ -107,7 +112,7 @@
             flex-direction: column;
             align-items: center;
             gap: 20px;
-            padding: 40px 0 40px;
+            padding: 40px 0 0;
 
             .title {
                 font-size: 60px;
@@ -125,11 +130,14 @@
             .trust_list {
                 width: 100%;
                 height: auto;
-                margin-top: 20px;
+                padding: 40px 0 40px;
+
+                background: rgba(255, 255, 255, 0.7);
+                backdrop-filter: blur(5px);
 
                 display: grid;
                 column-gap: 60px;
-                row-gap: 20px;
+                row-gap: 60px;
 
                 .trust_div {
                     display: flex;
