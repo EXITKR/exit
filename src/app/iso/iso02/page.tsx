@@ -21,7 +21,7 @@ export default function Home() {
                 </span>
               </span>
             </div>
-            <div className="content_box_content w-50">
+            <div className="content_box_content w-50 sect_point">
               <span className="content_text">
                 ISO 14001은 조직이 환경경영시스템을 설계 및 구현하고, 환경성과를 지속적으로 개선할 수 있는 프레임워크를 제공하며, 이를 통해 환경 위험을 효과적으로 관리하고, 관련 법적 요건을 준수하며, 환경 목표 달성을 위한 적극적인 조치를 취하고 있는 등 지속적으로 가능한 경영을 효율적으로 관리할 수 있도록 합니다.
               </span>

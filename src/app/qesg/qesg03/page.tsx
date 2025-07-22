@@ -23,12 +23,12 @@ export default function Home() {
                 </span>
               </span>
             </div>
-            <div className="content_box_content w-50">
+            <div className="content_box_content w-50 sect_point">
               <span className="content_text">
                 이는 기업이 제품 생산 및 유통 과정에서 발생할 수 있는 ESG 리스크를 사전에 관리하고, 협력사와의 협력을 통해 사회적 책임을 다하며, 투명하고 윤리적인 공급망을 구축하는 것을 목표로 합니다.
               </span>
             </div>
-            <div className="content_box_content w-50">
+            <div className="content_box_content w-50 sect_point">
               <span className="content_text">
                 또한 ESG 경영은 강제노동 및 아동노동의 배제, 성별·인종·종교에 따른 차별을 시정하는 것을 뜻합니다. 강제노동의 경우, 공급망의 일부에서라도 강제노동이 개입될 경우 제품 통관이 금지되거나 몰수될 수 있기 때문에, 대외 무역에 밀접하게 관련되어 있는 기업들은 공급망 ESG는 더욱 중요한 상황입니다.
               </span>

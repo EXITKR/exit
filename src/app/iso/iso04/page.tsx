@@ -25,17 +25,17 @@ export default function Home() {
                 </span>
               </span>
             </div>
-            <div className="content_box_content w-50">
+            <div className="content_box_content w-50 sect_point">
               <span className="content_text">
                 유럽 시장에 제품을 출시하고자 하는 EU 내외의 모든 제조업체에게 CE 마크 부착은 필수 요건이며, 이를 통해 제품은 EEA 전역에서 자유로운 유통이 가능해집니다.
               </span>
             </div>
-            <div className="content_box_content w-50">
+            <div className="content_box_content w-50 sect_point">
               <span className="content_text">
                 CE 마크의 범위는 소비자의 건강, 안전, 위생 및 환경보호 차원에서 위험성이 내포된 제품에 해당되며, 단순한 라벨을 넘어, 해당 제품이 유럽 기준에 부합하는 높은 수준의 안전성과 적합성을 확보하고 있음을 의미합니다.
               </span>
             </div>
-            <div className="content_box_content w-50">
+            <div className="content_box_content w-50 sect_point">
               <span className="content_text">
                 CE 인증을 통해 귀사의 제품은 EU 연합내의 수출에 제한이 없어 유럽 시장 진출의 기반을 마련하고, 글로벌 경쟁력 또한 강화할 수 있습니다.
               </span>
@@ -54,12 +54,12 @@ export default function Home() {
                 </span>
               </span>
             </div>
-            <div className="content_box_content w-50">
+            <div className="content_box_content w-50 sect_point">
               <span className="content_text">
                 UL 인증은 제품 뿐만 아니라 인력, 시설, 절차, 시스템까지 포괄하는 안전 및 품질 기반의 종합 인증 서비스를 제공합니다.
               </span>
             </div>
-            <div className="content_box_content w-50">
+            <div className="content_box_content w-50 sect_point">
               <span className="content_text">
                 제조업체가 해당 기준을 충족하는 경우 UL 마크를 부착할 수 있으며, 이를 통해 권위 있는 제3자 인증으로 제품의 신뢰성을 입증할 수 있습니다.
               </span>
@@ -78,17 +78,17 @@ export default function Home() {
                 </span>
               </span>
             </div>
-            <div className="content_box_content w-50">
+            <div className="content_box_content w-50 sect_point">
               <span className="content_text">
                 유럽 시장에 제품을 출시하고자 하는 EU 내외의 모든 제조업체에게 CE 마크 부착은 필수 요건이며, 이를 통해 제품은 EEA 전역에서 자유로운 유통이 가능해집니다.
               </span>
             </div>
-            <div className="content_box_content w-50">
+            <div className="content_box_content w-50 sect_point">
               <span className="content_text">
                 CE 마크의 범위는 소비자의 건강, 안전, 위생 및 환경보호 차원에서 위험성이 내포된 제품에 해당되며, 단순한 라벨을 넘어, 해당 제품이 유럽 기준에 부합하는 높은 수준의 안전성과 적합성을 확보하고 있음을 의미합니다.
               </span>
             </div>
-            <div className="content_box_content w-50">
+            <div className="content_box_content w-50 sect_point">
               <span className="content_text">
                 CE 인증을 통해 귀사의 제품은 EU 연합내의 수출에 제한이 없어 유럽 시장 진출의 기반을 마련하고, 글로벌 경쟁력 또한 강화할 수 있습니다.
               </span>

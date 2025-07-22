@@ -9,7 +9,7 @@
     }
 
     .tx-30 {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .content_box_content {
@@ -39,6 +39,9 @@
 
         &.w-50 {
             width: 50%;
+        }
+
+        &.sect_point {
             border-left: solid 5px #537571;
         }
 

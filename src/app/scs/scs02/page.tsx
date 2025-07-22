@@ -26,17 +26,17 @@ export default function Home() {
                   </span>
               </span>
             </div>
-            <div className="content_box_content w-50">
+            <div className="content_box_content w-50 sect_point">
               <span className="content_text">
                 이미 글로벌 유통사 및 대형 유통사들은 본사뿐만이 아닌 물류를 위탁한 3PL 업체들을 대상으로도 개인정보관리 프로세스를 적용하고 있는 추세입니다.
               </span>
             </div>
-            <div className="content_box_content w-50">
+            <div className="content_box_content w-50 sect_point">
               <span className="content_text">
                 특히, 배송 및 이벤트 행사 등의 진행에 있어 대량의 개인정보의 유출은 기업의 이미지 저하, 개인정보보호법 70조-75조 사이의 양형 기준에 근거해 법적 처벌 대상이 될 수 있습니다.
               </span>
             </div>
-            <div className="content_box_content w-50">
+            <div className="content_box_content w-50 sect_point">
               <span className="content_text">
                 ‘유통사 - 납품업체 - 3PL 업체’의 흐름으로 이어지는 전방위적인 개인정보보호 시스템 구축은 개인정보보호법 위반에 대한 기업의 법적 리스크를 최소화하고 안전하게 개인정보를 활용하기 위한 시스템 구축을 적극적으로 도입하고 있습니다.
               </span>
@@ -57,12 +57,12 @@ export default function Home() {
                 </span>
               </span>
             </div>
-            <div className="content_box_content w-50">
+            <div className="content_box_content w-50 sect_point">
               <span className="content_text">
                 DLP 시스템은 이메일, 웹하드, 메신저 등 다양한 경로를 통한 정보 유출을 효과적으로 차단할 수 있습니다.
               </span>
             </div>
-            <div className="content_box_content w-50">
+            <div className="content_box_content w-50 sect_point">
               <span className="content_text">
                 또한 설치와 관리가 용이하고, 사내 네트워크를 통한 데이터 전송을 집중적으로 감시할 수 있어 기업들이 필수적으로 도입하고 있습니다.
               </span>
@@ -79,12 +79,12 @@ export default function Home() {
                 </span>
               </span>
             </div>
-            <div className="content_box_content w-50">
+            <div className="content_box_content w-50 sect_point">
               <span className="content_text">
                 기업의 조직이 소유하거나 처리하는 데이터의 보안과 관련된 위험을 관리하는 시스템을 구축하여 정보보안 리스크를 관리하고 있음을 입증하는데 사용됩니다.
               </span>
             </div>
-            <div className="content_box_content w-50">
+            <div className="content_box_content w-50 sect_point">
               <span className="content_text">
                 ISO 27001은 사이버 범죄가 증가하고 새로운 위협이 끊임없이 등장함에 따라 조직이 위험을 인식하고 취약점을 사전에 파악하여 해결할 수 있도록 지원합니다.
               </span>
@@ -103,17 +103,17 @@ export default function Home() {
                   </span>
               </span>
             </div>
-            <div className="content_box_content w-50">
+            <div className="content_box_content w-50 sect_point">
               <span className="content_text">
                 이미 글로벌 유통사 및 대형 유통사들은 본사뿐만이 아닌 물류를 위탁한 3PL 업체들을 대상으로도 개인정보관리 프로세스를 적용하고 있는 추세입니다.
               </span>
             </div>
-            <div className="content_box_content w-50">
+            <div className="content_box_content w-50 sect_point">
               <span className="content_text">
                 특히, 배송 및 이벤트 행사 등의 진행에 있어 대량의 개인정보의 유출은 기업의 이미지 저하, 개인정보보호법 70조-75조 사이의 양형 기준에 근거해 법적 처벌 대상이 될 수 있습니다.
               </span>
             </div>
-            <div className="content_box_content w-50">
+            <div className="content_box_content w-50 sect_point">
               <span className="content_text">
                 ‘유통사 - 납품업체 - 3PL 업체’의 흐름으로 이어지는 전방위적인 개인정보보호 시스템 구축은 개인정보보호법 위반에 대한 기업의 법적 리스크를 최소화하고 안전하게 개인정보를 활용하기 위한 시스템 구축을 적극적으로 도입하고 있습니다.
               </span>

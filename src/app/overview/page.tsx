@@ -13,7 +13,7 @@ export default function Home() {
         <Title title="OVERVIEW" desc="CEO 인사말"/>
         <div className="inner_main page_inner overview_main">
           <div className="content_box">
-            <div className="content_box_content w-50">
+            <div className="content_box_content w-50 sect_point">
               <span className="content_text">
                 안녕하십니까.
                 <br /><br />
