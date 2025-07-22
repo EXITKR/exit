@@ -6,4 +6,20 @@ export const clientList: clientBusinessInterface[] = [
         name: "웰크론",
         img: client01
     },
+    {
+        name: "웰크론",
+        img: client01
+    },
+    {
+        name: "웰크론",
+        img: client01
+    },
+    {
+        name: "웰크론",
+        img: client01
+    },
+    {
+        name: "웰크론",
+        img: client01
+    },
 ]

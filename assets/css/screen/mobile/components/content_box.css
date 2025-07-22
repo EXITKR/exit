@@ -70,15 +70,17 @@
     .title_section {
         height: auto;
 
-        .title_main {
-            padding: 40px 20px 40px;
+        .title_blur {
+            .title_main {
+                padding: 40px 20px 40px;
 
-            .title {
-                font-size: 24px;
-            }
+                .title {
+                    font-size: 24px;
+                }
 
-            .desc {
-                font-size: 16px;
+                .desc {
+                    font-size: 16px;
+                }
             }
         }
     }

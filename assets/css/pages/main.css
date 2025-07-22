@@ -102,6 +102,10 @@
         background-size: cover;
         background-position: center;
 
+        .title_blur {
+            backdrop-filter: unset;
+        }
+
         .trust_main {
             height: 100%;
             display: flex;
@@ -133,7 +137,7 @@
 
                 display: grid;
                 column-gap: 60px;
-                row-gap: 20px;
+                row-gap: 60px;
 
                 .trust_div {
                     display: flex;

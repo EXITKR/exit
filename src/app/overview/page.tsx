@@ -14,7 +14,8 @@ export default function Home() {
         <div className="inner_main page_inner overview_main">
           <div className="content_box">
             <div className="content_box_content w-50">
-              <span className="content_text">안녕하십니까.
+              <span className="content_text">
+                안녕하십니까.
                 <br /><br />
                 ㈜EXIT 대표 이승준입니다.
                 <br /><br />
