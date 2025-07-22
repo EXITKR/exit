@@ -56,7 +56,7 @@
 
         .trust_section {
             .trust_main {
-                padding: 40px 20px 40px;
+                padding: 40px 20px 0;
             }
         }
     }
