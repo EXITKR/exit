@@ -103,6 +103,8 @@
             max-width: 960px;
             height: auto;
             margin: 0 auto;
+
+            border: solid 1px #ededed;
         }
     }
 
