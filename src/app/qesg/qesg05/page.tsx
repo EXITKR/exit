@@ -23,12 +23,21 @@ export default function Home() {
             </div>
             <div className="content_box_content gc-1-2 sect_point">
               <span className="content_text">
-                공급망 보안(Supply Chain Security), ESG(환경·사회·거버넌스), ISO 26000(사회적책임경영)은 기업의 지속가능성과 책임 있는 경영을 위한 중요한 개념들이며, 서로 밀접한 연관성을 가지고 있습니다.
+                <span className="fw-500 tc-gr">공급망 보안(Supply Chain Security), ESG(환경·사회·거버넌스), ISO 26000(사회적책임경영)</span>
+                은&nbsp;
+                <span className="fw-500">기업의 지속가능성</span>
+                과&nbsp;
+                <span className="fw-500">책임 있는 경영</span>
+                을 위한 중요한 개념들이며, 서로 밀접한 연관성을 가지고 있습니다.
               </span>
             </div>
             <div className="content_box_content gc-2-4 sect_point">
               <span className="content_text">
-                공급망 보안, ESG 경영, ISO 26000은 모두 기업이 지속가능한 방식으로 운영될 수 있도록 돕는 역할을 합니다. 공급망 보안은 기업의 운영 리스크를 관리하며, ESG와 ISO 26000은 사회적·환경적 리스크를 관리하는 데 초점을 맞추고 있습니다.
+                <span className="fw-500 tx-30">
+                  공급망 보안, ESG 경영, ISO 26000은 모두 기업이 지속가능한 방식으로 운영될 수 있도록 돕는 역할을 합니다.
+                </span>
+                <br/><br/>
+                공급망 보안은 기업의 운영 리스크를 관리하며, ESG와 ISO 26000은 사회적·환경적 리스크를 관리하는 데 초점을 맞추고 있습니다.
               </span>
             </div>
           </div>

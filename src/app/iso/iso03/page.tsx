@@ -2,6 +2,8 @@ import PaginationBtn from "@components/buttons/PaginationBtn";
 import Title from "@components/Title";
 import { getMetadata } from "@utils/Metadata";
 import type { Metadata } from "next";
+import Image from "next/image";
+import ImgIso from "@imgs/contents/ISO_45001.png"
 
 export const metadata: Metadata = getMetadata("ISO 45001")
 
@@ -23,9 +25,13 @@ export default function Home() {
                 </span>
               </span>
             </div>
+            <div className="content_img gc-1-4">
+              <Image src={ImgIso} alt="dummy" className="img"/>
+            </div>
             <div className="content_box_content gc-1-4 sect_point">
               <span className="content_text">
-                ISO 45001은 산업안전보건 정책, 목표, 계획, 실행, 운영, 감사 및 검토에 대한 기준을 수립하고, 핵심요소로 리더십의 헌신, 근로자 참여, 위험 식별 및 평가, 법률 및 규정준수, 비상 계획, 사고 조사 및 지속적 개선 등의 표준이 포함되어 있습니다.
+                ISO 45001은 산업안전보건 정책, 목표, 계획, 실행, 운영, 감사 및 검토에 대한 기준을 수립하고, 핵심요소로&nbsp;
+                <span className="fw-500">리더십의 헌신, 근로자 참여, 위험 식별 및 평가, 법률 및 규정준수, 비상 계획, 사고 조사 및 지속적 개선</span> 등의 표준이 포함되어 있습니다.
               </span>
             </div>
           </div>

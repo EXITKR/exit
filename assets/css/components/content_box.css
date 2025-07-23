@@ -18,6 +18,18 @@
         font-size: 18px;
     }
 
+    .tc-gr {
+        color: #21ba4a;
+    }
+
+    .tc-ye {
+        color: #ee4811;
+    }
+
+    .tc-bl {
+        color: #5281da;
+    }
+
     .content_box_content {
         height: auto;
         padding: 40px 20px;
@@ -88,7 +100,9 @@
 
         .img {
             width: 100%;
+            max-width: 960px;
             height: auto;
+            margin: 0 auto;
         }
     }
 

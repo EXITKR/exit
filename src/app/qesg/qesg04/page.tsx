@@ -23,7 +23,7 @@ export default function Home() {
             </div>
             <div className="content_box_content gc-1-4 sect_point">
               <span className="content_text">
-                특히 최근 EU에서 공식 채택된 기업 지속가능성 실사 지침(CSDDD)은 전 세계 기업들에게 환경 및 인권 리스크에 대한 실질적인 관리 책임을 요구하고 있으며, 기업들은 글로벌 기준에 부합하는 대응 역량을 갖추는 것이 시급한 과제가 되었습니다.
+                특히 최근 EU에서 공식 채택된 <span className="fw-500 tc-gr">기업 지속가능성 실사 지침(CSDDD)</span>은 전 세계 기업들에게 <span className="fw-500">환경 및 인권 리스크에 대한 실질적인 관리 책임</span>을 요구하고 있으며, 기업들은 <span className="fw-500">글로벌 기준에 부합하는 대응 역량</span>을 갖추는 것이 <span className="fw-500">시급한 과제</span>가 되었습니다.
               </span>
             </div>
           </div>
