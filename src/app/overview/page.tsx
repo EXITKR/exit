@@ -14,7 +14,7 @@ export default function Home() {
         <Title title="OVERVIEW" desc="CEO 인사말"/>
         <div className="inner_main page_inner overview_main">
           <div className="content_box">
-            <div className="content_box_content desc_1 sect_point">
+            <div className="content_box_content gc-1-2 sect_point">
               <span className="content_text">
                 안녕하십니까.
                 <br /><br />
@@ -39,7 +39,7 @@ export default function Home() {
                 </div>
               </span>
             </div>
-            <div className="content_img content_img_2">
+            <div className="content_img gc-2-4">
               <Image src={ImgOverview} alt="dummy" className="img"/>
             </div>
           </div>

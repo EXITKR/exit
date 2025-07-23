@@ -39,24 +39,6 @@
 
         &.title {
             text-align: center;
-            grid-column: 1/4;
-        }
-
-        &.desc_1 {
-            grid-column: 1/2;
-        }
-
-        &.desc_2 {
-            grid-column: 2/4;
-        }
-
-        &.desc_3 {
-            grid-column: 2/4;
-            grid-row: 2/4;
-        }
-
-        &.desc_4 {
-            grid-column: 1/4;
         }
 
         &.sect_point {
@@ -66,6 +48,26 @@
         &:hover {
             transform: translateY(-5px);
         }
+    }
+
+    .gc-1-2 {
+        grid-column: 1/2;
+    }
+
+    .gc-2-4 {
+        grid-column: 2/4;
+    }
+
+    .gc-1-4 {
+        grid-column: 1/4;
+    }
+
+    .gr-2-3 {
+        grid-row: 2/3;
+    }
+
+    .gr-2-4 {
+        grid-row: 2/4;
     }
 
     .content_img_1 {
