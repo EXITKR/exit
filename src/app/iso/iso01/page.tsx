@@ -2,6 +2,8 @@ import PaginationBtn from "@components/buttons/PaginationBtn";
 import Title from "@components/Title";
 import { getMetadata } from "@utils/Metadata";
 import type { Metadata } from "next";
+import Image from "next/image";
+import ImgIso from "@imgs/contents/ISO_9001.png"
 
 export const metadata: Metadata = getMetadata("ISO 9001")
 
@@ -21,13 +23,14 @@ export default function Home() {
                 </span>
               </span>
             </div>
-            <div className="content_box_content gc-1-2 sect_point">
-              <span className="content_text">
-                ISO 9001은 조직이 효과적인 프로세스를 구축하고 직원을 훈련시키며, 고객에게 제품 또는 서비스를 일관되게 제공하고 품질을 지속적으로 개선할 수 있도록 지원하는 시스템입니다.
-              </span>
+            <div className="content_img gc-1-4">
+              <Image src={ImgIso} alt="dummy" className="img"/>
             </div>
-            <div className="content_box_content gc-2-4 sect_point">
+            <div className="content_box_content gc-1-4 sect_point">
               <span className="content_text">
+                ISO 9001은 조직이&nbsp;
+                <span className="fw-500">효과적인 프로세스를 구축하고 직원을 훈련시키며, 고객에게 제품 또는 서비스를 일관되게 제공하고 품질을 지속적으로 개선할 수 있도록 지원하는 시스템입니다.</span>
+                <br/>
                 이 규격은 조직의 품질경영시스템 요구사항을 정의하며, 이를 통해 조직은 품질 목표를 달성하고 고객 만족도를 높일 수 있습니다.
               </span>
             </div>
