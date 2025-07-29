@@ -10,15 +10,19 @@
         flex-direction: column;
     }
 
-    .fw-500 {
+    /* .fw-500 {
         font-weight: 500;
+    } */
+
+    .fw-700 {
+        font-weight: 700;
     }
 
-    .tx-30 {
-        font-size: 18px;
-    }
+    /* .tx-30 {
+        font-size: 22px;
+    } */
 
-    .tc-gr {
+    /* .tc-gr {
         color: #21ba4a;
     }
 
@@ -28,7 +32,7 @@
 
     .tc-bl {
         color: #5281da;
-    }
+    } */
 
     .content_box_content {
         height: auto;
@@ -45,8 +49,8 @@
         transform: translateY(0);
 
         .content_text {
-            font-size: 16px;
-            font-weight: 300;
+            font-size: 22px;
+            font-weight: 400;
         }
 
         &.title {
