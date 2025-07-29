@@ -15,6 +15,11 @@
     }
 
     .overview_main {
+        .content_box {
+            .content_box_content {
+                background: #f2fcf8;
+            }
+        }
         .ceo {
             display: flex;
             justify-content: start;
