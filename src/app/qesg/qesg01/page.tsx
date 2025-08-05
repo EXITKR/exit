@@ -16,7 +16,7 @@ export default function Home() {
           <div className="content_box">
             <div className="content_box_content title gc-1-4">
               <span className="content_text">
-                <span className="fw-500 tx-30">최근 산업계의 최대 화두는 ‘공급망(Supply Chain)’이라 할 수 있습니다.</span>
+                <span className=" ">최근 산업계의 최대 화두는 ‘공급망(Supply Chain)’이라 할 수 있습니다.</span>
               </span>
             </div>
             <div className="content_img gc-1-4">
@@ -29,7 +29,7 @@ export default function Home() {
             </div>
             <div className="content_box_content gc-1-4 sect_point">
               <span className="content_text">
-                <span className="fw-500 tx-30">
+                <span className="">
                   공급망 ESG란 기업의 지속가능경영을 위한 리스크 관리를 위해 원자재 구매에서부터 제품의 제조, 제품의 서비스 개발, 유통, 보관, 판매, 소비자의 사용, 폐기물 처리에 이르기까지 가치사슬 전반에 ESG 개념(환경적 책임, 사회적 책임, 윤리적 경영)을 적용하여, 공급업체를 선정하고 관리하는 것을 의미합니다.
                 </span>
               </span>

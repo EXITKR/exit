@@ -21,7 +21,7 @@ export default function Home() {
           <div className="content_box">
             <div className="content_box_content title gc-1-4">
               <span className="content_text">
-                <span className="fw-500 tx-30">
+                <span className=" ">
                   미국 세관에서 실시하는 C-TPAT (Customs Trade Partnership Against Terrorism) 프로그램은
                   <br />
                   알 카에다에 의한 9.11 테러 후에 발효된 미국 세관당국과 미국 내 수입 관련 기업 간의 테러방지 협약이며,
@@ -35,7 +35,7 @@ export default function Home() {
             </div>
             <div className="content_box_content gc-1-4 sect_point">
               <span className="content_text">
-                <span className="fw-500">
+                <span className="">
                   C-TPAT 심사를 통과하게 되면, 수입화물 통관 시 무작위 검사의 확률이 줄어들고, 검사가 필요한 경우에도 우선 처리되어 통관 지연을 최소화할 수 있습니다.
                 </span>
               </span>
@@ -52,7 +52,7 @@ export default function Home() {
           <div className="content_box">
             <div className="content_box_content title gc-1-4">
               <span className="content_text">
-                <span className="fw-500 tx-30">
+                <span className=" ">
                   AEO인증 기업은 통관 절차에서 우선 처리되어 지연시간을 최소화하고,
                   <br />
                   빠른 배송을 통해 물류 비용을 절감할 수 있으며,
@@ -67,14 +67,14 @@ export default function Home() {
             <div className="content_box_content gc-1-4 sect_point">
               <span className="content_text">
                 AEO인증은 안전한 거래와 위험 관리를 보장하며, 불법 거래나 테러를 예방하는 보안 관리가 강화되며,&nbsp;
-                <span className="fw-500">글로벌 무역 파트너들에게 신뢰를 주고, 법적 안정성과 국제적 규제 준수를 증명하여 법적 리스크를 최소화</span>할 수 있습니다.
+                <span className="">글로벌 무역 파트너들에게 신뢰를 주고, 법적 안정성과 국제적 규제 준수를 증명하여 법적 리스크를 최소화</span>할 수 있습니다.
               </span>
             </div>
             <div className="content_box_content gc-1-4 sect_point">
               <span className="content_text">
                 여러 나라에 생산 시설을 운영하는 다국적 기업은 AEO인증으로 글로벌 공급망에서 효율적인 통관과 물류처리를 받을 수 있습니다. 또한 해외 수출입이 많은 기업 및 해외 시장 진출을 목표로 하는 기업들은 AEO 인증을 통해&nbsp;
-                <span className="fw-500 tc-gr">무역 효율성을 높이고</span>, EU, 미국, 중국 등과의 거래에서&nbsp;
-                <span className="fw-500 tc-gr">빠른 통관과 비용 절감을 실현할 수 있습니다.</span>
+                <span className=" ">무역 효율성을 높이고</span>, EU, 미국, 중국 등과의 거래에서&nbsp;
+                <span className=" ">빠른 통관과 비용 절감을 실현할 수 있습니다.</span>
               </span>
             </div>
           </div>
@@ -84,7 +84,7 @@ export default function Home() {
           <div className="content_box">
             <div className="content_box_content title gc-1-4">
               <span className="content_text">
-                <span className="fw-500 tx-30">
+                <span className=" ">
                   미국 세관에서 실시하는 C-TPAT (Customs Trade Partnership Against Terrorism) 프로그램은
                   <br />
                   알 카에다에 의한 9.11 테러 후에 발효된 미국 세관당국과 미국 내 수입 관련 기업 간의 테러방지 협약이며,
@@ -98,7 +98,7 @@ export default function Home() {
             </div>
             <div className="content_box_content gc-1-4 sect_point">
               <span className="content_text">
-                <span className="fw-500">
+                <span className="">
                   C-TPAT 심사를 통과하게 되면, 수입화물 통관 시 무작위 검사의 확률이 줄어들고, 검사가 필요한 경우에도 우선 처리되어 통관 지연을 최소화할 수 있습니다.
                 </span>
               </span>

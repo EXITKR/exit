@@ -23,7 +23,7 @@ export default function Home() {
           <div className="content_box">
             <div className="content_box_content title gc-1-4">
               <span className="content_text">
-                <span className="fw-500 tx-30">
+                <span className=" ">
                   국내 여러 기업들 및 여러 공공기관 등 개인정보 유출 사고 증가하며,
                   <br />
                   심화되는 개인 정보 보호 유출 위험을 예방하기 위한 개인정보보호 시스템과 프로세스의 구축이 요구되고 있습니다.
@@ -37,7 +37,7 @@ export default function Home() {
             </div>
             <div className="content_box_content gc-1-4 sect_point">
               <span className="content_text">
-                <span className="fw-500 tx-30">
+                <span className="">
                   특히, 배송 및 이벤트 행사 등의 진행에 있어 대량의 개인정보의 유출은 기업의 이미지 저하, 개인정보보호법 70조-75조 사이의 양형 기준에 근거해 법적 처벌 대상이 될 수 있습니다.
                 </span>
               </span>
@@ -47,9 +47,9 @@ export default function Home() {
             </div>
             <div className="content_box_content gc-1-4 sect_point">
               <span className="content_text">
-                <span className="fw-500 tc-gr">‘유통사 - 납품업체 - 3PL 업체’</span>의 흐름으로 이어지는 전방위적인&nbsp;
-                <span className="fw-500">개인정보보호 시스템 구축</span>은 개인정보보호법 위반에 대한&nbsp;
-                <span className="fw-500 tc-ye">기업의 법적 리스크를 최소화</span>하고 안전하게 개인정보를 활용하기 위한 시스템 구축을 적극적으로 도입하고 있습니다.
+                <span className=" ">‘유통사 - 납품업체 - 3PL 업체’</span>의 흐름으로 이어지는 전방위적인&nbsp;
+                <span className="">개인정보보호 시스템 구축</span>은 개인정보보호법 위반에 대한&nbsp;
+                <span className=" ">기업의 법적 리스크를 최소화</span>하고 안전하게 개인정보를 활용하기 위한 시스템 구축을 적극적으로 도입하고 있습니다.
               </span>
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function Home() {
           <div className="content_box">
             <div className="content_box_content title gc-1-4">
               <span className="content_text">
-                <span className="fw-500 tx-30">
+                <span className=" ">
                   정보유출방지(DLP)는 조직 내 중요 정보와 데이터를 보호하기 위해,
                   <br />
                   문서·이미지 등 저장된 파일 내 주요 정보를 탐지하고 저장매체, 출력, 파일 전송 등
@@ -74,7 +74,7 @@ export default function Home() {
             <div className="content_box_content gc-1-4 sect_point">
               <span className="content_text">
                 DLP 시스템은 이메일, 웹하드, 메신저 등 다양한 경로를 통한 정보 유출을 효과적으로 차단할 수 있습니다. 또한&nbsp;
-                <span className="fw-500">설치와 관리가 용이하고, 사내 네트워크를 통한 데이터 전송을 집중적으로 감시</span>할 수 있어 기업들이 필수적으로 도입하고 있습니다.
+                <span className="">설치와 관리가 용이하고, 사내 네트워크를 통한 데이터 전송을 집중적으로 감시</span>할 수 있어 기업들이 필수적으로 도입하고 있습니다.
               </span>
             </div>
           </div>
@@ -84,7 +84,7 @@ export default function Home() {
           <div className="content_box">
             <div className="content_box_content title gc-1-4">
               <span className="content_text">
-                <span className="fw-500 tx-30">
+                <span className=" ">
                   ISO 27001은 규모와 활동분야에 관계없이 모든 기업에 정보보안관리시스템을 구축, 구현, 유지 및 지속적으로 개선하기 위한 국제표준입니다.
                 </span>
               </span>
@@ -99,7 +99,7 @@ export default function Home() {
             </div>
             <div className="content_box_content gc-1-4 sect_point">
               <span className="content_text">
-                <span className="fw-500">
+                <span className="">
                   ISO 27001은 사이버 범죄가 증가하고 새로운 위협이 끊임없이 등장함에 따라 조직이 위험을 인식하고 취약점을 사전에 파악하여 해결할 수 있도록 지원합니다.
                 </span>
               </span>
@@ -111,7 +111,7 @@ export default function Home() {
           <div className="content_box">
             <div className="content_box_content title gc-1-4">
               <span className="content_text">
-                <span className="fw-500 tx-30">
+                <span className=" ">
                   국내 여러 기업들 및 여러 공공기관 등 개인정보 유출 사고 증가하며,
                   <br />
                   심화되는 개인 정보 보호 유출 위험을 예방하기 위한 개인정보보호 시스템과 프로세스의 구축이 요구되고 있습니다.
@@ -125,7 +125,7 @@ export default function Home() {
             </div>
             <div className="content_box_content gc-1-4 sect_point">
               <span className="content_text">
-                <span className="fw-500 tx-30">
+                <span className=" ">
                   특히, 배송 및 이벤트 행사 등의 진행에 있어 대량의 개인정보의 유출은 기업의 이미지 저하, 개인정보보호법 70조-75조 사이의 양형 기준에 근거해 법적 처벌 대상이 될 수 있습니다.
                 </span>
               </span>
@@ -135,9 +135,9 @@ export default function Home() {
             </div>
             <div className="content_box_content gc-1-4 sect_point">
               <span className="content_text">
-                <span className="fw-500 tc-gr">‘유통사 - 납품업체 - 3PL 업체’</span>의 흐름으로 이어지는 전방위적인&nbsp;
-                <span className="fw-500">개인정보보호 시스템 구축</span>은 개인정보보호법 위반에 대한&nbsp;
-                <span className="fw-500 tc-ye">기업의 법적 리스크를 최소화</span>하고 안전하게 개인정보를 활용하기 위한 시스템 구축을 적극적으로 도입하고 있습니다.
+                <span className=" ">‘유통사 - 납품업체 - 3PL 업체’</span>의 흐름으로 이어지는 전방위적인&nbsp;
+                <span className="">개인정보보호 시스템 구축</span>은 개인정보보호법 위반에 대한&nbsp;
+                <span className=" ">기업의 법적 리스크를 최소화</span>하고 안전하게 개인정보를 활용하기 위한 시스템 구축을 적극적으로 도입하고 있습니다.
               </span>
             </div>
           </div>
