@@ -17,7 +17,8 @@
     .overview_main {
         .content_box {
             .content_box_content {
-                background: #f2fcf8;
+                background: #f8fffc;
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
             }
         }
         .ceo {

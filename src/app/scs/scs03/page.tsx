@@ -19,7 +19,7 @@ export default function Home() {
           <div className="content_box">
             <div className="content_box_content">
               <span className="content_text">
-                <span className="fw-500 tx-30"></span>
+                <span className=" "></span>
                 <br /><br />
               </span>
             </div>
