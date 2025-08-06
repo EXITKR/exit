@@ -3,13 +3,12 @@
         height: 40px;
 
         .header_main {
-            a {
-                width: 130px;
+            .web_logo_div {
+                width: 50px;
                 height: 40px;
-                margin-left: 20px;
 
                 .web_logo {
-                    width: 130px;
+                    width: 50px;
                     height: 40px;
                 }
             }
@@ -36,7 +35,7 @@
 
             .header_sub_main {
                 .header_sub_top {
-                    height: calc(100vh - 40px);
+                    height: calc(100vh - 120px);
                     margin-top: unset;
 
                     display: flex;

@@ -7,7 +7,7 @@ export const navigationList: NavigationInterface[] = [
         sub: [
             {
                 url: "/qesg/qesg01",
-                name: "공급망 ESG는 무엇인가?",
+                name: "공급망 ESG는?",
             },
             {
                 url: "/qesg/qesg02",
@@ -29,11 +29,11 @@ export const navigationList: NavigationInterface[] = [
     },
     {
         url: "/scs/scs01",
-        name: "Customized SCS\r\n(Supply Chain Security)",
+        name: "Customized SCS",
         sub: [
             {
                 url: "/scs/scs01",
-                name: "Customized SCS\r\n(맞춤형 공급망 보안)는 무엇인가?",
+                name: "Customized SCS는?",
             },
             {
                 url: "/scs/scs02",
@@ -57,7 +57,7 @@ export const navigationList: NavigationInterface[] = [
             },
             {
                 url: "/scs/scs06",
-                name: "COC\r\n(Code Of Conduct)",
+                name: "COC",
             },
         ]
     },
@@ -79,7 +79,7 @@ export const navigationList: NavigationInterface[] = [
             },
             {
                 url: "/iso/iso04",
-                name: "ISO 기타\r\n(CE / UL)",
+                name: "CE / UL",
             },
         ]
     },
