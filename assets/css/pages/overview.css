@@ -17,10 +17,27 @@
     .overview_main {
         .content_box {
             .content_box_content {
-                background: #f8fffc;
-                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+                .content_text {
+                    font-weight: 400;
+                }
+
+                .text_title {
+                    font-size: 30px;
+                    font-weight: 700;
+                }
+
+                .text_desc {
+                    font-size: 22px;
+                    font-weight: 500;
+                }
+
+                &.sect_point {
+                    background: transparent;
+                    border-left: solid 2px #537571;
+                }
             }
         }
+
         .ceo {
             display: flex;
             justify-content: start;

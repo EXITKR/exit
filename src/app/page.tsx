@@ -1,14 +1,4 @@
-"use client"
-import { useRouter } from "next/navigation";
-import Image from "next/image";
-import { clientList } from "@utils/ClientList";
-import { FaBuilding } from "react-icons/fa6";
-import { IoDocumentText } from "react-icons/io5";
-import Title from "@components/Title";
-
 export default function Home() {
-  const router = useRouter()
-
   return (
     <>
       <div id="main_page">

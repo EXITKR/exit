@@ -1,5 +1,4 @@
 "use client"
-import Link from "next/link";
 import WebLogo from "@imgs/logo/web_logo_3.png"
 import Image from "next/image";
 import Navigation from "@components/header/Navigation";
@@ -54,7 +53,7 @@ const Header = () => {
     return (
         <>
             <header id="header_pc" ref={ref}>
-                <div className="inner_main header_main">
+                <div className="head_inner_main header_main">
                     <div className="web_logo_div" onClick={() => {
                         router.push("/")
                         setOnMouse(false)

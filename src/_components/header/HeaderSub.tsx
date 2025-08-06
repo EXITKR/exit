@@ -14,7 +14,7 @@ const HeaderSub = (props: {
                 onMouseOver={() => props.setMouseOver(true)}
                 onMouseOut={() => props.setMouseOver(false)}
             >
-                <div className="inner_main header_sub_main">
+                <div className="head_inner_main header_sub_main">
                     <div className="header_sub_top">
                         {navigationList.map((val, idx) => (
                             <div className="header_sub_navi" key={idx}>

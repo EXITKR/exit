@@ -17,7 +17,7 @@ const Navigation = (props: {
                     onMouseOver={() => {
                         props.setMouseOver(true)
                     }}>
-                        <span className={pathname === item.url ? "navi_text active" : "navi_text"}>{item.name}</span>
+                        <span className={pathname.split('/')[1] === item.url.split('/')[1] || (('overview' === item.url.split('/')[1] && 'contact_us' === pathname.split('/')[1])) ? "navi_text active" : "navi_text"}>{item.name}</span>
                     </div>
                 ))}
             </div>
