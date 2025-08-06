@@ -51,19 +51,40 @@ img {
   }
 } */
 
+.head_inner_main {
+  width: 1600px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1600px) {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+  }
+
+  @media screen and (max-width: 1360px) {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 .inner_main {
   width: 1280px;
   margin: 0 auto;
 
   @media screen and (max-width: 1280px) {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+  }
+
+  @media screen and (max-width: 1360px) {
     width: 100%;
+    margin: 0 auto;
   }
 }
 
 
 .page_inner {
   padding-bottom: 120px;
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1360px) {
     padding-bottom: 120px;
   }
   @media screen and (max-width: 1000px) {

@@ -10,14 +10,14 @@ const HeaderSub = (props: {
     const router = useRouter()
     return (
         <>
-            <div className={"header_sub " + (props.onMouse ? "header-on" : "header-no")}>
-                <div className="inner_main header_sub_main">
+            <div className={"header_sub " + (props.onMouse ? "header-on" : "header-no")}
+                onMouseOver={() => props.setMouseOver(true)}
+                onMouseOut={() => props.setMouseOver(false)}
+            >
+                <div className="head_inner_main header_sub_main">
                     <div className="header_sub_top">
                         {navigationList.map((val, idx) => (
                             <div className="header_sub_navi" key={idx}>
-                                <div className="navi">
-                                    <span className="navi_title">{val.name}</span>
-                                </div>
                                 {val.sub.map((item, index) => (
                                     <div className="navi" key={index} onClick={() => {
                                         router.push(item.url)

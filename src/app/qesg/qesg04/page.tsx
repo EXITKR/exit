@@ -14,7 +14,7 @@ export default function Home() {
           <div className="content_box">
             <div className="content_box_content title gc-1-4">
               <span className="content_text">
-                <span className=" ">
+                <span className="tx-24">
                   최근 글로벌 기업(상장사·대기업 등)은 여러 이해관계자(소비자, 투자자, 정부, 글로벌 고객사 등)로부터
                   <br/>
                   지속가능경영(ESG)에 대한 (공시)요구를 받고 있습니다.
@@ -23,7 +23,7 @@ export default function Home() {
             </div>
             <div className="content_box_content gc-1-4 sect_point">
               <span className="content_text">
-                특히 최근 EU에서 공식 채택된 <span className=" ">기업 지속가능성 실사 지침(CSDDD)</span>은 전 세계 기업들에게 <span className="">환경 및 인권 리스크에 대한 실질적인 관리 책임</span>을 요구하고 있으며, 기업들은 <span className="">글로벌 기준에 부합하는 대응 역량</span>을 갖추는 것이 <span className="">시급한 과제</span>가 되었습니다.
+                특히 최근 EU에서 공식 채택된 기업 지속가능성 실사 지침(CSDDD)은 전 세계 기업들에게 환경 및 인권 리스크에 대한 실질적인 관리 책임을 요구하고 있으며, 기업들은 글로벌 기준에 부합하는 대응 역량을 갖추는 것이 시급한 과제가 되었습니다.
               </span>
             </div>
           </div>

@@ -18,9 +18,18 @@
         font-weight: 700;
     } */
 
-    .tx-30 {
+    .tx-24 {
         line-height: 40px;
-        font-size: 28px;
+        font-size: 24px;
+        font-weight: 700;
+
+        &:after {
+            height: 40px;
+            display: block;
+            content: '';
+            border-bottom: solid 2px #0a0a0a;
+            transform: scaleX(0.05);
+        }
     }
 
     /* .tc-gr {
@@ -51,7 +60,10 @@
         .content_text {
             line-height: 30px;
             font-size: 18px;
-            font-weight: 300;
+            font-weight: 400;
+
+            word-break: keep-all;
+            /* letter-spacing: 1.5px; */
         }
 
         &.title {

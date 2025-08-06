@@ -12,19 +12,23 @@
                 flex-direction: column;
 
                 .slogan_section {
-                    width: 100vw;
-                    height: 300px;
-                    padding: 40px 0;
-
-                    border-right: unset;
-                    border-bottom: solid 4px #fff;
-
                     .slogan {
-                        line-height: 80px;
-                        padding: unset;
+                        line-height: 100px;
+                        padding: 0 40px 0 0;
 
+                        color: transparent;
                         -webkit-text-stroke-width: 1px;
+                        -webkit-text-stroke-color: #fff;
+                        font-size: 60px;
+                    }
+
+                    .emph {
                         font-size: 80px;
+                        color: #fff;
+                    }
+
+                    .inv {
+                        display: none;
                     }
                 }
 
@@ -58,23 +62,6 @@
 
                         .btn_text {
                             font-size: 40px;
-                        }
-                    }
-                }
-
-                @media screen and (max-width: 500px) {
-                    .slogan_section {
-                        .slogan {
-                            line-height: 60px;
-                            font-size: 60px;
-                        }
-                    }
-
-                    .button_section {
-                        .button_tab {
-                            .btn_text {
-                                font-size: 30px;
-                            }
                         }
                     }
                 }

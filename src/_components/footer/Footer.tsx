@@ -31,8 +31,7 @@ const Footer = () => {
                   <MdSms className="icon" />
                 </div>
               </Link> */}
-              <ActiveBtn style="white ctr_mb" name="문의하기" onClick={() => router.push("/contact_us?index=0")} disabled={false} />
-              <ActiveBtn style="white ctr_mb" name="인증 신청하기" onClick={() => router.push("/contact_us?index=1")} disabled={false} />
+              <ActiveBtn style="white ctr_mb" name="CONTACT US" onClick={() => router.push("/contact_us")} disabled={false} />
             </div>
           </div>
           <div className="bot_section">
