@@ -3,18 +3,23 @@
         margin: 40px 0 0;
 
         .main_section {
-            height: 500px;
+            height: 400px;
 
             .main_main {
                 height: 100%;
-                padding: 0 20px 0;
+                padding: 0 10px 0;
 
                 flex-direction: column;
 
                 .slogan_section {
+                    width: 100%;
+                    align-items: start;
                     .slogan {
-                        line-height: 100px;
-                        padding: 0 40px 0 0;
+                        width: 100%;
+                        line-height: 80px;
+                        padding: 0;
+
+                        text-align: start;
 
                         color: transparent;
                         -webkit-text-stroke-width: 1px;
@@ -23,7 +28,7 @@
                     }
 
                     .emph {
-                        font-size: 80px;
+                        font-size: 70px;
                         color: #fff;
                     }
 
