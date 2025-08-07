@@ -8,7 +8,7 @@ export const metadata: Metadata = getMetadata("ISO 26000과의 연계성")
 export default function Home() {
   return (
     <>
-      <div id="qesg_page" className="csr_page">
+      <div id="qesg_page">
         <Title title="ISO 26000과의 연계성" desc="공급망 ESG 심사" />
         <div className="inner_main page_inner">
           <div className="content_box">
