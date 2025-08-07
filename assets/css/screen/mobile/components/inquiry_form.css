@@ -1,5 +1,6 @@
 @media screen and (max-width: 1000px) {
     .inquiry_form {
+        margin-top: 40px;
         form {
             width: calc(100vw - 10px);
 
