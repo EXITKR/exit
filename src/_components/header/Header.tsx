@@ -40,14 +40,6 @@ const Header = () => {
     }, []);
 
     useEffect(() => {
-        if (onMouse) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = 'auto';
-        }
-    }, [onMouse])
-
-    useEffect(() => {
         console.log(onMouse)
     }, [onMouse])
     return (
