@@ -8,6 +8,22 @@
     position: fixed;
     z-index: 100;
 
+    .dummy_background_01 {
+        background: url("../../imgs/background/main_background_01.png");
+    }
+
+    .dummy_background_02 {
+        background: url("../../imgs/background/main_background_02.png");
+    }
+
+    .dummy_background_03 {
+        background: url("../../imgs/background/main_background_03.png");
+    }
+
+    .dummy_background_04 {
+        background: url("../../imgs/background/main_background_04.png");
+    }
+
     .header_main {
         display: flex;
         align-items: center;
