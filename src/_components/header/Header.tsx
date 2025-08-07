@@ -45,6 +45,10 @@ const Header = () => {
     return (
         <>
             <header id="header_pc" ref={ref}>
+                <div className="dummy_background_01"></div>
+                <div className="dummy_background_02"></div>
+                <div className="dummy_background_03"></div>
+                <div className="dummy_background_04"></div>
                 <div className="head_inner_main header_main">
                     <div className="web_logo_div" onClick={() => {
                         router.push("/")
