@@ -2,6 +2,7 @@ import { NavigationInterface } from "@interfaces/pagesInterface";
 
 export const navigationList: NavigationInterface[] = [
     {
+        type: 0,
         url: "/qesg/qesg01",
         name: "공급망 ESG 심사 ",
         sub: [
@@ -28,6 +29,7 @@ export const navigationList: NavigationInterface[] = [
         ]
     },
     {
+        type: 1,
         url: "/scs/scs01",
         name: "Customized SCS",
         sub: [
@@ -62,6 +64,7 @@ export const navigationList: NavigationInterface[] = [
         ]
     },
     {
+        type: 2,
         url: "/iso/iso01",
         name: "시스템 인증",
         sub: [
@@ -84,6 +87,7 @@ export const navigationList: NavigationInterface[] = [
         ]
     },
     {
+        type: 3,
         url: "/overview",
         name: "회사소개",
         sub: [
