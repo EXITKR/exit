@@ -58,7 +58,7 @@ const Scs02 = () => {
                         </div>
                         <div className="content_box_content gc-1-4 sect_point">
                             <span className="content_text">
-                                DLP 시스템은 이메일, 웹하드, 메신저 등 다양한 경로를 통한 정보 유출을 효과적으로 차단할 수 있습니다.<br/>또한 설치와 관리가 용이하고, 사내 네트워크를 통한 데이터 전송을 집중적으로 감시할 수 있어 기업들이<br/>필수적으로 도입하고 있습니다.
+                                DLP 시스템은 이메일, 웹하드, 메신저 등 다양한 경로를 통한 정보 유출을 효과적으로 차단할 수 있습니다.<br/>또한 설치와 관리가 용이하고, 사내 네트워크를 통한 데이터 전송을 집중적으로 감시할 수 있어<br/>기업들이 필수적으로 도입하고 있습니다.
                             </span>
                         </div>
                         <div className="content_img gc-1-4">
