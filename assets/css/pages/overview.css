@@ -22,18 +22,18 @@
                 }
 
                 .text_title {
-                    font-size: 30px;
+                    font-size: 34px;
                     font-weight: 700;
                 }
 
                 .text_desc {
-                    font-size: 22px;
+                    font-size: 24px;
                     font-weight: 500;
                 }
 
                 &.sect_point {
+                    width: 620px;
                     background: transparent;
-                    border-left: solid 2px #537571;
                 }
             }
         }

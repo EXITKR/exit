@@ -60,6 +60,7 @@
                     .header_sub_navi {
                         .navi {
                             width: 200px;
+
                             .navi_title {
                                 font-size: 20px;
                             }
@@ -70,6 +71,17 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    .sub_navigation {
+        height: 60px;
+
+        .navi {
+            .navi_text {
+                line-height: 60px;
+                font-size: 16px;
             }
         }
     }

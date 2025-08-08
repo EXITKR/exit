@@ -47,6 +47,7 @@ export interface NavigationSubInterface {
 }
 
 export interface NavigationInterface {
+  type: number,
   url: string;
   name: string;
   sub: NavigationSubInterface[]

@@ -1,9 +1,45 @@
 @media screen and (max-width: 1000px) {
     #overview_page {
         margin: 40px 0 0;
-        
+
         .title_section {
             height: 200px;
+        }
+
+        .overview_main {
+            .content_box {
+                .content_box_content {
+                    .content_text {
+                        font-weight: 400;
+                    }
+
+                    .text_title {
+                        font-size: 24px;
+                        font-weight: 700;
+                    }
+
+                    .text_desc {
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+
+                    &.sect_point {
+                        width: unset;
+                        background: transparent;
+                    }
+                }
+            }
+
+            .ceo {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+
+                .exit {
+                    width: 120px;
+                    height: 60px;
+                }
+            }
         }
     }
 }

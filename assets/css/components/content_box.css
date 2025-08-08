@@ -1,5 +1,6 @@
 .content_box {
-    width: 100%;
+    width: 1100px;
+    margin: 0 auto;
     height: auto;
 
     display: grid;
@@ -20,7 +21,7 @@
 
     .tx-24 {
         line-height: 40px;
-        font-size: 24px;
+        font-size: 30px;
         font-weight: 700;
 
         &:after {
@@ -59,7 +60,7 @@
 
         .content_text {
             line-height: 30px;
-            font-size: 18px;
+            font-size: 22px;
             font-weight: 400;
 
             word-break: keep-all;
@@ -72,7 +73,7 @@
 
         &.sect_point {
             background: transparent;
-            border-left: solid 5px #537571;
+            border-left: unset;
         }
 
         /* &:hover {
@@ -118,7 +119,7 @@
 
         .img {
             width: 100%;
-            max-width: 960px;
+            max-width: 840px;
             height: auto;
             margin: 0 auto;
 
